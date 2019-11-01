@@ -35,7 +35,8 @@ class Database:
     def create(self):
         with self._conn as conn:
             cursor = conn.cursor()
-            self._execute(cursor, 
+            self._execute(
+                cursor,
                 """CREATE TABLE IF NOT EXISTS {} (
                     id SERIAL PRIMARY KEY,
                     video_id TEXT NOT NULL,
@@ -43,11 +44,12 @@ class Database:
                     UNIQUE(video_id)
                     )""".format(
                     self.TABLENAME
-                )
+                ),
             )
 
     def save(self, cursor, entry):
-        self._execute(cursor,
+        self._execute(
+            cursor,
             """INSERT INTO {} (video_id) values (%s)""".format(self.TABLENAME),
             (entry["id"],),
         )
