@@ -10,3 +10,6 @@ bin
 
 /target
 **/*.rs.bk
+
+.vim
+venv
