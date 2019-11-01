@@ -17,10 +17,10 @@ class Client:
     def __init__(self, key):
         self.key = key
 
-
     def fetch_channel_info(self, username):
         url = "https://www.googleapis.com/youtube/v3/channels?part={part}&key={key}&forUsername={username}".format(
-                part="contentDetails", key=self.key, username=username)
+            part="contentDetails", key=self.key, username=username
+        )
         r = requests.get(url)
         r.raise_for_status()
         results = r.json()
@@ -28,7 +28,8 @@ class Client:
 
     def fetch_items(self, uploads_id):
         url = "https://www.googleapis.com/youtube/v3/playlistItems?key={key}&part=contentDetails&maxResults=50&playlistId={playlist_id}".format(
-            key=self.key, playlist_id=uploads_id)
+            key=self.key, playlist_id=uploads_id
+        )
         r = requests.get(url)
         r.raise_for_status()
         return r.json()
