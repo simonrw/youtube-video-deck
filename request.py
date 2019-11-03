@@ -8,9 +8,10 @@ import psycopg2
 from psycopg2.errors import UniqueViolation
 import logging
 from contextlib import contextmanager
-
+import datetime
 
 username = "outsidexbox"
+channel_id = "UCKk076mm-7JjLxJcFSXIPJA"
 
 
 class Database:
@@ -104,6 +105,19 @@ class Client:
         for video in self._fetch_items(uploads_id):
             yield video
 
+    def new_videos_since(self, start):
+        payload = {
+                "key": self.key,
+                "part": "snippet",
+                "channelId": channel_id,
+                "publishedAfter": start.isoformat() + "Z"
+                }
+        url = "https://www.googleapis.com/youtube/v3/search"
+        r = requests.get(url, params=payload)
+        r.raise_for_status()
+        results = r.json()
+        print(results)
+
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
@@ -114,28 +128,29 @@ if __name__ == "__main__":
 
     dotenv.load_dotenv()
 
-    db = Database(
-        "db.db",
-        connection_options=dict(
-            username=os.environ["DATABASE_USERNAME"],
-            database=os.environ["DATABASE_DBNAME"],
-            hostname=os.environ.get("DATABASE_HOSTNAME", "localhost"),
-            password=os.environ["DATABASE_PASSWORD"],
-        ),
-    )
-    # db.drop()
-    db.create()
+    # db = Database(
+    #     "db.db",
+    #     connection_options=dict(
+    #         username=os.environ["DATABASE_USERNAME"],
+    #         database=os.environ["DATABASE_DBNAME"],
+    #         hostname=os.environ.get("DATABASE_HOSTNAME", "localhost"),
+    #         password=os.environ["DATABASE_PASSWORD"],
+    #     ),
+    # )
+    # # db.drop()
+    # db.create()
 
     key = os.environ["GOOGLE_API_KEY"]
 
-    client = Client(key, db)
+    client = Client(key, None)
+    print(client.new_videos_since(datetime.datetime(2019, 9, 18)))
 
-    for item in client.upload_for(username):
-        with db.tx() as cursor:
-            try:
-                db.save(cursor, item)
-            except UniqueViolation:
-                logger.info("object %s exists in database, skipping", item)
-                continue
-            except Exception as e:
-                raise e
+    # for item in client.upload_for(username):
+    #     with db.tx() as cursor:
+    #         try:
+    #             db.save(cursor, item)
+    #         except UniqueViolation:
+    #             logger.info("object %s exists in database, skipping", item)
+    #             continue
+    #         except Exception as e:
+    #             raise e
