@@ -2,6 +2,7 @@
 
 
 import requests
+from typing import NamedTuple
 import os
 import dotenv
 import psycopg2
@@ -9,6 +10,7 @@ from psycopg2.errors import UniqueViolation
 import logging
 from contextlib import contextmanager
 import datetime
+import vcr
 
 username = "outsidexbox"
 channel_id = "UCKk076mm-7JjLxJcFSXIPJA"
@@ -107,20 +109,53 @@ class Client:
 
     def new_videos_since(self, start):
         payload = {
-                "key": self.key,
-                "part": "snippet",
-                "channelId": channel_id,
-                "publishedAfter": start.isoformat() + "Z"
-                }
+            "key": self.key,
+            "part": "snippet",
+            "channelId": channel_id,
+            "publishedAfter": start.isoformat() + "Z",
+            "maxResults": 50,
+        }
         url = "https://www.googleapis.com/youtube/v3/search"
         r = requests.get(url, params=payload)
         r.raise_for_status()
         results = r.json()
-        print(results)
+
+        if results["pageInfo"]["totalResults"] > results["pageInfo"]["resultsPerPage"]:
+            raise ValueError("Missing some results")
+
+        for item in results["items"]:
+            video_id = item["id"]["videoId"]
+            title = item["snippet"]["title"]
+            description = item["snippet"]["description"]
+            thumbnail_url = item["snippet"]["thumbnails"]["high"]["url"]
+            thumbnail_width = item["snippet"]["thumbnails"]["high"]["width"]
+            thumbnail_height = item["snippet"]["thumbnails"]["high"]["height"]
+
+            yield Video(
+                id=video_id,
+                title=title,
+                description=description,
+                thumbnail=Thumbnail(
+                    url=thumbnail_url, width=thumbnail_width, height=thumbnail_height
+                ),
+            )
+
+
+class Thumbnail(NamedTuple):
+    url: str
+    width: int
+    height: int
+
+
+class Video(NamedTuple):
+    id: str
+    title: str
+    description: str
+    thumbnail: Thumbnail
 
 
 if __name__ == "__main__":
-    logging.basicConfig(level=logging.DEBUG)
+    logging.basicConfig(level=logging.WARNING)
     # Disable other loggers
     logging.getLogger("urllib3").setLevel(logging.WARNING)
 
@@ -143,7 +178,10 @@ if __name__ == "__main__":
     key = os.environ["GOOGLE_API_KEY"]
 
     client = Client(key, None)
-    print(client.new_videos_since(datetime.datetime(2019, 9, 18)))
+    with vcr.use_cassette("yt_search.yml", filter_query_parameters=["key"]):
+        for video in client.new_videos_since(datetime.datetime(2019, 9, 18)):
+            print(video)
+            break
 
     # for item in client.upload_for(username):
     #     with db.tx() as cursor:
