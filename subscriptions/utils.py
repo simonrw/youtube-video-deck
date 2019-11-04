@@ -2,7 +2,9 @@ import requests
 from dataclasses import dataclass
 from typing import Optional
 import enum
-from .models import Video
+from .models import Subscription, Video
+from django.utils import timezone
+from django.utils.dateparse import parse_datetime
 
 
 class ItemType(enum.Enum):
@@ -114,20 +116,21 @@ class YoutubeClient(object):
                 "key": self.api_key,
                 "part": "snippet",
                 "maxResults": 25,
-                "pageToken": page_id,
                 "channelId": channel_id,
-                "publishedAfter": since.isoformat() + "Z",
+                "publishedAfter": since.strftime("%Y-%m-%dT%H:%M:%SZ"),
             }
+
+            if page_id is not None:
+                params["pageToken"] = page_id,
 
             data = self._fetch(url, params=params)
 
             for item in data["items"]:
                 assert item["id"]["kind"] == "youtube#video"
 
-                yield Video(
-                    youtube_id=item["id"]["videoId"],
-                    published_at=item["snippet"]["publishedAt"],
-                )
+                published_at = parse_datetime(item["snippet"]["publishedAt"])
+
+                yield Video(youtube_id=item["id"]["videoId"], published_at=published_at)
 
             # Break condition, no more pages
             if "nextPageToken" in data:
@@ -143,3 +146,28 @@ class Crawler:
     Given a subscription id and type, crawl the videos for that
     subscription to find any new ones.
     """
+
+    def __init__(self, client):
+        self.client = client
+
+    def crawl(self):
+        """
+        Go through all of the subscriptions, check for latest videos
+        and update
+        """
+        subscriptions = Subscription.objects.all()
+        now = timezone.now()
+        for sub in subscriptions:
+
+            if sub.last_checked is None:
+                since = now - timezone.timedelta(days=90)
+            else:
+                since = sub.last_checked
+
+            videos = self.client.fetch_latest(
+                    channel_id=sub.youtube_id,
+                    since=since)
+
+            for video in videos:
+                video.subscription = sub
+                video.save()

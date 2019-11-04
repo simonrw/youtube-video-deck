@@ -1,7 +1,8 @@
 from unittest import mock
 from django.utils import timezone
 import pytest
-from subscriptions.utils import YoutubeClient, ItemType
+from subscriptions.utils import YoutubeClient, ItemType, Crawler
+from subscriptions.models import Subscription, Video
 from ytvd.settings import BASE_DIR
 import os
 
@@ -109,12 +110,74 @@ def test_fetch_latest(client, response):
 
     # Check the first result
     assert videos[0].youtube_id == "7v-KIxHOhrs"
+    assert videos[0].published_at == timezone.make_aware(
+        timezone.datetime(2019, 9, 26, 17, 15, 22)
+    )
 
 
-@pytest.mark.skip
+@pytest.mark.django_db
 def test_crawler(client):
-    with mock.patch.object(client, "fetch_latest") as fetch_latest:
-        crawler = Crawler(client)
-        videos = crawler.crawl()
+    last_checked = timezone.make_aware(timezone.datetime(2019, 9, 1))
+    # Set up the database contents
+    sub = Subscription.objects.create(
+        name="outsidexbox",
+        youtube_id="UCKk076mm-7JjLxJcFSXIPJA",
+        type="ItemType.CHANNEL",
+        last_checked=last_checked,
+    )
 
-    assert len(videos) == 20
+    videos = [
+        Video(
+            youtube_id="7v-KIxHOhrs",
+            published_at=timezone.make_aware(
+                timezone.datetime(2019, 9, 26, 17, 15, 22)
+            ),
+        )
+    ]
+    with mock.patch.object(client, "fetch_latest") as fetch_latest:
+        fetch_latest.return_value = videos
+
+        crawler = Crawler(client)
+        crawler.crawl()
+
+    assert [v.youtube_id for v in Video.objects.all()] == [v.youtube_id for v in videos]
+
+
+@pytest.mark.django_db
+def test_crawler_with_existing_videos(client):
+    last_checked = timezone.make_aware(timezone.datetime(2019, 9, 1))
+    # Set up the database contents
+    sub = Subscription.objects.create(
+        name="outsidexbox",
+        youtube_id="UCKk076mm-7JjLxJcFSXIPJA",
+        type="ItemType.CHANNEL",
+        last_checked=last_checked,
+    )
+
+    existing_video = Video(
+        youtube_id="7v-KIxHOhrs",
+        published_at=timezone.make_aware(timezone.datetime(2019, 9, 26, 17, 15, 22)),
+    )
+    existing_video.subscription = sub
+    existing_video.watched = True
+    existing_video.save()
+
+    assert len(Video.objects.all()) == 1
+
+    videos = [
+        existing_video,
+        Video(
+            youtube_id="_vdipCXyrFw",
+            published_at=timezone.make_aware(timezone.datetime(2019, 9, 5, 17, 43, 56)),
+        ),
+    ]
+    with mock.patch.object(client, "fetch_latest") as fetch_latest:
+        fetch_latest.return_value = videos
+
+        crawler = Crawler(client)
+        crawler.crawl()
+
+    db_videos = Video.objects.all()
+    assert [v.youtube_id for v in db_videos] == [v.youtube_id for v in videos]
+    assert db_videos[0].watched
+    assert not db_videos[1].watched
