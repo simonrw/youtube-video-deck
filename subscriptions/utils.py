@@ -2,6 +2,7 @@ import requests
 from dataclasses import dataclass
 from typing import Optional
 import enum
+from .models import Video
 
 
 class ItemType(enum.Enum):
@@ -104,3 +105,41 @@ class YoutubeClient(object):
                 )
             else:
                 raise ValueError(f"Invalid item kind: {item['id']['kind']}")
+
+    def fetch_latest(self, *, channel_id, since):
+        page_id = None
+        url = "https://www.googleapis.com/youtube/v3/search"
+        while True:
+            params = {
+                "key": self.api_key,
+                "part": "snippet",
+                "maxResults": 25,
+                "pageToken": page_id,
+                "channelId": channel_id,
+                "publishedAfter": since.isoformat() + "Z",
+            }
+
+            data = self._fetch(url, params=params)
+
+            for item in data["items"]:
+                assert item["id"]["kind"] == "youtube#video"
+
+                yield Video(
+                    youtube_id=item["id"]["videoId"],
+                    published_at=item["snippet"]["publishedAt"],
+                )
+
+            # Break condition, no more pages
+            if "nextPageToken" in data:
+                page_id = data["nextPageToken"]
+            else:
+                break
+
+        return []
+
+
+class Crawler:
+    """
+    Given a subscription id and type, crawl the videos for that
+    subscription to find any new ones.
+    """

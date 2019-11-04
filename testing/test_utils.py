@@ -1,4 +1,5 @@
 from unittest import mock
+from django.utils import timezone
 import pytest
 from subscriptions.utils import YoutubeClient, ItemType
 from ytvd.settings import BASE_DIR
@@ -88,3 +89,32 @@ def test_search_for_term(client, response):
         results[2].thumbnail.url == "https://i.ytimg.com/vi/a6GennlwSR8/hqdefault.jpg"
     )
     assert results[2].channel_title == "outsidexbox"
+
+
+def test_fetch_latest(client, response):
+    stub_response_1 = response("fetch_latest_1")
+    stub_response_2 = response("fetch_latest_2")
+    stub_response_3 = response("fetch_latest_3")
+
+    with mock.patch.object(client, "_fetch") as fetch:
+        fetch.side_effect = [stub_response_1, stub_response_2, stub_response_3]
+
+        videos = list(
+            client.fetch_latest(
+                channel_id="UCKk076mm-7JjLxJcFSXIPJA",
+                since=timezone.datetime(2019, 9, 1),
+            )
+        )
+        assert len(videos) == 50
+
+    # Check the first result
+    assert videos[0].youtube_id == "7v-KIxHOhrs"
+
+
+@pytest.mark.skip
+def test_crawler(client):
+    with mock.patch.object(client, "fetch_latest") as fetch_latest:
+        crawler = Crawler(client)
+        videos = crawler.crawl()
+
+    assert len(videos) == 20
