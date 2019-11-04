@@ -11,4 +11,5 @@ See the [design docs](./design/design.md)
 ## Alternatives
 
 youtube-video-deck: this seems to have been discontinued. We are basically re-implementing this but simplifying the authentication
+
 freetube: this can list subscriptions, but does not remove items that have been viewed
