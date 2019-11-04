@@ -1,30 +1,31 @@
 {% extends "subscriptions/base.html" %}
 
 {% block content %}
-<a href="{% url 'search' %}">Add subscription</a>
-<ul>
+<div class="bg-gray-100 p-12">
+  <a class="underline mb-8" href="{% url 'search' %}">Add subscription</a>
+  <div class="flex flex-wrap">
     {% for sub in subscriptions %}
-    <li>
-        <p>{{ sub.name }}</p>
-        <form action="watched_sub/" method="POST">
+    <div class="m-4 p-4 overflow-scroll">
+      <p>{{ sub.name }}</p>
+      <form action="watched_sub/" method="POST">
+        {% csrf_token %}
+        <input type="hidden" name="subscription-id" value={{ sub.id }} />
+        <input type="submit" value="Mark subscription watched" />
+      </form>
+      <div>
+        {% for video in sub.unwatched %}
+        <div>
+          <form action="watched_video/" method="POST">
             {% csrf_token %}
-            <input type="hidden" name="subscription-id" value={{ sub.id }} />
-            <input type="submit" value="Mark subscription watched" />
-        </form>
-        <ul>
-            {% for video in sub.unwatched %}
-            <li>
-                <p>{{ video.name }}</p>
-                <form action="watched_video/" method="POST">
-                    {% csrf_token %}
-                    <input type="hidden" name="video-id" value={{ video.id }} />
-                    <input type="submit" value="Mark video watched" />
-                </form>
-                <img src={{ video.thumbnail_url }}></img>
-            </li>
-            {% endfor %}
-        </ul>
-    </li>
+            <input type="hidden" name="video-id" value={{ video.id }} />
+            <input type="submit" value="Mark video watched" />
+          </form>
+          <img class="w-32" src={{ video.thumbnail_url }}></img>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
     {% endfor %}
-</ul>
+  </div>
+</div>
 {% endblock content %}

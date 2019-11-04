@@ -1,11 +1,17 @@
 {% load render_bundle from webpack_loader %}
 
+
 <!doctype html>
-<html>
+<html lang="en">
     <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
         {% render_bundle "main" "css" %}
     </head>
-    <body>
+    <body class="container mx-auto my-8 bg-gray-900">
+
         {% block content %}
         {% endblock content %}
 
