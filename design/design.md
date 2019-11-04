@@ -1,3 +1,7 @@
+---
+title: Design document
+---
+
 # Design doc
 
 ## Objectives
@@ -23,11 +27,7 @@ The app should support the following functionalities (in order of imporatance):
 * tracks the last time the subscription was checked for new items
 * stores whether the subscription is a channel or playlist
 
-```dot
-digraph G {
-    a -> b;
-}
-```
+![Subscription ERD](./subscription_erd.png)
 
 #### Video
 

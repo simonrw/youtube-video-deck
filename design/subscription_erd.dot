@@ -1,0 +1,23 @@
+digraph G {
+    root = subscription;
+    overlap = scale;
+
+    // Root node
+    node [style=filled, fillcolor="#f7f5f0"];
+    subscription [label="Subscription"];
+
+
+    // Attributes
+    node [style=filled, fillcolor="#d2f5fa"];
+
+    name [label="Name\nFriendly name"];
+    last_checked [label="Last checked"];
+    type [label="Type\nChannel or playlist"];
+    id [label="ID*\nWhat is used\nfor making requests"];
+
+    // Connections
+    subscription -> name;
+    subscription -> last_checked;
+    subscription -> type;
+    subscription -> id;
+}
