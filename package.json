@@ -1,0 +1,24 @@
+{
+  "name": "youtube-video-deck",
+  "version": "1.0.0",
+  "description": "This program runs a web server that manages youtube subscriptions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mindriot101/youtube-video-deck.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mindriot101/youtube-video-deck/issues"
+  },
+  "homepage": "https://github.com/mindriot101/youtube-video-deck#readme",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-bundle-tracker": "^0.4.3",
+    "webpack-cli": "^3.3.10"
+  }
+}

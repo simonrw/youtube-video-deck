@@ -1,9 +1,14 @@
+{% load render_bundle from webpack_loader %}
+
 <!doctype html>
 <html>
     <head>
+        {% render_bundle "main" "css" %}
     </head>
     <body>
         {% block content %}
         {% endblock content %}
+
+        {% render_bundle "main" "js" %}
     </body>
 </html>
