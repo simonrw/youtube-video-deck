@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Subscription(models.Model):
     """
     Represents a single subscription for a user
@@ -25,5 +26,7 @@ class Video(models.Model):
     * store the thumbnail
     * store the full url to video
     """
+
+    subscription = models.ForeignKey(Subscription, on_delete=models.CASCADE)
     published_at = models.DateTimeField()
     watched = models.BooleanField(default=False)
