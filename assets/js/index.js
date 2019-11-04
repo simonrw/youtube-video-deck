@@ -1,1 +1,1 @@
-console.log("Hello world");
+import _ from "../css/main.css";
