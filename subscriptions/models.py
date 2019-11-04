@@ -13,7 +13,7 @@ class Subscription(models.Model):
     """
 
     name = models.CharField(max_length=255)
-    youtube_id = models.CharField(max_length=255)
+    youtube_id = models.CharField(max_length=255, unique=True)
     type = models.CharField(max_length=31)
     last_checked = models.DateTimeField(null=True)
 
@@ -38,7 +38,7 @@ class Video(models.Model):
     name = models.CharField(max_length=255)
     thumbnail_url = models.CharField(max_length=255)
     description = models.CharField(max_length=255)
-    youtube_id = models.CharField(max_length=255)
+    youtube_id = models.CharField(max_length=255, unique=True)
     subscription = models.ForeignKey(Subscription, on_delete=models.CASCADE)
     published_at = models.DateTimeField()
     watched = models.BooleanField(default=False)

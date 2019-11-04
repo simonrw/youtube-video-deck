@@ -4,6 +4,7 @@ from typing import Optional
 import enum
 from .models import Subscription, Video
 from django.utils import timezone
+from django.db.utils import IntegrityError
 from django.utils.dateparse import parse_datetime
 
 
@@ -174,4 +175,7 @@ class Crawler:
 
             for video in videos:
                 video.subscription = sub
-                video.save()
+                try:
+                    video.save()
+                except IntegrityError:
+                    continue

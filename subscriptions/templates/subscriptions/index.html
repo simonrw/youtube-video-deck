@@ -1,6 +1,7 @@
 {% extends "subscriptions/base.html" %}
 
 {% block content %}
+<a href="{% url 'search' %}">Add subscription</a>
 <ul>
     {% for sub in subscriptions %}
     <li>
