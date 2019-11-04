@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
 from .utils import YoutubeClient, ItemType
-from .models import Subscription
+from .models import Subscription, Video
 from .forms import SearchForm
 import os
 
@@ -48,5 +48,26 @@ def subscribe(request):
                 youtube_id=item_id,
                 type=ItemType.from_(item_type),
                 )
+
+    return redirect("/ytvd/")
+
+
+def mark_subscription_watched(request):
+    if request.method == "POST":
+        sub_id = request.POST["subscription-id"]
+        sub = Subscription.objects.get(id=sub_id)
+        for video in sub.video_set.all():
+            video.watched = True
+            video.save()
+
+    return redirect("/ytvd/")
+
+
+def mark_video_watched(request):
+    if request.method == "POST":
+        video_id = request.POST["video-id"]
+        video = Video.objects.get(id=video_id)
+        video.watched = True
+        video.save()
 
     return redirect("/ytvd/")

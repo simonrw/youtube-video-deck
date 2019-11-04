@@ -2,13 +2,23 @@
 
 {% block content %}
 <ul>
-    {% for item in subscriptions %}
+    {% for sub in subscriptions %}
     <li>
-        <p>{{ item.name }}</p>
+        <p>{{ sub.name }}</p>
+        <form action="watched_sub/" method="POST">
+            {% csrf_token %}
+            <input type="hidden" name="subscription-id" value={{ sub.id }} />
+            <input type="submit" value="Mark subscription watched" />
+        </form>
         <ul>
-            {% for video in item.unwatched %}
+            {% for video in sub.unwatched %}
             <li>
                 <p>{{ video.name }}</p>
+                <form action="watched_video/" method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" name="video-id" value={{ video.id }} />
+                    <input type="submit" value="Mark video watched" />
+                </form>
                 <img src={{ video.thumbnail_url }}></img>
             </li>
             {% endfor %}
