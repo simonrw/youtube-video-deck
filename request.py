@@ -152,7 +152,7 @@ class Video(NamedTuple):
     title: str
     description: str
     thumbnail: Thumbnail
-
+t
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.WARNING)

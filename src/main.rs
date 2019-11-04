@@ -1,4 +1,5 @@
 use serde::Deserialize;
+use warp::{self, path, Filter};
 
 #[derive(Deserialize, Debug)]
 struct UploadInfo {
@@ -112,12 +113,20 @@ impl MyApi {
 
 #[tokio::main]
 async fn main() {
-    dotenv::dotenv().ok();
-    let key = std::env::var("GOOGLE_API_KEY").unwrap();
-    let username = "outsidexbox";
 
-    let client = MyApi::new(key);
+    // let hello = path!("hello" / String)
+    //     .map(|name| format!("Hello {}", name));
+    let routes = warp::any().map(|| {
+        "Hello world"
+    });
+    warp::serve(routes).run(([127, 0, 0, 1], 3030))
 
-    let uploads_id = client.fetch_channel_info(username).await;
-    client.fetch_items(&uploads_id, None).await;
+    // dotenv::dotenv().ok();
+    // let key = std::env::var("GOOGLE_API_KEY").unwrap();
+    // let username = "outsidexbox";
+
+    // let client = MyApi::new(key);
+
+    // let uploads_id = client.fetch_channel_info(username).await;
+    // client.fetch_items(&uploads_id, None).await;
 }
