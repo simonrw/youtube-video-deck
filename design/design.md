@@ -50,7 +50,9 @@ This object decouples the domain models from the Youtube API. It supports the fo
 ## Questions
 
 * [ ] can the API check multiple subscriptions (channels or playslists) in a single request?
-* [ ] does the search method of the Youtube API return what the matched result is?
+* [*] does the search method of the Youtube API return what the matched result
+  is? *yes it does, and it can query for multiple types of result e.g. channels
+  and playlists*
 * [ ] django enumeration support (`Subscription.type` field)
 
 ## Initial sketch
