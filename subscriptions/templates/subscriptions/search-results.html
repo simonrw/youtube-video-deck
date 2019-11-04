@@ -1,0 +1,25 @@
+{% extends "subscriptions/base.html" %}
+
+{% block content %}
+{% if items %}
+<ul>
+    {% for item in items %}
+    <li>
+        {% if item.item_type == CHANNEL %}
+            <p>Channel</p>
+            <p>{{ item.title }}</p>
+        {% elif item.item_type == PLAYLIST %}
+            <p>Playlist</p>
+            <p>{{ item.title }} from {{ item.channel_title }}</p>
+        {% else %}
+            <p>Error</p>
+        {% endif %}
+        <p>{{ item.description }}</p>
+        <img src="{{ item.thumbnail.url }}"></img>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No items found</p>
+{% endif %}
+{% endblock content %}

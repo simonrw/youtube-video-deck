@@ -60,6 +60,7 @@ class YoutubeClient(object):
             "part": "snippet",
             "q": term,
             "type": "channel,playlist",
+            "maxResults": 25,
         }
 
         data = self._fetch(url, params=params)
