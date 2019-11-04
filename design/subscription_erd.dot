@@ -10,10 +10,10 @@ digraph G {
     // Attributes
     node [style=filled, fillcolor="#d2f5fa"];
 
-    name [label="Name\nFriendly name"];
-    last_checked [label="Last checked"];
-    type [label="Type\nChannel or playlist"];
-    id [label="ID*\nWhat is used\nfor making requests"];
+    id [label="ID*\n\nType: SERIAL"];
+    name [label="Name\n\nType: TEXT"];
+    last_checked [label="Last checked\n\nType: TIMESTAMPTZ"];
+    type [label="Type\n\nType: SubscriptionType"];
 
     // Connections
     subscription -> name;

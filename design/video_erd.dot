@@ -1,0 +1,21 @@
+digraph G {
+    root = video;
+    overlap = scale;
+
+    // Root node
+    node [style=filled, fillcolor="#f7f5f0"];
+    video [label="Video"];
+
+
+    // Attributes
+    node [style=filled, fillcolor="#d2f5fa"];
+
+    watched [label="Watched\n\nType: BOOLEAN\ndefault=false"];
+    published_at [label="Published at\n\nType: TIMESTAMPTZ"];
+    id [label="ID*\n\nType: SERIAL"];
+
+    // Connections
+    video -> watched;
+    video -> published_at;
+    video -> id;
+}

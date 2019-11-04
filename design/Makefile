@@ -1,4 +1,5 @@
-IMAGES := subscription_erd.png
+IMAGE_SRCS := $(wildcard *.dot)
+IMAGES := $(IMAGE_SRCS:.dot=.png)
 
 all: design.html
 

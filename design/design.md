@@ -16,7 +16,6 @@ The app should support the following functionalities (in order of imporatance):
 
 ## Components
 
-
 ### Domain models (mapping to database tables)
 
 #### Subscription
@@ -31,9 +30,13 @@ The app should support the following functionalities (in order of imporatance):
 
 #### Video
 
-#### User
+*Responsibilities*
 
-#### Authentication
+* track whether the user has watched the video
+* store the thumbnail
+* store the full url to video
+
+![Video ERD](./video_erd.png)
 
 ### Helper classes
 
