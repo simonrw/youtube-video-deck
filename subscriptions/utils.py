@@ -121,7 +121,7 @@ class YoutubeClient(object):
             }
 
             if page_id is not None:
-                params["pageToken"] = page_id,
+                params["pageToken"] = (page_id,)
 
             data = self._fetch(url, params=params)
 
@@ -130,7 +130,12 @@ class YoutubeClient(object):
 
                 published_at = parse_datetime(item["snippet"]["publishedAt"])
 
-                yield Video(youtube_id=item["id"]["videoId"], published_at=published_at)
+                yield Video(
+                    youtube_id=item["id"]["videoId"],
+                    name=item["snippet"]["title"],
+                    description=item["snippet"]["description"],
+                    published_at=published_at,
+                )
 
             # Break condition, no more pages
             if "nextPageToken" in data:
@@ -164,9 +169,7 @@ class Crawler:
             else:
                 since = sub.last_checked
 
-            videos = self.client.fetch_latest(
-                    channel_id=sub.youtube_id,
-                    since=since)
+            videos = self.client.fetch_latest(channel_id=sub.youtube_id, since=since)
 
             for video in videos:
                 video.subscription = sub

@@ -113,6 +113,12 @@ def test_fetch_latest(client, response):
     assert videos[0].published_at == timezone.make_aware(
         timezone.datetime(2019, 9, 26, 17, 15, 22)
     )
+    assert videos[0].name == "7 Transforming Bosses Who Made Us Regret Our Cockiness"
+    assert videos[0].description.startswith(
+        "Don't you just hate it when you encounter a videogame boss"
+    )
+
+    # TODO: check another video
 
 
 @pytest.mark.django_db

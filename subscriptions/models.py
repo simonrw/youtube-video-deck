@@ -32,6 +32,9 @@ class Video(models.Model):
     * store the full url to video
     """
 
+    name = models.CharField(max_length=255)
+    thumbnail_url = models.CharField(max_length=255)
+    description = models.CharField(max_length=255)
     youtube_id = models.CharField(max_length=255)
     subscription = models.ForeignKey(Subscription, on_delete=models.CASCADE)
     published_at = models.DateTimeField()
