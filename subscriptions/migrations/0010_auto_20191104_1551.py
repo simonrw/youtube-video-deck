@@ -5,26 +5,24 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('subscriptions', '0009_video_youtube_id'),
-    ]
+    dependencies = [("subscriptions", "0009_video_youtube_id")]
 
     operations = [
         migrations.AddField(
-            model_name='video',
-            name='description',
+            model_name="video",
+            name="description",
             field=models.CharField(max_length=255),
             preserve_default=False,
         ),
         migrations.AddField(
-            model_name='video',
-            name='name',
+            model_name="video",
+            name="name",
             field=models.CharField(max_length=255),
             preserve_default=False,
         ),
         migrations.AddField(
-            model_name='video',
-            name='thumbnail_url',
+            model_name="video",
+            name="thumbnail_url",
             field=models.CharField(max_length=255),
             preserve_default=False,
         ),

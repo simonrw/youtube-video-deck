@@ -7,20 +7,16 @@ from django.utils import timezone
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('subscriptions', '0003_video'),
-    ]
+    dependencies = [("subscriptions", "0003_video")]
 
     operations = [
         migrations.AddField(
-            model_name='video',
-            name='published_at',
+            model_name="video",
+            name="published_at",
             field=models.DateTimeField(),
             preserve_default=False,
         ),
         migrations.AddField(
-            model_name='video',
-            name='watched',
-            field=models.BooleanField(default=False),
+            model_name="video", name="watched", field=models.BooleanField(default=False)
         ),
     ]

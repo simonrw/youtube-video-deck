@@ -5,14 +5,10 @@ from django.db import migrations
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('subscriptions', '0005_video_subscription_id'),
-    ]
+    dependencies = [("subscriptions", "0005_video_subscription_id")]
 
     operations = [
         migrations.RenameField(
-            model_name='video',
-            old_name='subscription_id',
-            new_name='subscription',
-        ),
+            model_name="video", old_name="subscription_id", new_name="subscription"
+        )
     ]

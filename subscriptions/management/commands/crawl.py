@@ -9,8 +9,13 @@ class Command(BaseCommand):
     help = "Perform ad-hoc crawling"
 
     def add_arguments(self, parser):
-        parser.add_argument("-r", "--reset", action="store_true", default=False,
-                help="Reset the database to a known state")
+        parser.add_argument(
+            "-r",
+            "--reset",
+            action="store_true",
+            default=False,
+            help="Reset the database to a known state",
+        )
 
     def handle(self, *args, **options):
         if options["reset"]:
@@ -23,7 +28,6 @@ class Command(BaseCommand):
                 type="ItemType.CHANNEL",
                 last_checked=last_checked,
             )
-
 
         api_key = os.environ["GOOGLE_API_KEY"]
         client = YoutubeClient(api_key)

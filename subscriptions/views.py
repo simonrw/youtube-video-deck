@@ -11,9 +11,7 @@ YOUTUBE = YoutubeClient(os.environ["GOOGLE_API_KEY"])
 
 def index(request):
     subscriptions = Subscription.objects.all()
-    return render(request, "subscriptions/index.html", {
-        "subscriptions": subscriptions,
-        })
+    return render(request, "subscriptions/index.html", {"subscriptions": subscriptions})
 
 
 def search(request):
@@ -44,10 +42,8 @@ def subscribe(request):
         item_name = request.POST["item-name"]
 
         Subscription.objects.create(
-                name=item_name,
-                youtube_id=item_id,
-                type=ItemType.from_(item_type),
-                )
+            name=item_name, youtube_id=item_id, type=ItemType.from_(item_type)
+        )
 
     return redirect("/ytvd/")
 

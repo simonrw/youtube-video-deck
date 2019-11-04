@@ -5,15 +5,13 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('subscriptions', '0008_auto_20191104_1444'),
-    ]
+    dependencies = [("subscriptions", "0008_auto_20191104_1444")]
 
     operations = [
         migrations.AddField(
-            model_name='video',
-            name='youtube_id',
+            model_name="video",
+            name="youtube_id",
             field=models.CharField(max_length=255),
             preserve_default=False,
-        ),
+        )
     ]

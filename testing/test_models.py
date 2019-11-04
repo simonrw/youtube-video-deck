@@ -32,7 +32,6 @@ class TestSubscription:
         assert list(unwatched) == [v1]
 
 
-
 class TestVideo:
     def subscription(self):
         # Fixture

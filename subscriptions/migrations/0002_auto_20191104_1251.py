@@ -5,14 +5,12 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('subscriptions', '0001_initial'),
-    ]
+    dependencies = [("subscriptions", "0001_initial")]
 
     operations = [
         migrations.AlterField(
-            model_name='subscription',
-            name='last_checked',
+            model_name="subscription",
+            name="last_checked",
             field=models.DateTimeField(null=True),
-        ),
+        )
     ]
