@@ -13,7 +13,12 @@ class Subscription(models.Model):
     """
 
     name = models.CharField(max_length=255)
+    youtube_id = models.CharField(max_length=255)
+    type = models.CharField(max_length=31)
     last_checked = models.DateTimeField(null=True)
+
+    def __str__(self):
+        return self.name
 
 
 class Video(models.Model):
@@ -27,6 +32,10 @@ class Video(models.Model):
     * store the full url to video
     """
 
+    youtube_id = models.CharField(max_length=255)
     subscription = models.ForeignKey(Subscription, on_delete=models.CASCADE)
     published_at = models.DateTimeField()
     watched = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f"{self.youtube_id} from {self.subscription}"

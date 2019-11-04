@@ -1,4 +1,16 @@
 {% extends "subscriptions/base.html" %}
 
 {% block content %}
+<ul>
+    {% for item in subscriptions %}
+    <li>
+        <p>{{ item.name }}</p>
+        <ul>
+            {% for video in item.video_set.all %}
+            <li>Video</li>
+            {% endfor %}
+        </ul>
+    </li>
+    {% endfor %}
+</ul>
 {% endblock content %}

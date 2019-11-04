@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
 from .utils import YoutubeClient, ItemType
+from .models import Subscription
 from .forms import SearchForm
 import os
 
@@ -9,7 +10,10 @@ YOUTUBE = YoutubeClient(os.environ["GOOGLE_API_KEY"])
 
 
 def index(request):
-    return render(request, "subscriptions/index.html")
+    subscriptions = Subscription.objects.all()
+    return render(request, "subscriptions/index.html", {
+        "subscriptions": subscriptions,
+        })
 
 
 def search(request):
@@ -18,7 +22,6 @@ def search(request):
         if form.is_valid():
             term = form.cleaned_data["term"]
             search_items = list(YOUTUBE.search(term=term))
-            print(len(search_items))
             return render(
                 request,
                 "subscriptions/search-results.html",
@@ -34,5 +37,16 @@ def search(request):
     return render(request, "subscriptions/search.html", {"form": form})
 
 
-def results(request):
-    return render(request, "subscriptions/search-results.html")
+def subscribe(request):
+    if request.method == "POST":
+        item_id = request.POST["item-id"]
+        item_type = request.POST["item-type"]
+        item_name = request.POST["item-name"]
+
+        Subscription.objects.create(
+                name=item_name,
+                youtube_id=item_id,
+                type=ItemType.from_(item_type),
+                )
+
+    return redirect("/ytvd/")

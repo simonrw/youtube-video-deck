@@ -5,8 +5,17 @@ import enum
 
 
 class ItemType(enum.Enum):
-    CHANNEL = enum.auto()
-    PLAYLIST = enum.auto()
+    CHANNEL = "channel"
+    PLAYLIST = "playlist"
+
+    @classmethod
+    def from_(cls, value):
+        if value == "ItemType.CHANNEL":
+            return cls.CHANNEL
+        elif value == "ItemType.PLAYLIST":
+            return cls.PLAYLIST
+        else:
+            raise ValueError(f"Invalid item type: {value}")
 
 
 @dataclass
@@ -70,10 +79,10 @@ class YoutubeClient(object):
             description = item["snippet"]["description"]
             channel_title = item["snippet"]["channelTitle"]
             thumbnail = Thumbnail(
-                    url=item["snippet"]["thumbnails"]["high"]["url"],
-                    width=item["snippet"]["thumbnails"]["high"].get("width"),
-                    height=item["snippet"]["thumbnails"]["high"].get("height"),
-                    )
+                url=item["snippet"]["thumbnails"]["high"]["url"],
+                width=item["snippet"]["thumbnails"]["high"].get("width"),
+                height=item["snippet"]["thumbnails"]["high"].get("height"),
+            )
 
             if item["id"]["kind"] == "youtube#channel":
                 yield SearchItem(
@@ -95,4 +104,3 @@ class YoutubeClient(object):
                 )
             else:
                 raise ValueError(f"Invalid item kind: {item['id']['kind']}")
-
