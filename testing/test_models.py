@@ -25,8 +25,8 @@ class TestSubscription:
 
     def test_unwatched_filter(self, now):
         s = Subscription.objects.create(name="foo")
-        v1 = s.video_set.create(published_at=now)
-        v2 = s.video_set.create(published_at=now, watched=True)
+        v1 = s.video_set.create(youtube_id="123", published_at=now)
+        v2 = s.video_set.create(youtube_id="456", published_at=now, watched=True)
 
         unwatched = s.unwatched()
         assert list(unwatched) == [v1]
