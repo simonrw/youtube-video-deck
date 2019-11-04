@@ -26,7 +26,7 @@ The app should support the following functionalities (in order of imporatance):
 * tracks the last time the subscription was checked for new items
 * stores whether the subscription is a channel or playlist
 
-![Subscription ERD](./subscription_erd.png)
+![Subscription ERD](./design/subscription_erd.png)
 
 #### Video
 
@@ -36,7 +36,7 @@ The app should support the following functionalities (in order of imporatance):
 * store the thumbnail
 * store the full url to video
 
-![Video ERD](./video_erd.png)
+![Video ERD](./design/video_erd.png)
 
 ### Helper classes
 
