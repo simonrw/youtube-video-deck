@@ -13,3 +13,17 @@ class Subscription(models.Model):
 
     name = models.CharField(max_length=255)
     last_checked = models.DateTimeField(null=True)
+
+
+class Video(models.Model):
+    """
+    Represents a single video, belonging to a subscription
+
+    *Responsibilities*
+
+    * track whether the user has watched the video
+    * store the thumbnail
+    * store the full url to video
+    """
+    published_at = models.DateTimeField()
+    watched = models.BooleanField(default=False)
