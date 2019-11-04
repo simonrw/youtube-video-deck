@@ -18,7 +18,7 @@ class Subscription(models.Model):
     last_checked = models.DateTimeField(null=True)
 
     def unwatched(self):
-        return self.video_set.filter(watched=False)
+        return self.video_set.filter(watched=False).order_by("-published_at")
 
     def __str__(self):
         return self.name
