@@ -11,10 +11,11 @@
         {% render_bundle "main" "css" %}
     </head>
     <body class="container mx-auto my-8 bg-gray-900">
+        <div class="bg-gray-100 p-12">
+            {% block content %}
+            {% endblock content %}
 
-        {% block content %}
-        {% endblock content %}
-
-        {% render_bundle "main" "js" %}
+            {% render_bundle "main" "js" %}
+        </div>
     </body>
 </html>
