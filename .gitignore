@@ -14,3 +14,6 @@ bin
 .vim
 venv
 *.pyc
+node_modules
+webpack-stats.json
+assets/webpack_bundles

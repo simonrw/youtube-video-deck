@@ -1,9 +1,21 @@
+{% load render_bundle from webpack_loader %}
+
+
 <!doctype html>
-<html>
+<html lang="en">
     <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        {% render_bundle "main" "css" %}
     </head>
-    <body>
-        {% block content %}
-        {% endblock content %}
+    <body class="container mx-auto my-8 bg-gray-900">
+        <div class="bg-gray-100 p-12">
+            {% block content %}
+            {% endblock content %}
+
+            {% render_bundle "main" "js" %}
+        </div>
     </body>
 </html>
