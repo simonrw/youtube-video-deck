@@ -17,6 +17,9 @@ class Subscription(models.Model):
     type = models.CharField(max_length=31)
     last_checked = models.DateTimeField(null=True)
 
+    def unwatched(self):
+        return self.video_set.filter(watched=False)
+
     def __str__(self):
         return self.name
 

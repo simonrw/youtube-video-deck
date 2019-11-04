@@ -135,6 +135,7 @@ class YoutubeClient(object):
                     name=item["snippet"]["title"],
                     description=item["snippet"]["description"],
                     published_at=published_at,
+                    thumbnail_url=item["snippet"]["thumbnails"]["high"]["url"],
                 )
 
             # Break condition, no more pages

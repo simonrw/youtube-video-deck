@@ -13,7 +13,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='video',
             name='youtube_id',
-            field=models.CharField(default='', max_length=255),
+            field=models.CharField(max_length=255),
             preserve_default=False,
         ),
     ]

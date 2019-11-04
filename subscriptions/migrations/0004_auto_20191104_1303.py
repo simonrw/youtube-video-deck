@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='video',
             name='published_at',
-            field=models.DateTimeField(default=timezone.make_aware(datetime.datetime(1970, 1, 1, 0, 0))),
+            field=models.DateTimeField(),
             preserve_default=False,
         ),
         migrations.AddField(

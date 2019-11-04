@@ -13,13 +13,13 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='subscription',
             name='type',
-            field=models.IntegerField(default=1),
+            field=models.IntegerField(),
             preserve_default=False,
         ),
         migrations.AddField(
             model_name='subscription',
             name='youtube_id',
-            field=models.CharField(default='', max_length=255),
+            field=models.CharField(max_length=255),
             preserve_default=False,
         ),
     ]

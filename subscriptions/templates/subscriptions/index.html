@@ -6,8 +6,11 @@
     <li>
         <p>{{ item.name }}</p>
         <ul>
-            {% for video in item.video_set.all %}
-            <li>Video</li>
+            {% for video in item.unwatched %}
+            <li>
+                <p>{{ video.name }}</p>
+                <img src={{ video.thumbnail_url }}></img>
+            </li>
             {% endfor %}
         </ul>
     </li>

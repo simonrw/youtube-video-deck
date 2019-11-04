@@ -13,19 +13,19 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='video',
             name='description',
-            field=models.CharField(default='', max_length=255),
+            field=models.CharField(max_length=255),
             preserve_default=False,
         ),
         migrations.AddField(
             model_name='video',
             name='name',
-            field=models.CharField(default='', max_length=255),
+            field=models.CharField(max_length=255),
             preserve_default=False,
         ),
         migrations.AddField(
             model_name='video',
             name='thumbnail_url',
-            field=models.CharField(default='', max_length=255),
+            field=models.CharField(max_length=255),
             preserve_default=False,
         ),
     ]

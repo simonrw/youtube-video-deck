@@ -23,6 +23,15 @@ class TestSubscription:
 
         assert Video.objects.first().published_at == now
 
+    def test_unwatched_filter(self, now):
+        s = Subscription.objects.create(name="foo")
+        v1 = s.video_set.create(published_at=now)
+        v2 = s.video_set.create(published_at=now, watched=True)
+
+        unwatched = s.unwatched()
+        assert list(unwatched) == [v1]
+
+
 
 class TestVideo:
     def subscription(self):
