@@ -43,5 +43,12 @@ class Video(models.Model):
     published_at = models.DateTimeField()
     watched = models.BooleanField(default=False)
 
+    @property
+    def url(self):
+        """
+        Helper to create the full youtube link from the video id
+        """
+        return "https://www.youtube.com/watch?v={}".format(self.youtube_id)
+
     def __str__(self):
         return f"{self.youtube_id} from {self.subscription}"
