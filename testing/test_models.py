@@ -4,8 +4,6 @@ from django.utils import timezone
 from subscriptions.models import Subscription, Video
 
 
-
-
 @pytest.fixture
 def now():
     return timezone.now()

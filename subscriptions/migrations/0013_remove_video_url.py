@@ -5,13 +5,6 @@ from django.db import migrations
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('subscriptions', '0012_video_url'),
-    ]
+    dependencies = [("subscriptions", "0012_video_url")]
 
-    operations = [
-        migrations.RemoveField(
-            model_name='video',
-            name='url',
-        ),
-    ]
+    operations = [migrations.RemoveField(model_name="video", name="url")]
