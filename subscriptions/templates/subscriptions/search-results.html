@@ -2,26 +2,43 @@
 
 {% block content %}
 {% if items %}
-<ul>
+<ul class="flex flex-wrap">
     {% for item in items %}
-    <li>
+    <li class="max-w-sm p-4 rounded-lg shadow-lg">
         {% if item.item_type == CHANNEL %}
-            <p>Channel</p>
+        <!-- <p class="text-lg">Channel</p> -->
+        <span class="flex">
+            <svg class="mx-2 w-4" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+                <g id="icon-shape">
+                <path d="M10,20 C15.5228475,20 20,15.5228475 20,10 C20,4.4771525 15.5228475,0 10,0 C4.4771525,0 0,4.4771525 0,10 C0,15.5228475 4.4771525,20 10,20 Z M6.99999861,6.00166547 C6.99999861,4.34389141 8.3465151,3 9.99999722,3 C11.6568507,3 12.9999958,4.33902013 12.9999958,6.00166547 L12.9999958,7.99833453 C12.9999958,9.65610859 11.6534793,11 9.99999722,11 C8.34314374,11 6.99999861,9.66097987 6.99999861,7.99833453 L6.99999861,6.00166547 Z M3.34715433,14.4444439 C5.37306718,13.5169611 7.62616222,13 10,13 C12.3738388,13 14.6269347,13.5169615 16.6528458,14.4444437 C15.2177146,16.5884188 12.7737035,18 10,18 C7.22629656,18 4.78228556,16.5884189 3.34715433,14.4444439 L3.34715433,14.4444439 Z" id="Combined-Shape"></path>				
+                </g>
+                </g>
+            </svg>
             <p>{{ item.title }}</p>
+        </span>
         {% elif item.item_type == PLAYLIST %}
-            <p>Playlist</p>
+        <span class="flex">
+            <svg class="mx-2 w-4" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+                <g id="icon-shape">
+                <path d="M0,3 L20,3 L20,5 L0,5 L0,3 Z M0,7 L20,7 L20,9 L0,9 L0,7 Z M0,11 L20,11 L20,13 L0,13 L0,11 Z M0,15 L20,15 L20,17 L0,17 L0,15 Z" id="Combined-Shape"></path>
+                </g>
+                </g>
+            </svg>
             <p>{{ item.title }} from {{ item.channel_title }}</p>
+        </span>
         {% else %}
-            <p>Error</p>
+        <p class="text-lg">Error</p>
         {% endif %}
         <p>{{ item.description }}</p>
-        <img src="{{ item.thumbnail.url }}"></img>
-        <form action="subscribe" method="POST">
+        <img class="mx-2 w-64" src="{{ item.thumbnail.url }}"></img>
+        <form action="{% url 'subscribe' %}" method="POST">
             {% csrf_token %}
             <input type="hidden" name="item-id" value="{{ item.id }}" />
             <input type="hidden" name="item-type" value="{{ item.item_type }}" />
             <input type="hidden" name="item-name" value="{{ item.title }}" />
-            <input type="submit" value="Subscribe" />
+            <button class="bg-green-600 text-white m-2 p-4 rounded" type="submit">Subscribe</button>
         </form>
     </li>
     {% endfor %}

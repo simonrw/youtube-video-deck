@@ -1,7 +1,7 @@
 {% extends "subscriptions/base.html" %}
 
 {% block content %}
-<form action="" method="POST">
+<form action="{% url 'search' %}" method="POST">
     {% csrf_token %}
     {{ form }}
     <button class="rounded bg-blue-600 text-white py-2 px-8" type="submit">Search</button>
