@@ -188,5 +188,7 @@ class Crawler:
             video.subscription = sub
             try:
                 video.save()
-            except IntegrityError:
+            except IntegrityError as e:
+                # Video already exists, so do not bother updating, and silently
+                # skip this
                 continue
