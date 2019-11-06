@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.db.models import Count, Q
+from django.contrib.auth.models import User
 from .utils import YoutubeClient, ItemType, Crawler
 from .models import Subscription, Video
 from .forms import SearchForm
@@ -15,10 +16,16 @@ CRAWLER = Crawler(YOUTUBE)
 @login_required
 def index(request):
     # Get the subscriptions ordered by unwatched videos first, followed by name
-    subscriptions = Subscription.objects.annotate(
+    current_users_subscriptions = Subscription.objects.filter(
+        user__username=request.user
+    )
+    subscriptions = current_users_subscriptions.annotate(
         unwatched_video_count=Count("video", filter=Q(video__watched=False))
-    ).order_by("-unwatched_video_count", "name")
-    return render(request, "subscriptions/index.html", {"subscriptions": subscriptions})
+    )
+    sorted_subscriptions = subscriptions.order_by("-unwatched_video_count", "name")
+    return render(
+        request, "subscriptions/index.html", {"subscriptions": sorted_subscriptions}
+    )
 
 
 @login_required
@@ -50,14 +57,19 @@ def subscribe(request):
         item_type = request.POST["item-type"]
         item_name = request.POST["item-name"]
 
+        current_user = User.objects.get(username=request.user)
+
         sub = Subscription.objects.create(
-            name=item_name, youtube_id=item_id, type=ItemType.from_(item_type)
+            user=current_user,
+            name=item_name,
+            youtube_id=item_id,
+            type=ItemType.from_(item_type),
         )
 
         # XXX: break this out of band?
         CRAWLER.crawl_subscription(sub)
 
-    return redirect("/ytvd/")
+    return redirect("/")
 
 
 @login_required
