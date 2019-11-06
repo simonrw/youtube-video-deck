@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 class Subscription(models.Model):
@@ -12,10 +13,15 @@ class Subscription(models.Model):
     * stores whether the subscription is a channel or playlist
     """
 
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=255)
-    youtube_id = models.CharField(max_length=255, unique=True)
+    youtube_id = models.CharField(max_length=255)
     type = models.CharField(max_length=31)
     last_checked = models.DateTimeField(null=True)
+
+    class Meta:
+        # Add a compound unique key on user and youtube id
+        unique_together = ("user", "youtube_id")
 
     def unwatched(self):
         return self.video_set.filter(watched=False).order_by("-published_at")
