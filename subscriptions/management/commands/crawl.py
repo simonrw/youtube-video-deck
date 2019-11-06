@@ -3,6 +3,10 @@ from django.utils import timezone
 from subscriptions.utils import YoutubeClient, Crawler
 from subscriptions.models import Subscription
 import os
+import logging
+
+
+LOGGER = logging.getLogger("ytvd.subscriptions.management.crawl")
 
 
 class Command(BaseCommand):
@@ -19,9 +23,12 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         if options["reset"]:
+            LOGGER.info("Resetting database state")
             Subscription.objects.all().delete()
 
             last_checked = timezone.make_aware(timezone.datetime(2019, 9, 1))
+
+            LOGGER.info("Creating outside xbox subscription")
             sub = Subscription.objects.create(
                 name="outsidexbox",
                 youtube_id="UCKk076mm-7JjLxJcFSXIPJA",
@@ -33,4 +40,5 @@ class Command(BaseCommand):
         client = YoutubeClient(api_key)
         crawler = Crawler(client)
 
+        LOGGER.info("Performing crawl")
         crawler.crawl()

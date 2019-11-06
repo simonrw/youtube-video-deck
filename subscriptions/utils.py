@@ -176,6 +176,7 @@ class Crawler:
             self.crawl_subscription(sub)
 
     def crawl_subscription(self, sub):
+        LOGGER.info("Crawling for subscription %s", sub)
         now = timezone.now()
         if sub.last_checked is None:
             since = now - timezone.timedelta(days=90)
