@@ -2,6 +2,14 @@ name: Python application
 
 on: [push]
 
+env:
+  SECRET_KEY: secret
+  DATABASE_DBNAME: dbname
+  DATABASE_USERNAME: user
+  DATABASE_PASSWORD: password
+  DATABASE_HOSTNAME: localhost
+  GOOGLE_API_KEY: google-api-key
+
 jobs:
   build:
 
@@ -26,4 +34,4 @@ jobs:
 #         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest -m "not django_db"
+        pytest -m "not django_db and not webtest"
