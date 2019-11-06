@@ -2,10 +2,14 @@ import requests
 from dataclasses import dataclass
 from typing import Optional
 import enum
+import logging
 from .models import Subscription, Video
 from django.utils import timezone
 from django.db.utils import IntegrityError
 from django.utils.dateparse import parse_datetime
+
+
+LOGGER = logging.getLogger("ytvd.subscriptions.utils")
 
 
 class ItemType(enum.Enum):
