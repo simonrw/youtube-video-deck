@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
+from django.contrib.auth.decorators import login_required
 from .utils import YoutubeClient, ItemType, Crawler
 from .models import Subscription, Video
 from .forms import SearchForm
@@ -10,11 +11,13 @@ YOUTUBE = YoutubeClient(os.environ["GOOGLE_API_KEY"])
 CRAWLER = Crawler(YOUTUBE)
 
 
+@login_required
 def index(request):
     subscriptions = Subscription.objects.all()
     return render(request, "subscriptions/index.html", {"subscriptions": subscriptions})
 
 
+@login_required
 def search(request):
     if request.method == "POST":
         form = SearchForm(request.POST)
@@ -36,6 +39,7 @@ def search(request):
     return render(request, "subscriptions/search.html", {"form": form})
 
 
+@login_required
 def subscribe(request):
     if request.method == "POST":
         item_id = request.POST["item-id"]
@@ -52,6 +56,7 @@ def subscribe(request):
     return redirect("/ytvd/")
 
 
+@login_required
 def mark_subscription_watched(request):
     if request.method == "POST":
         sub_id = request.POST["subscription-id"]
@@ -63,6 +68,7 @@ def mark_subscription_watched(request):
     return redirect("/ytvd/")
 
 
+@login_required
 def mark_video_watched(request):
     if request.method == "POST":
         video_id = request.POST["video-id"]
