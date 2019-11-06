@@ -131,7 +131,12 @@ class YoutubeClient(object):
             data = self._fetch(url, params=params)
 
             for item in data["items"]:
-                assert item["id"]["kind"] == "youtube#video"
+                if item["id"]["kind"] != "youtube#video":
+                    LOGGER.warning(
+                        "Unexpected item found in list: %s, expected youtube#video",
+                        item["id"]["kind"],
+                    )
+                    continue
 
                 published_at = parse_datetime(item["snippet"]["publishedAt"])
 
