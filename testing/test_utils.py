@@ -156,13 +156,18 @@ def test_crawler(client):
         ),
     ]
 
+    custom_now = timezone.now()
     with mock.patch.object(client, "fetch_latest") as fetch_latest:
-        fetch_latest.return_value = videos
+        with mock.patch("subscriptions.utils.timezone.now") as mock_now:
+            mock_now.return_value = custom_now
+            fetch_latest.return_value = videos
 
-        crawler = Crawler(client)
-        crawler.crawl()
+            crawler = Crawler(client)
+            crawler.crawl()
 
     assert [v.youtube_id for v in Video.objects.all()] == [v.youtube_id for v in videos]
+    assert Subscription.objects.get(name="outsidexbox").last_checked == custom_now
+    assert Subscription.objects.get(name="outsidextra").last_checked == custom_now
 
 
 @pytest.mark.django_db
@@ -193,16 +198,21 @@ def test_crawler_with_existing_videos(client):
             published_at=timezone.make_aware(timezone.datetime(2019, 9, 5, 17, 43, 56)),
         ),
     ]
-    with mock.patch.object(client, "fetch_latest") as fetch_latest:
-        fetch_latest.return_value = videos
 
-        crawler = Crawler(client)
-        crawler.crawl()
+    custom_now = timezone.now()
+    with mock.patch.object(client, "fetch_latest") as fetch_latest:
+        with mock.patch("subscriptions.utils.timezone.now") as mock_now:
+            mock_now.return_value = custom_now
+            fetch_latest.return_value = videos
+
+            crawler = Crawler(client)
+            crawler.crawl()
 
     db_videos = Video.objects.all()
     assert [v.youtube_id for v in db_videos] == [v.youtube_id for v in videos]
     assert db_videos[0].watched
     assert not db_videos[1].watched
+    assert Subscription.objects.get(name="outsidexbox").last_checked == custom_now
 
 
 @pytest.mark.django_db
@@ -223,12 +233,16 @@ def test_crawler_for_single_subscription(client, last_checked):
 
     videos = [Video(youtube_id="123", subscription=sub, published_at=latest_update)]
 
+    custom_now = timezone.now()
     with mock.patch.object(client, "fetch_latest") as fetch_latest:
-        fetch_latest.return_value = videos
+        with mock.patch("subscriptions.utils.timezone.now") as mock_now:
+            mock_now.return_value = custom_now
+            fetch_latest.return_value = videos
 
-        crawler = Crawler(client)
-        crawler.crawl_subscription(sub)
+            crawler = Crawler(client)
+            crawler.crawl_subscription(sub)
 
     db_videos = Video.objects.all()
     assert len(db_videos) == 1
     assert db_videos[0].youtube_id == "123"
+    assert Subscription.objects.get(name="outsidexbox").last_checked == custom_now

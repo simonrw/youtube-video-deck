@@ -192,3 +192,7 @@ class Crawler:
                 # Video already exists, so do not bother updating, and silently
                 # skip this
                 continue
+
+        # Finally update the last_checked field
+        sub.last_checked = now
+        sub.save()
