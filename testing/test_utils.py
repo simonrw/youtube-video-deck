@@ -122,10 +122,11 @@ def test_fetch_latest(client, response):
 
 
 @pytest.mark.django_db
-def test_crawler(client):
+def test_crawler(client, user):
     last_checked = timezone.make_aware(timezone.datetime(2019, 9, 1))
     # Set up the database contents
     sub1 = Subscription.objects.create(
+        user=user,
         name="outsidexbox",
         youtube_id="UCKk076mm-7JjLxJcFSXIPJA",
         type="ItemType.CHANNEL",
@@ -133,6 +134,7 @@ def test_crawler(client):
     )
 
     sub2 = Subscription.objects.create(
+        user=user,
         name="outsidextra",
         youtube_id="ytid",
         type="ItemType.CHANNEL",
@@ -171,10 +173,11 @@ def test_crawler(client):
 
 
 @pytest.mark.django_db
-def test_crawler_with_existing_videos(client):
+def test_crawler_with_existing_videos(client, user):
     last_checked = timezone.make_aware(timezone.datetime(2019, 9, 1))
     # Set up the database contents
     sub = Subscription.objects.create(
+        user=user,
         name="outsidexbox",
         youtube_id="UCKk076mm-7JjLxJcFSXIPJA",
         type="ItemType.CHANNEL",
@@ -216,15 +219,15 @@ def test_crawler_with_existing_videos(client):
 
 
 @pytest.mark.django_db
-@pytest.mark.parametrize("last_checked", [
-    None,
-    timezone.make_aware(timezone.datetime(2019, 9, 1))
-    ])
-def test_crawler_for_single_subscription(client, last_checked):
+@pytest.mark.parametrize(
+    "last_checked", [None, timezone.make_aware(timezone.datetime(2019, 9, 1))]
+)
+def test_crawler_for_single_subscription(client, last_checked, user):
     latest_update = timezone.make_aware(timezone.datetime(2019, 10, 1))
 
     # Create two subscriptions that have one new video each
     sub = Subscription.objects.create(
+        user=user,
         name="outsidexbox",
         youtube_id="UCKk076mm-7JjLxJcFSXIPJA",
         type="ItemType.CHANNEL",
