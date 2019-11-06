@@ -1,12 +1,13 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
-from .utils import YoutubeClient, ItemType
+from .utils import YoutubeClient, ItemType, Crawler
 from .models import Subscription, Video
 from .forms import SearchForm
 import os
 
 
 YOUTUBE = YoutubeClient(os.environ["GOOGLE_API_KEY"])
+CRAWLER = Crawler(YOUTUBE)
 
 
 def index(request):
@@ -41,9 +42,12 @@ def subscribe(request):
         item_type = request.POST["item-type"]
         item_name = request.POST["item-name"]
 
-        Subscription.objects.create(
+        sub = Subscription.objects.create(
             name=item_name, youtube_id=item_id, type=ItemType.from_(item_type)
         )
+
+        # XXX: break this out of band?
+        CRAWLER.crawl_subscription(sub)
 
     return redirect("/ytvd/")
 
