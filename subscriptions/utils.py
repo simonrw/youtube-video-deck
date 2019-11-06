@@ -165,17 +165,19 @@ class Crawler:
         subscriptions = Subscription.objects.all()
         now = timezone.now()
         for sub in subscriptions:
+            self.crawl_subscription(sub)
 
-            if sub.last_checked is None:
-                since = now - timezone.timedelta(days=90)
-            else:
-                since = sub.last_checked
+    def crawl_subscription(self, sub):
+        if sub.last_checked is None:
+            since = now - timezone.timedelta(days=90)
+        else:
+            since = sub.last_checked
 
-            videos = self.client.fetch_latest(channel_id=sub.youtube_id, since=since)
+        videos = self.client.fetch_latest(channel_id=sub.youtube_id, since=since)
 
-            for video in videos:
-                video.subscription = sub
-                try:
-                    video.save()
-                except IntegrityError:
-                    continue
+        for video in videos:
+            video.subscription = sub
+            try:
+                video.save()
+            except IntegrityError:
+                continue

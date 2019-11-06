@@ -125,21 +125,37 @@ def test_fetch_latest(client, response):
 def test_crawler(client):
     last_checked = timezone.make_aware(timezone.datetime(2019, 9, 1))
     # Set up the database contents
-    sub = Subscription.objects.create(
+    sub1 = Subscription.objects.create(
         name="outsidexbox",
         youtube_id="UCKk076mm-7JjLxJcFSXIPJA",
         type="ItemType.CHANNEL",
         last_checked=last_checked,
     )
 
+    sub2 = Subscription.objects.create(
+        name="outsidextra",
+        youtube_id="ytid",
+        type="ItemType.CHANNEL",
+        last_checked=last_checked,
+    )
+
     videos = [
         Video(
-            youtube_id="7v-KIxHOhrs",
+            youtube_id="123",
+            subscription=sub1,
             published_at=timezone.make_aware(
                 timezone.datetime(2019, 9, 26, 17, 15, 22)
             ),
-        )
+        ),
+        Video(
+            youtube_id="456",
+            subscription=sub2,
+            published_at=timezone.make_aware(
+                timezone.datetime(2019, 9, 26, 17, 15, 22)
+            ),
+        ),
     ]
+
     with mock.patch.object(client, "fetch_latest") as fetch_latest:
         fetch_latest.return_value = videos
 
@@ -187,3 +203,29 @@ def test_crawler_with_existing_videos(client):
     assert [v.youtube_id for v in db_videos] == [v.youtube_id for v in videos]
     assert db_videos[0].watched
     assert not db_videos[1].watched
+
+
+@pytest.mark.django_db
+def test_crawler_for_single_subscription(client):
+    last_checked = timezone.make_aware(timezone.datetime(2019, 9, 1))
+    latest_update = timezone.make_aware(timezone.datetime(2019, 10, 1))
+
+    # Create two subscriptions that have one new video each
+    sub = Subscription.objects.create(
+        name="outsidexbox",
+        youtube_id="UCKk076mm-7JjLxJcFSXIPJA",
+        type="ItemType.CHANNEL",
+        last_checked=last_checked,
+    )
+
+    videos = [Video(youtube_id="123", subscription=sub, published_at=latest_update)]
+
+    with mock.patch.object(client, "fetch_latest") as fetch_latest:
+        fetch_latest.return_value = videos
+
+        crawler = Crawler(client)
+        crawler.crawl_subscription(sub)
+
+    db_videos = Video.objects.all()
+    assert len(db_videos) == 1
+    assert db_videos[0].youtube_id == "123"
