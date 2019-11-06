@@ -172,11 +172,11 @@ class Crawler:
         and update
         """
         subscriptions = Subscription.objects.all()
-        now = timezone.now()
         for sub in subscriptions:
             self.crawl_subscription(sub)
 
     def crawl_subscription(self, sub):
+        now = timezone.now()
         if sub.last_checked is None:
             since = now - timezone.timedelta(days=90)
         else:

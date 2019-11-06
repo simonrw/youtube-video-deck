@@ -206,8 +206,11 @@ def test_crawler_with_existing_videos(client):
 
 
 @pytest.mark.django_db
-def test_crawler_for_single_subscription(client):
-    last_checked = timezone.make_aware(timezone.datetime(2019, 9, 1))
+@pytest.mark.parametrize("last_checked", [
+    None,
+    timezone.make_aware(timezone.datetime(2019, 9, 1))
+    ])
+def test_crawler_for_single_subscription(client, last_checked):
     latest_update = timezone.make_aware(timezone.datetime(2019, 10, 1))
 
     # Create two subscriptions that have one new video each
