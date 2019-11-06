@@ -4,9 +4,9 @@
 <a class="underline mb-8" href="{% url 'search' %}">Add subscription</a>
 <div class="flex flex-wrap">
     {% for sub in subscriptions %}
-    <div class="m-4 p-4 overflow-scroll">
+    <div class="m-4 p-4 overflow-scroll rounded shadow">
         <div class="flex justify-around items-center m-4 my-2">
-            <p class="py-2 px-4 bg-gray-800 rounded text-white">{{ sub.name }}</p>
+            <p class="py-2 px-4">{{ sub.name }}</p>
             <form class="py-2" action="watched_sub/" method="POST">
                 {% csrf_token %}
                 <input type="hidden" name="subscription-id" value={{ sub.id }} />
