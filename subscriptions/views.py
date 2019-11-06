@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
+from django.db.models import Count, Q
 from .utils import YoutubeClient, ItemType, Crawler
 from .models import Subscription, Video
 from .forms import SearchForm
@@ -13,7 +14,10 @@ CRAWLER = Crawler(YOUTUBE)
 
 @login_required
 def index(request):
-    subscriptions = Subscription.objects.all()
+    # Get the subscriptions ordered by unwatched videos first, followed by name
+    subscriptions = Subscription.objects.annotate(
+        unwatched_video_count=Count("video", filter=Q(video__watched=False))
+    ).order_by("-unwatched_video_count", "name")
     return render(request, "subscriptions/index.html", {"subscriptions": subscriptions})
 
 
