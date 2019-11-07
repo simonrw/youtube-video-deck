@@ -4,7 +4,8 @@
   "description": "This program runs a web server that manages youtube subscriptions.",
   "main": "index.js",
   "scripts": {
-    "watch": "webpack -w"
+    "watch": "webpack -w",
+    "prodbuild": "NODE_ENV=production webpack -p --mode production"
   },
   "repository": {
     "type": "git",
