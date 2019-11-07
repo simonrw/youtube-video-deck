@@ -48,10 +48,10 @@ class TestVideo:
 @pytest.mark.django_db
 def test_subscriptions_belong_to_user():
     u1 = User.objects.create_user("a", "a@example.com", "password")
-    sub1 = u1.subscription_set.create(name="foo", youtube_id="123")
+    sub1 = u1.subscriptions.create(name="foo", youtube_id="123")
 
     u2 = User.objects.create_user("b", "b@example.com", "password")
-    sub2 = u2.subscription_set.create(name="bar", youtube_id="456")
+    sub2 = u2.subscriptions.create(name="bar", youtube_id="456")
 
     # Check that querying for u1's subscriptions does not return u2
-    assert list(u1.subscription_set.all()) == [sub1, ]
+    assert list(u1.subscriptions.all()) == [sub1, ]
