@@ -18,14 +18,14 @@ class TestSubscription:
 
     def test_has_videos(self, now, user):
         s = Subscription.objects.create(user=user, name="foo")
-        s.video_set.create(published_at=now)
+        s.videos.create(published_at=now)
 
         assert Video.objects.first().published_at == now
 
     def test_unwatched_filter(self, now, user):
         s = Subscription.objects.create(user=user, name="foo")
-        v1 = s.video_set.create(youtube_id="123", published_at=now)
-        v2 = s.video_set.create(youtube_id="456", published_at=now, watched=True)
+        v1 = s.videos.create(youtube_id="123", published_at=now)
+        v2 = s.videos.create(youtube_id="456", published_at=now, watched=True)
 
         unwatched = s.unwatched()
         assert list(unwatched) == [v1]

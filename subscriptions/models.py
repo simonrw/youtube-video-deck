@@ -24,7 +24,7 @@ class Subscription(models.Model):
         unique_together = ("user", "youtube_id")
 
     def unwatched(self):
-        return self.video_set.filter(watched=False).order_by("-published_at")
+        return self.videos.filter(watched=False).order_by("-published_at")
 
     def __str__(self):
         return self.name
@@ -45,7 +45,9 @@ class Video(models.Model):
     thumbnail_url = models.CharField(max_length=255)
     description = models.CharField(max_length=255)
     youtube_id = models.CharField(max_length=255, unique=True)
-    subscription = models.ForeignKey(Subscription, on_delete=models.CASCADE)
+    subscription = models.ForeignKey(
+        Subscription, related_name="videos", on_delete=models.CASCADE
+    )
     published_at = models.DateTimeField()
     watched = models.BooleanField(default=False)
 

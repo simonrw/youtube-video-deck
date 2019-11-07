@@ -77,7 +77,7 @@ def mark_subscription_watched(request):
     if request.method == "POST":
         sub_id = request.POST["subscription-id"]
         sub = Subscription.objects.get(id=sub_id)
-        for video in sub.video_set.all():
+        for video in sub.videos.all():
             video.watched = True
             video.save()
 
