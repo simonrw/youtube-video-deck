@@ -29,6 +29,7 @@ SECRET_KEY = os.environ["SECRET_KEY"]
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+INTERNAL_IPS = ["127.0.0.1", "192.168.1.108"]
 
 
 # Application definition
@@ -40,11 +41,13 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "debug_toolbar",
     "subscriptions",
     "webpack_loader",
 ]
 
 MIDDLEWARE = [
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -122,18 +125,16 @@ USE_TZ = True
 STATIC_URL = "/static/"
 
 WEBPACK_LOADER = {
-        "DEFAULT": {
-            "CACHE": not DEBUG,
-            "BUNDLE_DIR_NAME": "webpack_bundles/",
-            "STATS_FILE": os.path.join(BASE_DIR, "webpack-stats.json"),
-            "POLL_INTERVAL": 0.1,
-            "TIMEOUT": None,
-            "IGNORE": [".*\.hot-update.js", ".+\.map"],
-            }
-        }
+    "DEFAULT": {
+        "CACHE": not DEBUG,
+        "BUNDLE_DIR_NAME": "webpack_bundles/",
+        "STATS_FILE": os.path.join(BASE_DIR, "webpack-stats.json"),
+        "POLL_INTERVAL": 0.1,
+        "TIMEOUT": None,
+        "IGNORE": [".*\.hot-update.js", ".+\.map"],
+    }
+}
 
-STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, "assets"),
-        )
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "assets"),)
 
 LOGIN_REDIRECT_URL = "/"
