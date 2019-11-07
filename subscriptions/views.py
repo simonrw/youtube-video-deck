@@ -81,7 +81,7 @@ def mark_subscription_watched(request):
             video.watched = True
             video.save()
 
-    return redirect("/ytvd/")
+    return redirect("/")
 
 
 @login_required
@@ -92,4 +92,12 @@ def mark_video_watched(request):
         video.watched = True
         video.save()
 
-    return redirect("/ytvd/")
+    return redirect("/")
+
+@login_required
+def update_feeds(request):
+    if request.method == "POST":
+        user = User.objects.get(username=request.user)
+        CRAWLER.crawl(user=user)
+
+    return redirect("/")

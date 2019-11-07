@@ -165,7 +165,7 @@ def test_crawler(client, user):
             fetch_latest.return_value = videos
 
             crawler = Crawler(client)
-            crawler.crawl()
+            crawler.crawl(user=user)
 
     assert [v.youtube_id for v in Video.objects.all()] == [v.youtube_id for v in videos]
     assert Subscription.objects.get(name="outsidexbox").last_checked == custom_now
@@ -209,7 +209,7 @@ def test_crawler_with_existing_videos(client, user):
             fetch_latest.return_value = videos
 
             crawler = Crawler(client)
-            crawler.crawl()
+            crawler.crawl(user=user)
 
     db_videos = Video.objects.all()
     assert [v.youtube_id for v in db_videos] == [v.youtube_id for v in videos]

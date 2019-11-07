@@ -166,12 +166,12 @@ class Crawler:
     def __init__(self, client):
         self.client = client
 
-    def crawl(self):
+    def crawl(self, *, user):
         """
         Go through all of the subscriptions, check for latest videos
         and update
         """
-        subscriptions = Subscription.objects.all()
+        subscriptions = Subscription.objects.filter(user__username=user.username).all()
         for sub in subscriptions:
             self.crawl_subscription(sub)
 
