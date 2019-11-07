@@ -13,7 +13,9 @@ class Subscription(models.Model):
     * stores whether the subscription is a channel or playlist
     """
 
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(
+        User, related_name="subscriptions", on_delete=models.CASCADE
+    )
     name = models.CharField(max_length=255)
     youtube_id = models.CharField(max_length=255)
     type = models.CharField(max_length=31)
