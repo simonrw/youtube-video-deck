@@ -1,5 +1,7 @@
 import graphene
+from graphene import relay
 from graphene_django.types import DjangoObjectType
+from graphene_django.filter import DjangoFilterConnectionField
 from .models import Video, Subscription
 from django.contrib.auth.models import User
 
@@ -7,28 +9,31 @@ from django.contrib.auth.models import User
 class UserType(DjangoObjectType):
     class Meta:
         model = User
+        filter_fields = ["username"]
+        interfaces = (relay.Node, )
 
 
 class VideoType(DjangoObjectType):
     class Meta:
         model = Video
+        filter_fields = ["watched"]
+        interfaces = (relay.Node, )
 
 
 class SubscriptionType(DjangoObjectType):
     class Meta:
         model = Subscription
+        filter_fields = ["name"]
+        interfaces = (relay.Node, )
 
 
 class Query(object):
-    all_subscriptions = graphene.List(SubscriptionType)
-    all_videos = graphene.List(VideoType)
-    all_users = graphene.List(UserType)
+    # All fetchers
+    all_subscriptions = DjangoFilterConnectionField(SubscriptionType)
+    all_videos = DjangoFilterConnectionField(VideoType)
+    all_users = DjangoFilterConnectionField(UserType)
 
-    def resolve_all_subscriptions(self, info, **kwargs):
-        return Subscription.objects.select_related("user").all()
-
-    def resolve_all_videos(self, info, **kwargs):
-        return Video.objects.select_related("subscription").all()
-
-    def resolve_all_users(self, info, **kwargs):
-        return User.objects.all()
+    # Single fetchers
+    user = relay.Node.Field(UserType)
+    video = relay.Node.Field(VideoType)
+    subscription = relay.Node.Field(SubscriptionType)
