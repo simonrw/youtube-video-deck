@@ -20,7 +20,7 @@ def index(request):
         user__username=request.user
     )
     subscriptions = current_users_subscriptions.annotate(
-        unwatched_video_count=Count("video", filter=Q(video__watched=False))
+        unwatched_video_count=Count("videos", filter=Q(videos__watched=False))
     )
     sorted_subscriptions = subscriptions.order_by("-unwatched_video_count", "name")
     return render(
