@@ -12,8 +12,19 @@ env:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
+
+    services:
+      # Set up a postgres database alongside the tests
+      postgres:
+        image: postgres:12.0
+        env:
+          POSTGRES_PASSWORD: "password"
+          POSTGRES_USER: "username"
+          POSTGRES_DB: "database"
+        ports:
+          - 5432:5432
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
 
     steps:
     - uses: actions/checkout@v1
@@ -25,13 +36,12 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-#     - name: Lint with flake8
-#       run: |
-#         pip install flake8
-#         # stop the build if there are Python syntax errors or undefined names
-#         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-#         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
-#         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
-      run: |
-        pytest -m "not django_db and not webtest"
+      run: pytest -m "not webtest"
+      env:
+        GOOGLE_API_KEY: "google-api-key"
+        DATABASE_USERNAME: "username"
+        DATABASE_DBNAME: "database"
+        DATABASE_PASSWORD: "password"
+        DATABASE_HOSTNAME: postgres
+        SECRET_KEY: "secret"
