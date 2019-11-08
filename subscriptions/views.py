@@ -22,7 +22,7 @@ def index(request):
         user__username=request.user
     )
     subscriptions = current_users_subscriptions.annotate(
-        unwatched_video_count=Count("video", filter=Q(video__watched=False))
+        unwatched_video_count=Count("videos", filter=Q(videos__watched=False))
     )
     sorted_subscriptions = subscriptions.order_by("-unwatched_video_count", "name")
     return render(
@@ -79,7 +79,7 @@ def mark_subscription_watched(request):
     if request.method == "POST":
         sub_id = request.POST["subscription-id"]
         sub = Subscription.objects.get(id=sub_id)
-        for video in sub.video_set.all():
+        for video in sub.videos.all():
             video.watched = True
             video.save()
 

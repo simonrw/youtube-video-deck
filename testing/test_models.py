@@ -18,14 +18,14 @@ class TestSubscription:
 
     def test_has_videos(self, now, user):
         s = Subscription.objects.create(user=user, name="foo")
-        s.video_set.create(published_at=now)
+        s.videos.create(published_at=now)
 
         assert Video.objects.first().published_at == now
 
     def test_unwatched_filter(self, now, user):
         s = Subscription.objects.create(user=user, name="foo")
-        v1 = s.video_set.create(youtube_id="123", published_at=now)
-        v2 = s.video_set.create(youtube_id="456", published_at=now, watched=True)
+        v1 = s.videos.create(youtube_id="123", published_at=now)
+        v2 = s.videos.create(youtube_id="456", published_at=now, watched=True)
 
         unwatched = s.unwatched()
         assert list(unwatched) == [v1]
@@ -48,10 +48,10 @@ class TestVideo:
 @pytest.mark.django_db
 def test_subscriptions_belong_to_user():
     u1 = User.objects.create_user("a", "a@example.com", "password")
-    sub1 = u1.subscription_set.create(name="foo", youtube_id="123")
+    sub1 = u1.subscriptions.create(name="foo", youtube_id="123")
 
     u2 = User.objects.create_user("b", "b@example.com", "password")
-    sub2 = u2.subscription_set.create(name="bar", youtube_id="456")
+    sub2 = u2.subscriptions.create(name="bar", youtube_id="456")
 
     # Check that querying for u1's subscriptions does not return u2
-    assert list(u1.subscription_set.all()) == [sub1]
+    assert list(u1.subscriptions.all()) == [sub1, ]

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "graphene_django",
     "debug_toolbar",
     "subscriptions",
     "webpack_loader",
@@ -138,3 +139,5 @@ WEBPACK_LOADER = {
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "assets"),)
 
 LOGIN_REDIRECT_URL = "/"
+
+GRAPHENE = {"SCHEMA": "ytvd.schema.schema"}
