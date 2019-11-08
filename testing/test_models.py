@@ -54,4 +54,4 @@ def test_subscriptions_belong_to_user():
     sub2 = u2.subscription_set.create(name="bar", youtube_id="456")
 
     # Check that querying for u1's subscriptions does not return u2
-    assert list(u1.subscription_set.all()) == [sub1, ]
+    assert list(u1.subscription_set.all()) == [sub1]

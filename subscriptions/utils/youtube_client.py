@@ -1,46 +1,11 @@
 import requests
-from dataclasses import dataclass
-from typing import Optional
-import enum
 import logging
-from .models import Subscription, Video
-from django.utils import timezone
-from django.db.utils import IntegrityError
+from ..models import Video
+from .types import ItemType, Thumbnail, SearchItem
 from django.utils.dateparse import parse_datetime
 
 
-LOGGER = logging.getLogger("ytvd.subscriptions.utils")
-
-
-class ItemType(enum.Enum):
-    CHANNEL = "channel"
-    PLAYLIST = "playlist"
-
-    @classmethod
-    def from_(cls, value):
-        if value == "ItemType.CHANNEL":
-            return cls.CHANNEL
-        elif value == "ItemType.PLAYLIST":
-            return cls.PLAYLIST
-        else:
-            raise ValueError(f"Invalid item type: {value}")
-
-
-@dataclass
-class Thumbnail:
-    url: str
-    width: Optional[int]
-    height: Optional[int]
-
-
-@dataclass
-class SearchItem:
-    id: str
-    title: str
-    description: str
-    thumbnail: Thumbnail
-    channel_title: str
-    item_type: ItemType
+LOGGER = logging.getLogger("ytvd.subscriptions.utils.youtube_client")
 
 
 class YoutubeClient(object):
@@ -77,7 +42,7 @@ class YoutubeClient(object):
             "part": "snippet",
             "q": term,
             "type": "channel,playlist",
-            "maxResults": 25,
+            "maxResults": 50,
         }
 
         data = self._fetch(url, params=params)
@@ -113,15 +78,16 @@ class YoutubeClient(object):
             else:
                 raise ValueError(f"Invalid item kind: {item['id']['kind']}")
 
-    def fetch_latest(self, *, channel_id, since):
+    def fetch_latest_from_channel(self, *, channel_id, since):
         page_id = None
         url = "https://www.googleapis.com/youtube/v3/search"
         while True:
             params = {
                 "key": self.api_key,
                 "part": "snippet",
-                "maxResults": 25,
+                "maxResults": 50,
                 "channelId": channel_id,
+                "type": "video",
                 "publishedAfter": since.strftime("%Y-%m-%dT%H:%M:%SZ"),
             }
 
@@ -140,6 +106,15 @@ class YoutubeClient(object):
 
                 published_at = parse_datetime(item["snippet"]["publishedAt"])
 
+                if published_at <= since:
+                    # Should never happen as we are querying the API since the
+                    # `since` parameter. We want to log this case in case our
+                    # assumptions are incorrect.
+                    LOGGER.warning(
+                        "API returned an item later than the `since` value, despite giving a `publishedAt` value. This is unexpected."
+                    )
+                    continue
+
                 yield Video(
                     youtube_id=item["id"]["videoId"],
                     name=item["snippet"]["title"],
@@ -154,46 +129,46 @@ class YoutubeClient(object):
             else:
                 break
 
-        return []
+    def fetch_latest_from_playlist(self, *, playlist_id, since):
+        page_id = None
+        url = "https://www.googleapis.com/youtube/v3/playlistItems"
+        while True:
+            params = {
+                "key": self.api_key,
+                "part": "snippet",
+                "maxResults": 50,
+                "playlistId": playlist_id,
+            }
 
+            if page_id is not None:
+                params["pageToken"] = (page_id,)
 
-class Crawler:
-    """
-    Given a subscription id and type, crawl the videos for that
-    subscription to find any new ones.
-    """
+            data = self._fetch(url, params=params)
 
-    def __init__(self, client):
-        self.client = client
+            for item in data["items"]:
+                resource = item["snippet"]["resourceId"]
+                if resource["kind"] != "youtube#video":
+                    LOGGER.warning(
+                        "Unexpected item found in list: %s, expected youtube#playlistItem",
+                        resource["kind"],
+                    )
+                    continue
 
-    def crawl(self, *, user):
-        """
-        Go through all of the subscriptions, check for latest videos
-        and update
-        """
-        subscriptions = Subscription.objects.filter(user__username=user.username).all()
-        for sub in subscriptions:
-            self.crawl_subscription(sub)
+                published_at = parse_datetime(item["snippet"]["publishedAt"])
 
-    def crawl_subscription(self, sub):
-        LOGGER.info("Crawling for subscription %s", sub)
-        now = timezone.now()
-        if sub.last_checked is None:
-            since = now - timezone.timedelta(days=90)
-        else:
-            since = sub.last_checked
+                if published_at <= since:
+                    continue
 
-        videos = self.client.fetch_latest(channel_id=sub.youtube_id, since=since)
+                yield Video(
+                    youtube_id=resource["videoId"],
+                    name=item["snippet"]["title"],
+                    description=item["snippet"]["description"],
+                    published_at=published_at,
+                    thumbnail_url=item["snippet"]["thumbnails"]["high"]["url"],
+                )
 
-        for video in videos:
-            video.subscription = sub
-            try:
-                video.save()
-            except IntegrityError as e:
-                # Video already exists, so do not bother updating, and silently
-                # skip this
-                continue
-
-        # Finally update the last_checked field
-        sub.last_checked = now
-        sub.save()
+            # Break condition, no more pages
+            if "nextPageToken" in data:
+                page_id = data["nextPageToken"]
+            else:
+                break

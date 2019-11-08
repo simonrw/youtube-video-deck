@@ -1,0 +1,1781 @@
+{
+ "kind": "youtube#playlistItemListResponse",
+ "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/fblVUxKdWNy-NChWFWOOuGNNVUc\"",
+ "nextPageToken": "CDIQAA",
+ "pageInfo": {
+  "totalResults": 96,
+  "resultsPerPage": 50
+ },
+ "items": [
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/UTEb7r9PlLS4cPKUoha4MwfwVt4\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS41ODIyMTgwQzA4NjJCQkZC",
+   "snippet": {
+    "publishedAt": "2019-11-01T21:54:51.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 096: Grokking Kubernetes : kube-scheduler",
+    "description": "Come hang out with Duffie Cooley as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Duffie talking about the things he knows. Some of this will be Duffie exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\nThis week we will be continuing the Grokking series with: exploring the Scheduler",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/XxVHNWoZO_c/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/XxVHNWoZO_c/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/XxVHNWoZO_c/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 0,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "XxVHNWoZO_c"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/gn1_RkHSD3EGsXYzmqiseh70wR4\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5FRjdGNDMzN0I2RTI3MDlG",
+   "snippet": {
+    "publishedAt": "2019-10-25T22:17:46.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 095: K-Rail",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/_wUA20WDfws/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/_wUA20WDfws/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/_wUA20WDfws/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 1,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "_wUA20WDfws"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/ttz3VspsmgDdA5HZKRZlckBsW7E\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS41RDUzRjJFQ0Y0MUI3NzU1",
+   "snippet": {
+    "publishedAt": "2019-10-16T23:07:36.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 094: SPIFFE and SPIRE",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Joe talking about the things he knows. Some of this will be Joe exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\nThis week we are looking at SPIFFE and SPIRE! These are CNCF projects that help to give workloads identity that can be used across all sorts of infrastructure. Learn about the ideas here, watch me deploy SPIRE to k8s and ask questions about where this stuff is going.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/cx__8khtih4/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/cx__8khtih4/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/cx__8khtih4/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 2,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "cx__8khtih4"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/YBQ1cTGEXNtU-t9yujDNlT5Ugwg\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5ERENFNTk4Q0Q2MTZDMTA5",
+   "snippet": {
+    "publishedAt": "2019-10-11T22:31:06.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 093: Grokking Kubernetes - Controller Manager",
+    "description": "Come hang out with Duffie Cooley as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Duffie talking about the things he knows. Some of this will be Duffie exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\nThis week we will be continuing the Grokking series with: exploring the Controller Manager",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/78XQe6FdHac/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/78XQe6FdHac/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/78XQe6FdHac/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 3,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "78XQe6FdHac"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/Qa8ELvenTLMKFLfXuWtwzjHtXOQ\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4yM0EyQ0U1M0I2RkIwNTQ0",
+   "snippet": {
+    "publishedAt": "2019-10-02T20:56:50.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 092: Continuing Minecraft Controller",
+    "description": "Episode notes up at https://github.com/heptio/tgik/blob/master/episodes/092/README.md.\n\nWork on the controller starts at 00:23:43.\n\nCome hang out with Joe Beda as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Joe talking about the things he knows. Some of this will be Joe exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\nIn this episode we will pick up where we left off with the Minecraft controller we started in https://tgik.io/083.  We'll be doing some coding and exploring what it takes to build an operator/controller.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/pzXyZXcFa7o/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/pzXyZXcFa7o/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/pzXyZXcFa7o/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 4,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "pzXyZXcFa7o"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/grHTWubkn5PGHfcc6J9qrz8EZMg\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5DQjg2RDQyMEVGQkZFOEVF",
+   "snippet": {
+    "publishedAt": "2019-09-18T18:33:38.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 091: kpack",
+    "description": "Episode notes up at https://github.com/heptio/tgik/blob/master/episodes/091/README.md.\n\nkpack content starts at 00:19:43.\n\nCome hang out with Joe Beda as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Joe talking about the things he knows. Some of this will be Joe exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\nThis week we will be looking at kpack -- a Kubernetes native way to build container images with build packs.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/4zkRX9PSJ5k/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/4zkRX9PSJ5k/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/4zkRX9PSJ5k/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 5,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "4zkRX9PSJ5k"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/beISmFSATmh4S4ItYjyZlu4gGWM\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4wQUE0QzM4MkJGQ0YwQjUx",
+   "snippet": {
+    "publishedAt": "2019-09-13T22:32:50.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 090: Grokking Kubernetes - kube-proxy",
+    "description": "Notes archived at https://github.com/heptio/tgik/blob/master/episodes/090/README.md\n\n\nCome hang out with Duffie Cooley as he continues the \"grokking kubernetes series with a bit of hands on hacking of Kubernetes and related topics. Some of this will be Duffie talking about the things he knows. Some of this will be Duffie exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/wEyLsEaomfA/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/wEyLsEaomfA/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/wEyLsEaomfA/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 6,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "wEyLsEaomfA"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/a3nbrHCZhOGoUrK3clYGW16WQOc\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5GMDBDNkJGMzYzREUyMTYw",
+   "snippet": {
+    "publishedAt": "2019-09-04T23:06:21.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 089: Tekton Pipelines",
+    "description": "Notes archived at https://github.com/heptio/tgik/blob/master/episodes/089/README.md\n\nContent around Tekton starts about 20 minutes in.\n\nCome hang out with Joe Beda as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Joe talking about the things he knows. Some of this will be Joe exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\nThis week we will be looking at the Tekton CD project.  This is an offshoot of KNative and one of the inaugural projects for the Continuous Delivery Foundation (CDF).",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/CGywE84CCx8/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/CGywE84CCx8/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/CGywE84CCx8/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 7,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "CGywE84CCx8"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/Jbxy6EBp8owYOYUlQiWWjGsX4fs\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5CMUM0NzY5NzdEQzlGRjAx",
+   "snippet": {
+    "publishedAt": "2019-08-23T21:29:46.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 088: Falco with Kris",
+    "description": "Join Kris Nova and Duffie Cooley as they explore Falco an open source project that enables a number of great capabilities for your cluster. This tool makes use of eBPF! \n\nCome hangout, ask questions, and share you experiences!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/fRoTKqH3rHI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/fRoTKqH3rHI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/fRoTKqH3rHI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 8,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "fRoTKqH3rHI"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/Is6bh4dPGLuNTbTqRXtgIkYqspg\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5EMzJDRTUwQjBEOUVFQzAw",
+   "snippet": {
+    "publishedAt": "2019-08-16T21:31:32.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 087: Octant",
+    "description": "Join Bryan Liles in his first TGIK to explore octant. A new tool that  provides a number of capabilities around visualizing the state of your Kubernetes cluster.\n\nCome hangout, ask questions, and share you experiences!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/4OQ_2hTyNrI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/4OQ_2hTyNrI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/4OQ_2hTyNrI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 9,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "4OQ_2hTyNrI"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/t1gUwz7k55d_sENzbiG-7ukbMD0\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS40NzE2MTY1QTM3RUI3QkU3",
+   "snippet": {
+    "publishedAt": "2019-08-09T22:17:42.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 086: Grokking Kubernetes - The kubelet",
+    "description": "Join Duffie Cooley as he returns to TGIK to explore some resources around understanding Kubernetes as a system. We'll explore some of the tooling out there that helps build a mental model of the system itself and how all the parts of Kubernetes work together.\n\nCome hangout, ask questions, and share you experiences!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/CKpSyl5vgK8/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/CKpSyl5vgK8/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/CKpSyl5vgK8/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 10,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "CKpSyl5vgK8"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/UQXG9AUDV0YB0TWZc59y_12SqL8\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS44MkM2RjVEQkQ5N0I2MjVE",
+   "snippet": {
+    "publishedAt": "2019-08-02T21:48:36.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 085: Network Policies",
+    "description": "Episode directory on GitHub: https://github.com/heptio/tgik/tree/master/episodes/085\n\nJoin Josh Rosso as he returns to TGIK to explore Network Policies in Kubernetes. We'll explore how Kubernetes networking operates without policy, with policy, and how Container Networking Interface (CNI) plugins impact your capabilities.\n\nCome hangout, ask questions, and share you experiences!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/gzzq7TGBsL8/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/gzzq7TGBsL8/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/gzzq7TGBsL8/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 11,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "gzzq7TGBsL8"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/De65s8CtKOUy895B0oupejpdOBU\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS44QTA1QTQyRTc3M0VGQzYx",
+   "snippet": {
+    "publishedAt": "2019-07-26T23:46:12.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 084: Kubernetes API removal and you",
+    "description": "Come hang out with Duffie Cooley as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Duffie talking about the things he knows. Some of this will be Duffie exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\nThis week I'll be demonstrating a cluster with the soon to be remove apis already removed. We will explore how that affects your use of Kubernetes and what you can do to mitigate the problem should you hit it!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/-U79ZLO_37E/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/-U79ZLO_37E/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/-U79ZLO_37E/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 12,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "-U79ZLO_37E"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/239ifNoN8oPqiWljA_8kBar4Wv0\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4wMDFGNzBEOTU4Q0Y1Q0RG",
+   "snippet": {
+    "publishedAt": "2019-07-17T20:21:20.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 083: Minecraft Controller with Kubebuilder",
+    "description": "Full notes for this episode: https://github.com/heptio/tgik/tree/master/episodes/083\n\n- 00:00:00 - Welcome to TGIK!\n- 00:04:29 - Week in Review\n- 00:17:42 - Putting Kubebuilder in context\n- 00:22:56 - Minecraft image we'll be using\n- 00:26:07 - Running Minecraft on k8s manually\n- 00:34:10 - Ingress for Minecraft?\n- 00:39:17 - Starting with kubebuilder\n- 00:47:46 - Adding our first API type\n- 00:53:43 - Aside: Operators vs. Controllers\n- 01:02:18 - First run of controller!\n- 01:04:11 - Leaders election and HA in k8s controllers\n- 01:14:32 - Starting our reconciler\n- 01:16:00 - RBAC requirements via annotations\n- 01:29:47 - Aside: `generatedName` and its history\n- 01:52:33 - Bug: reversed objects in `SetControllerReference` (James Munnelly caught it but I missed it in the chat!)\n- 01:58:00 - First run with reconciler!\n- 01:59:44 - Debugging first errors\n- 02:08:20 - Almost there! CrashLoopBackoff\n- 02:13:48 - Success!\n- 02:14:00 - Wrapping up\n\nCome hang out with Joe Beda as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Joe talking about the things he knows. Some of this will be Joe exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\nThis week I'll be doing some programming! We'll crack open kubebuilder and see what it takes to build a Minecraft controller.  I don't know how far we'll get but it'll be fun!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/tv-HJuwC4yI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/tv-HJuwC4yI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/tv-HJuwC4yI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 13,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "tv-HJuwC4yI"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/Lzj1XodHuAad8u-IvjgsoaBOUKs\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4xNTZBNUQxMDZBQzFGMjkw",
+   "snippet": {
+    "publishedAt": "2019-07-10T17:24:52.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 082: Weaveworks Ignite",
+    "description": "Full notes and links at https://github.com/heptio/tgik/blob/master/episodes/082/README.md\n\n00:00:00 - Welcome to TGIK!\n00:04:52 - Week in Review\n00:13:52 - Context/positioning Ignite\n00:19:22 - Ignite blog post\n00:22:31 - Installing Ignite\n00:30:25 - Running our first VM!\n00:33:11 - Using OCI images for VM images\n00:42:46 - Ignite architecture review\n00:43:06 - Storage with devicemapper\n00:50:05 - Using Docker and exploring networking\n01:05:52 - Launching k8s into Ignite VMs\n01:32:50 - GitOps and Ignite\n01:43:10 - Wrapping up!\n\nCome hang out with Joe Beda as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Joe talking about the things he knows. Some of this will be Joe exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\nThis week we will look at Weaveworks Ignite (https://www.weave.works/blog/fire-up-your-vms-with-weave-ignite) a project to provide a docker like experience around lightweight VMs built on AWS Firecracker.  This was a project building on work that Lucas Käldström has been doing for a while.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/aq-wlslJ5MQ/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/aq-wlslJ5MQ/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/aq-wlslJ5MQ/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 14,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "aq-wlslJ5MQ"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/H_lT0uWYmwk1opmJa4bd9M5iPB4\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4zQTkzRjgxRTY0OEU0MkM3",
+   "snippet": {
+    "publishedAt": "2019-06-28T21:35:15.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 081: Grafana Loki",
+    "description": "Join Christian Dickmann as he hosts his first TGIK exploring Grafana Loki. Index-Free log aggregators, like Loki, promise drastic reduction in storage cost, while serving the logging needs in dynamic Kubernetes environments.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/7Fsyo8lKB3M/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/7Fsyo8lKB3M/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/7Fsyo8lKB3M/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 15,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "7Fsyo8lKB3M"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/KJhB0zUeVVlvA9M919ri-ReWRRE\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS44QTY2MEEzNzBFQUJCMUQ2",
+   "snippet": {
+    "publishedAt": "2019-06-21T21:39:39.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 080: Velero 1.0",
+    "description": "Show notes: https://github.com/heptio/tgik/tree/master/episodes/080\n\n00:00:00 - Welcome to TGIK!\n00:04:00 - Week in Review\n00:19:00 - Velero and why it was renamed from Ark\n00:21:00 - Let's get started, starting with the docs\n00:25:00 - Creating an S3 bucket & IAM Account\n00:34:00 - Run velero install\n00:38:00 - Install nginx example workload\n00:48:00 - Take a backup using velero backup create\n00:52:00 - Look at contents of backup\n01:03:00 - Create scheduled backup\n01:07:00 - Install velero into cluster 2\n01:09:00 - Migrate nginx app from cluster 1 into cluster 2\n01:13:00 - Roadmap\n\nCome hang out with Joe Beda as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Joe talking about the things he knows. Some of this will be Joe exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\nThis week we will look at Velero (https://velero.io).  Velero (formally called Heptio Ark) is a backup and disaster recovery tool for Kubernetes. We've been working on this for quite a while and it recently hit 1.0.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/tj5Ey2bHsfM/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/tj5Ey2bHsfM/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/tj5Ey2bHsfM/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 16,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "tj5Ey2bHsfM"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/bkrFVjJeG81R4BK6L8h97LruczY\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4xNjIyNEE0MDEyRDlCMjBE",
+   "snippet": {
+    "publishedAt": "2019-06-12T19:43:26.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 079: YTT and Kapp",
+    "description": "Episode notes: https://github.com/heptio/tgik/tree/master/episodes/079\n\n00:00:00 - Welcome to TGIK!\n00:04:30 - Week in Review\n00:21:11 - Start looking at k14s\n00:28:49 - Install the tools\n00:36:07 - Start playing with kapp\n01:02:52 - Start playing with ytt\n\nCome hang out with Joe Beda as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Joe talking about the things he knows. Some of this will be Joe exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\nThis week we will look at YTT and Kapp! These tools are used for templating and applying configs to container clusters and take a bit of a unique approach.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/CSglwNTQiYg/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/CSglwNTQiYg/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/CSglwNTQiYg/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 17,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "CSglwNTQiYg"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/CRCI82haP2o2PTnzjZYeUeFkKqs\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5CMEVBRUJERkUyNTBENTkz",
+   "snippet": {
+    "publishedAt": "2019-06-07T21:51:22.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 078: Pod Security Policies",
+    "description": "Join Josh Rosso as he hosts his first TGIK covering Pod Security Policies. We'll explore why PSPs are important and how they can be implemented in your Kubernetes clusters! Come Join and bring all your questions!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/zErhwjPRKn8/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/zErhwjPRKn8/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/zErhwjPRKn8/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 18,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "zErhwjPRKn8"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/qxyZKEoghSldTkqxS8y9Hvx1IEE\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5FQUY2Qzk4RUFDN0ZFRkZF",
+   "snippet": {
+    "publishedAt": "2019-06-05T16:01:48.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 077: All your certificates have expired",
+    "description": "Tune in this week as Duffie works through how to rotate all the certificates in a Kubernetes Cluster. He will also describe what they are for and some of the characteristics of each one.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/Cl-EWv3LmJA/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/Cl-EWv3LmJA/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/Cl-EWv3LmJA/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/Cl-EWv3LmJA/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/Cl-EWv3LmJA/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 19,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "Cl-EWv3LmJA"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/px4Cv6y7VMhl8sd_tAYODIdEivk\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4xN0Y2QjVBOEI2MzQ5OUM5",
+   "snippet": {
+    "publishedAt": "2019-06-05T16:01:35.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 076: Exploring KEDA with RabbitMQ and Go",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/qVIV2Y0M2Iw/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/qVIV2Y0M2Iw/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/qVIV2Y0M2Iw/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 20,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "qVIV2Y0M2Iw"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/pKlSK2x_H6dnW9ZecxyBMfr44xw\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS45NDlDQUFFOThDMTAxQjUw",
+   "snippet": {
+    "publishedAt": "2019-06-05T16:01:30.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 075: Troubleshooting Container Networking",
+    "description": "Join Duffie Cooley as he explores how to troubleshoot with a variety of CNI implementations. This episode we will use kind to explore cilium, calico and canal.\n\n￼",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/IhbJ3ll4usI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/IhbJ3ll4usI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/IhbJ3ll4usI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 21,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "IhbJ3ll4usI"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/LqEFwZwxIe08eeTjVlsnHzXHm3o\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4yQzk4QTA5QjkzMTFFOEI1",
+   "snippet": {
+    "publishedAt": "2019-06-05T16:01:23.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 074: Exploring KubeVirt",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/vd5gGcy96go/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/vd5gGcy96go/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/vd5gGcy96go/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 22,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "vd5gGcy96go"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/L3iAnSp94tOiShVUJaay1hAmZfQ\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5EQkE3RTJCQTJEQkFBQTcz",
+   "snippet": {
+    "publishedAt": "2019-06-05T16:01:17.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 073: Exploring Garden with Kubernetes",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/Xfi9XqcZ76M/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/Xfi9XqcZ76M/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/Xfi9XqcZ76M/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 23,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "Xfi9XqcZ76M"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/JxP0--GSxveWEeTMZgUYZwPiAlw\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS43QzNCNkZENzIyMDY2MjZB",
+   "snippet": {
+    "publishedAt": "2019-06-05T16:01:01.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 072: Kustomize and friends",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Joe talking about the things he knows. Some of this will be Joe exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\nThis week we will look at Kustomize! A (now built in) system for managing and Kustomizing your Kubernetes manafests via patches.\n\nIf we have time we'll examine some other up and coming solutions in this space.\n \nSee https://github.com/heptio/tgik/tree/master/episodes/072 for notes and code.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/NFnpUlt0IuM/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/NFnpUlt0IuM/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/NFnpUlt0IuM/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 24,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "NFnpUlt0IuM"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/D3_Lc72yr0v9v0eQJnbIC_0z27s\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS41MjE1MkI0OTQ2QzJGNzNG",
+   "snippet": {
+    "publishedAt": "2019-04-03T19:54:59.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 071: Exploring the Open Policy Agent (OPA)",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Joe talking about the things he knows. Some of this will be Joe exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\nThis week we will look at OPA! It is a policy evaluation engine that just moved to the CNCF incubating level of support.  We'll learn about the basics of OPA along with how it is typically used in Kubernetes.\n \nSee https://github.com/heptio/tgik/tree/master/episodes/071 for notes and code.\n\nCoverage of OPA starts around 11:00",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/QU9BGPf0hBw/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/QU9BGPf0hBw/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/QU9BGPf0hBw/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 25,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "QU9BGPf0hBw"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/eYg7NWe0Hl3oiodGYm4oFRZqG_A\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS42RTNCOEMxREI3Q0VDMjU2",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:11:32.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 070: Assuming AWS roles with kube2iam/kiam",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Joe talking about the things he knows. Some of this will be Joe exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\nThis week we will look at kube2iam and kiam. These are systems that aim to bridge the world of Kubernetes with AWS from an auth perspective.\n \nSee https://github.com/heptio/tgik/tree/master/episodes/070 for notes and code.\n\nCoverage of kiam starts around 12:00",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/vgs3Af_ew3c/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/vgs3Af_ew3c/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/vgs3Af_ew3c/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 26,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "vgs3Af_ew3c"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/TsGtV0ilPa6eGKi8SwQ1Zt0q_io\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS40MDNEMzA0QTBFRThFMzBE",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:11:29.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 069: Hybrid ingress with Gloo on Kubernetes",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/q-L2woZMBHY/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/q-L2woZMBHY/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/q-L2woZMBHY/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 27,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "q-L2woZMBHY"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/UuUjoqyc4IOyI44iHkhcpSSuqX8\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS42MjYzMTMyQjA0QURCN0JF",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:11:26.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 068: MicroK8s on Linux",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/3Px-kbcIaVE/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/3Px-kbcIaVE/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/3Px-kbcIaVE/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 28,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "3Px-kbcIaVE"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/Glfx-tPgQUlCH-bmnU7mnllOld0\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4wOTA3OTZBNzVEMTUzOTMy",
+   "snippet": {
+    "publishedAt": "2019-04-03T19:55:38.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 067: Spring Boot on Kubernetes",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/jDdzs6-1BBM/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/jDdzs6-1BBM/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/jDdzs6-1BBM/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 29,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "jDdzs6-1BBM"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/GccSDF0yg6PLWkuqrQL44eLQGHI\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4xM0YyM0RDNDE4REQ1NDA0",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:11:16.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 066: Even More Secret!",
+    "description": "Come hang out with Duffie Cooley as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Duffie talking about the things he knows. Some of this will be Duffie exploring something secret with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/C-vRlW7VYio/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/C-vRlW7VYio/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/C-vRlW7VYio/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/C-vRlW7VYio/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/C-vRlW7VYio/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 30,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "C-vRlW7VYio"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/T1Hzz2tIPy2220IeK_ThnluH6XY\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5ERkUyQTM0MzEwQjZCMTY5",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:11:13.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 065: Keep it a Secret!",
+    "description": "Come hang out with Duffie Cooley as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Duffie talking about the things he knows. Some of this will be Duffie exploring something secret with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\n\nSee https://github.com/heptio/tgik/tree/master/episodes/065 for notes and code.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/0uy2V2kYl4U/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/0uy2V2kYl4U/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/0uy2V2kYl4U/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 31,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "0uy2V2kYl4U"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/c2YrQ3n2U41CBM5S3uGcNIHjw-o\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5CNTcxMDQ0NThBNzMxODYz",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:11:10.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 064: Kubernetes config with Pulumi",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Joe talking about the things he knows. Some of this will be Joe exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\nThis week we will look at Pulumi. Pulumi is a solution for creating and managing cloud configs.  We are going to look at it through the lens of Kubernetes but it can also do a whole lot more!\n\nSee https://github.com/heptio/tgik/tree/master/episodes/064 for notes and code.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/ILMK65YVSKw/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/ILMK65YVSKw/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/ILMK65YVSKw/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 32,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "ILMK65YVSKw"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/wKufXCjoefYAqEgkTYsQTTjhZkI\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5CNTZFOTNGQzZEODg1RUQx",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:11:04.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 063: Local Development with Tilt",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Joe talking about the things he knows. Some of this will be Joe exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\nThis week we will look at Tilt from Windmill.  This is a local development experience for microservices targeted to Kubernetes.\n\nLive notes: https://hackmd.io/naQblxLeQECj0zzSbez6qA",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/A_YV98HhLrk/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/A_YV98HhLrk/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/A_YV98HhLrk/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 33,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "A_YV98HhLrk"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/TZW9oLsMjcvnkMGmWyfnh-urIbo\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4wRjhFM0MxMTU1MEUzQ0VB",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:11:00.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 062: Continuous Delivery with Jenkins X",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\nLive notes: https://hackmd.io/c2DGSv_cSRSTYtpGGd8y0g?both",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/QdwtefUsoNI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/QdwtefUsoNI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/QdwtefUsoNI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 34,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "QdwtefUsoNI"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/mv6f6u6d1dl1ghGcfTeKhf5gu40\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS41OURENDc2NEM1MDI5Mjky",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:10:56.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 061: Falco with Dynamic Auditing in Kubernetes",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/fjoxmTeh3Fk/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/fjoxmTeh3Fk/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/fjoxmTeh3Fk/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 35,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "fjoxmTeh3Fk"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/lymdYiIWNDAi-nrxpKVOwAm9Vn0\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS42QzdBMzlBQzQzRjQ0QkQy",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:09:28.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 060: Kubernetes in Docker + etcd",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/okw8brTi6MY/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/okw8brTi6MY/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/okw8brTi6MY/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 36,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "okw8brTi6MY"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/klOXLzgzp5iCp_SpO34t2rstNkU\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4zMUEyMkQwOTk0NTg4MDgw",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:09:24.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 059: Exploring CNAB with Kubernetes",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/R_Wul_xdHsk/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/R_Wul_xdHsk/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/R_Wul_xdHsk/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 37,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "R_Wul_xdHsk"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/jFMWy7XS1RcYAIJPFBkmmpi6-mQ\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4wMTYxQzVBRDI1NEVDQUZE",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:09:20.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 058: Amazon Firecracker",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Joe talking about the things he knows. Some of this will be Joe exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\nThis week we will be covering the new minimal VMM from AWS called Firecracker. I'll explain what a VMM is, how it relates to containers and Kubernetes and why this is a cool new building block.  We'll go through the getting started instructions to get it up and running (on GCP with nested virtualization).",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/JU-zp1dTC58/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/JU-zp1dTC58/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/JU-zp1dTC58/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 38,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "JU-zp1dTC58"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/aXwQeAApZ8yqe6Jo-gCaxCXF5ag\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4wNEU1MTI4NkZEMzVBN0JF",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:09:17.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 057: Vault on Kubernetes",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/7aR6k9xBN94/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/7aR6k9xBN94/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/7aR6k9xBN94/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 39,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "7aR6k9xBN94"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/G49xgI4bTiZ8mNhtQKm2rjhQwqM\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5CQkEwRDA0MDkwNUM2MDY1",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:09:10.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 056: Heptio Contour and IngressRoute",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nHeptio Contour is an \"ingress controller\" that uses Kubernetes objects to configure Envoy. With Contour v0.6 and v0.7, it has introduced a new CRD called the \"IngressRoute\". We are going to dig into what this is, how it works and why Contour went this direction.\n\nShow notes: https://github.com/heptio/tgik/tree/master/episodes/056\n\nPartial index:\n- 00:22 Load Balancers and Ingress \n- Network traffic comes the user, goes to a software load balancer, say ELB.\n- ELB routes into a software load balancer in your cluster, say nginx.\n    - 00:34 Question from the audience: Is there a performance hit? In AWS the NLB is transparent to the network. \n- nginx picks a service in a cluster to route traffic to. If you say foo.com, go to service 1. That service is considered the _upstream_. It's very confusing. \"Down is upstream\"\n- 00:29 Limitations in Ingress protecting namespaces from stepping on each other\n- 00:31 Clarifying what we mean by upstream\n- 00:34 Installing Contour\n    - [Deploying on AWS with NLB](https://github.com/heptio/contour/blob/master/docs/deploy-aws-nlb.md)\n    - [Documentation](https://github.com/heptio/contour/tree/master/docs)\n- 00:37 Investigating the yaml we use to install Contour\n    - Pro tip to new listeners: Joe will typically spend time going through yaml files before deployment to see exactly what something does on your cluster before applying. Good habit to get in to!\n- 00:50 We're up and running!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/BSKU6QHOvVE/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/BSKU6QHOvVE/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/BSKU6QHOvVE/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 40,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "BSKU6QHOvVE"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/rGHH8Y-sDXd97hdbfJQzRvIJfA8\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5GNjAwN0Y0QTFGOTVDMEMy",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:09:06.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 055: Building container with Kaniko",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/rt0fqOekgjI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/rt0fqOekgjI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/rt0fqOekgjI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 41,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "rt0fqOekgjI"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/Ep0HVY8DyJIozI2TMU78ke4Rkcs\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS43NERCMDIzQzFBMERCMEE3",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:09:02.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 054: Building OCI container images with Buildah",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/Z9t1DvNcseA/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/Z9t1DvNcseA/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/Z9t1DvNcseA/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 42,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "Z9t1DvNcseA"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/J1L1EmYgTDo_Qvx2H8mr5l7U_IQ\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS41NTZEOThBNThFOUVGQkVB",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:08:56.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 053: The AWS Cluster API",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/e1XCsuTYUa4/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/e1XCsuTYUa4/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/e1XCsuTYUa4/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 43,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "e1XCsuTYUa4"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/Hl6qJ5r7j3JdqYXne6cu7z0FI7Q\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS42Qzk5MkEzQjVFQjYwRDA4",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:08:53.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 052: Instrumenting with Prometheus",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/zY2vpAf1SXA/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/zY2vpAf1SXA/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/zY2vpAf1SXA/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 44,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "zY2vpAf1SXA"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/yM6D4gJpfWoxqOI6pErOuGn1lI4\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4zMEQ1MEIyRTFGNzhDQzFB",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:08:49.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 051: Linkerd 2.0",
+    "description": "Full notes: https://github.com/heptio/tgik/tree/master/episodes/051\n\n- 00:00:00 - Technical difficulties. Mic broken. Chat not scrolling. Sorry!\n- 00:04:17 - Welcome to TGIK and hello!\n- 00:08:01 - Week in review: Kubernetes Steering Committee Elections\n- 00:10:06 - Week in review: Chucks cool YAML tool - kubeyaml.com\n- 00:11:40 - Week in review: Kubernetes 1.12 release Real Soon Now\n- 00:12:21 - Week in review: Pulumi k8s support\n- 00:15:30 - Week in review: Heptio Contour 0.6 and Heptio Ark 0.9.6\n- 00:17:47 - Starting to look at Linkerd 2.0\n- 00:21:13 - Installing the Linkerd CLI\n- 00:25:28 - Cluster preflight validation\n- 00:26:34 - linkerd install - yaml spelunking\n- 00:41:39 - Discussion on running/aggregating prometheus\n- 00:44:08 - Actually install linkerd\n- 00:46:15 - linkerd dashboard\n- 00:46:46 - Digression on \"fabulous mode\" using lolgopher\n- 00:51:32 - linkerd top\n- 00:52:24 - Installing demo app\n- 00:56:38 - Digression around cardinality when monitoring\n- 01:00:43 - Pointing tgik.io to emojivoto\n- 01:02:11 - Injecting sidecar to emojivoto\n- 01:03:55 - Watch it run with dashboard and CLI tools\n- 01:07:30 - Digression around source IP vs. true source\n- 01:15:11 - Starting to wrap up. Some comparison to Istio\n- 01:17:10 - Trying to remove linkerd from example app\n- 01:20:02 - Scaling out the demo app\n- 01:22:21 - \"The cats and the dogs and the rainbows are all fighting\"\n- 01:23:44 - Stream goes down because Kris overloads the Heptio network\n\nCome hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nLinkerd 2.0 just launched! I'll be looking at the announcement and work to get my hands dirt playing with it. I haven't used it in a while and there is a lot new so we'll all be learning together.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/1dXJ34-KLe8/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/1dXJ34-KLe8/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/1dXJ34-KLe8/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 45,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "1dXJ34-KLe8"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/nuw5GNOQfzI8I1P7GDxxl3LDIN4\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4xMzgwMzBERjQ4NjEzNUE5",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:08:42.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 050: Weave Net (CNI)",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/y_RMncC1u3c/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/y_RMncC1u3c/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/y_RMncC1u3c/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 46,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "y_RMncC1u3c"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/Gz0o6fbePiYbDEo_J125yiTwuYo\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS44QzVGQUU2QjE2NDgxM0M4",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:08:40.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 049: Flannel (CNI)",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/2YoK4bBy3CM/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/2YoK4bBy3CM/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/2YoK4bBy3CM/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 47,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "2YoK4bBy3CM"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/IhEUFftNBtMFUaF4aTsPlTFtrIE\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5ENjI1QUI0MDI5NEQzODFE",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:08:36.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 048: Exploring the Harbor",
+    "description": "Come hang out with Duffie Cooley as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Duffie talking about the things he knows. Some of this will be Duffie exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/OA0fWPXxXYs/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/OA0fWPXxXYs/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/OA0fWPXxXYs/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 48,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "OA0fWPXxXYs"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/rGLg3okKPvy3XxKDbHvT8YDIvdM\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS41RTNBREYwMkI5QzU3RkY2",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:08:31.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 047: Cilium (CNI)",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/I8Tp7jU2oJk/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/I8Tp7jU2oJk/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/I8Tp7jU2oJk/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 49,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "I8Tp7jU2oJk"
+    }
+   }
+  }
+ ]
+}

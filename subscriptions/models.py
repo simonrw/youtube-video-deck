@@ -43,7 +43,7 @@ class Video(models.Model):
 
     name = models.CharField(max_length=255)
     thumbnail_url = models.CharField(max_length=255)
-    description = models.CharField(max_length=255)
+    description = models.TextField()
     youtube_id = models.CharField(max_length=255, unique=True)
     subscription = models.ForeignKey(Subscription, on_delete=models.CASCADE)
     published_at = models.DateTimeField()
@@ -55,6 +55,16 @@ class Video(models.Model):
         Helper to create the full youtube link from the video id
         """
         return "https://www.youtube.com/watch?v={}".format(self.youtube_id)
+
+    def hover_text(self):
+        """
+        The text to show when the user hovers over the item in the UI
+        """
+        if self.description:
+            return "{self.name}\n\n{self.description}".format(self=self)
+        else:
+            return self.name
+
 
     def __str__(self):
         return f"{self.youtube_id} from {self.subscription}"

@@ -8,17 +8,16 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('subscriptions', '0014_subscription_user'),
+        ("subscriptions", "0014_subscription_user"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='subscription',
-            name='youtube_id',
+            model_name="subscription",
+            name="youtube_id",
             field=models.CharField(max_length=255),
         ),
         migrations.AlterUniqueTogether(
-            name='subscription',
-            unique_together={('user', 'youtube_id')},
+            name="subscription", unique_together={("user", "youtube_id")}
         ),
     ]

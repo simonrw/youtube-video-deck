@@ -1,0 +1,1631 @@
+{
+ "kind": "youtube#playlistItemListResponse",
+ "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/Mv5rwRqF97i3Ltu9wWGooeARop4\"",
+ "prevPageToken": "CDIQAQ",
+ "pageInfo": {
+  "totalResults": 96,
+  "resultsPerPage": 50
+ },
+ "items": [
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/jE5w9YTgQHfAfPhI0xpk4HCw6Xg\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS40QzRDOEU0QUYwNUIxN0M1",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:08:28.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 046: Knative continued (2/?)",
+    "description": "Notes and links at https://github.com/heptio/tgik/tree/master/episodes/046.\n\nCome hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nThis week we'll be continuing to look at Knative. We'll dig deeper into the serving abstractions and perhaps start looking at the \"build\" components\"",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/ivZIf34zYuQ/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/ivZIf34zYuQ/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/ivZIf34zYuQ/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 50,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "ivZIf34zYuQ"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/4jpv_1TXuocBm4mT3Xn2tKjs1C4\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4yQUJFNUVCMzVDNjcxRTlF",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:08:24.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 045: Calico (CNI)",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/VKtudjLc1oc/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/VKtudjLc1oc/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/VKtudjLc1oc/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 51,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "VKtudjLc1oc"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/8c4myEKfVqZs01HemEol4eZ15GY\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4yQjZFRkExQjFGODk3RUFD",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:08:20.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 044: Knative serverless",
+    "description": "Show notes available at: https://github.com/heptio/tgik/blob/master/episodes/044/README.md",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/n_zqedVM0oM/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/n_zqedVM0oM/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/n_zqedVM0oM/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 52,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "n_zqedVM0oM"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/JL8K3MHdPtPK5VIdHo7Isz-fD1k\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS41MzY4MzcwOUFFRUU3QzEx",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:08:15.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 043: Kops revisited",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/sNr7TjChn6s/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/sNr7TjChn6s/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/sNr7TjChn6s/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 53,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "sNr7TjChn6s"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/ZCcz1EMf4yTHS1X3pW8IKPmVlhI\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5DRUQwODMxQzUyRTlGRkY3",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:08:11.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 042: Ballerina",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/GSHixCT0Gcg/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/GSHixCT0Gcg/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/GSHixCT0Gcg/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 54,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "GSHixCT0Gcg"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/dxr4-zx1IKql_686ytMUW597vos\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5DNkMwRUI2MkI4QkI4NDFG",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:08:03.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 041: Traefik",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/NObVcDG3ADM/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/NObVcDG3ADM/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/NObVcDG3ADM/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 55,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "NObVcDG3ADM"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/LrSUTfRdtsKINnFm7NRUPq4Sy40\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS45NkVENTkxRDdCQUFBMDY4",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:07:59.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 040: Kubebuilder",
+    "description": "Lots more details on this episode at https://github.com/heptio/tgik/tree/master/episodes/040\n\nCome hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\nEpisode Shortcuts:\n\n- 00:00:14 - Welcome to TGIK!\n- 00:02:56 - Week in Review\n- 00:10:50 - Kubebuilder\n- 00:13:48 - Installing Kubebuilder\n- 00:19:40 - Running Kubebuilder\n- 00:24:45 - Creating our first API\n- 00:26:10 - Our first `kubebuilder init`\n- 00:34:30 - Looking at the files Kubebuilder just created (IDE time)\n- 00:37:35 - Why do Kubernetes projects have these hack directories? \n- 00:43:56 - Adding a Schema and Business Logic\n- 00:54:56 - Integration Tests and Pushing to Kubernetes\n- 01:09:09 - Watching our status\n- 01:15:00 - Generating our documentation",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/N-lTSk1bGAg/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/N-lTSk1bGAg/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/N-lTSk1bGAg/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 56,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "N-lTSk1bGAg"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/vDi6mGuA31Bx_twtBsV_Ij-jIWM\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4zQzFBN0RGNzNFREFCMjBE",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:07:52.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 039: Cluster auth with GitHub, Dex and Gangway",
+    "description": "Lots more details on this episode (including the YAML used) at https://github.com/heptio/tgik/tree/master/episodes/039.\n\nCome hang out with Joe Beda as he does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Joe talking about the things he knows. Some of this will be Joe exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\nThis week we'll be exploring setting up cluster auth with a combination of GitHub, Dex (from CoreOS/Red Hat) and Heptio Gangway.  We'll also mix in a little Contour and Cert Manager.  The end result will be a secure auth framework as a building block for a multi-team cluster.\n\nTimestamps for the episode\n\n[06:24] News from Around the Community - k8s 1.11, Ark .9\n[14:05] https://aws.amazon.com/eks/\n[20:43] https://github.com/negz/kuberos\n[21:01] https://medium.com/@mrbobbytables/kubernetes-day-2-operations-authn-authz-with-oidc-and-a-little-help-from-keycloak-de4ea1bdbbe \n[22:14] https://github.com/appscode/guard\n[24:07] Joe will be covering adding github authentication to a kubernetes cluster in this episode using openid with dex.\n[00:24] Let's start configuring and theory-crafting \n[28:22] A primer of how does OAuth works \n[53:53] Setting up an OAuth in github\n[1:00:19] Jim Angel asks \"Do you think Dex will die out as RH merges Tectonic, Dex's main driving force, with OpenShift (since OpenShift already has auth using OCP cli + poor Dex documentation)?\"\n[01:18:44] Application is stood up and working\n[01:23:40] The server= line is empty!\n[01:25:55] Logged in, and Joe can't `get pods` because .... RBAC! (This is a good thing)\n[01:28:00] Jose and Simon can log in, but have no permissions to do anything\n[01:30:52] Let's try to give Simon access to Joe's cluster\n[01:32:35] Simon crushes Joe's wallet and launches a 100 instances.\n[01:34:29] Simon terminates the pods",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/xYMA-S75_9U/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/xYMA-S75_9U/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/xYMA-S75_9U/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 57,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "xYMA-S75_9U"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/yosAmQf0Xlh4lJFcEnhuv94w_Nc\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5GNDg1Njc1QzZERjlFRjE5",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:07:49.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 038: Kata Containers",
+    "description": "Lots more details on this episode at https://github.com/heptio/tgik/tree/master/episodes/038\n\nCome hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/ixs2-UnWiGU/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/ixs2-UnWiGU/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/ixs2-UnWiGU/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 58,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "ixs2-UnWiGU"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/4S6LG1fnnqEx4UPz9d1UosuRXQM\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4xOTEzQzhBQzU3MDNDNjcz",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:07:43.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 037: Operator Framework",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\n\n0:00:00 - Hello and welcome\n0:01:50 - TGIK Repo\n0:03:38 - What have you been working on this week?\n0:04:54 - Kasane from Google \n0:06:10 - CFPs for KubeCon Seattle and China\n0:07:19 - Call for help SIG UI and SIG Scalability\n0:08:49 - VGO and Dep in Go Buffalo \n0:10:08 - Transition from Dep to vgo \n0:12:00 - All the operators \n0:14:00 - Controllers vs Operators vs Deployments \n0:16:00 - Operators and CRDs\n0:16:35 - Getting started with the operator SDK\n0:19:00 - Installing the operator-sdk CLI tool\n0:22:55 - Creating a new operator \n0:25:30 - Exploring the new operator code\n0:27:30 - Exploring how the operator-sdk works\n0:30:45 - Dependencies for the operator-sdk\n0:33:40 - Building with the operator-sdk\n0:37:17 - Examining the operator container image\n0:38:33 - Looking at the YAML!\n0:43:40 - Exploring the new CRD\n0:45:45 - Exploring the operator deployment\n0:48:34 - Creating a new CR\n0:50:50 - Exploring custom handlers with operators\n0:51:48 - Checkng out the Watch() function\n0:54:09 - Context in Go\n0:54:20 - runtime.Object in Kubernetes and embedding and composition \n0:56:00 - Type switching in Go\n1:00:17 - Literal data structure with Pods in Go\n1:05:02 - Exec'ing into a Kubernetes Pod\n1:06:07 - Hacking on the controller in Go!\n1:28:00 - The SDK package",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/Ko_WfXRAypY/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/Ko_WfXRAypY/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/Ko_WfXRAypY/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 59,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "Ko_WfXRAypY"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/NBpmUVY56z1AybWrCHbHSkXXyq4\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5BRjJDODk5REM0NjkzMUIy",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:07:37.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 036: Virtual Kubelet",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/J8W_9GTmCNA/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/J8W_9GTmCNA/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/J8W_9GTmCNA/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 60,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "J8W_9GTmCNA"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/oTMMD1_y5G1tpFS2Tmhd--o5Eq8\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS40QTA3NTU2RkM1QzlCMzYx",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:07:31.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 035: WeaveWorks Flux and GitOps",
+    "description": "0:00:00 Hello and Welcome\n0:02:20 Plan for the episode\n0:03:00 Recent Kubernetes news review\n0:03:25 New swag! Heptio and Kubernetes keycaps\n0:06:35 Heptio is hiring!\n0:07:34 Heptio in NYC\n0:08:44 Kubernetes Discourse!\n    https://discuss.kubernetes.io\n0:10:26 CoreOS/Red Hat integration plans\n    https://www.redhat.com/en/about/press-releases/red-hat-unveils-roadmap-coreos-integration-red-hat-openshift\n0:12:14 Flatcar Linux (fork of CoreOS)\n    https://www.flatcar-linux.org/\n0:13:46 Operator Framework\n    https://coreos.com/blog/introducing-operator-framework\n0:15:10 Envoy Operator\n    https://medium.com/solo-io/introducing-the-envoy-operator-for-kubernetes-d59dc75e6d8c\n0:17:45 gVisor\n    https://cloudplatform.googleblog.com/2018/05/Open-sourcing-gVisor-a-sandboxed-container-runtime.html\n    https://github.com/google/gvisor\n    Microsoft Drawbridge: https://www.microsoft.com/en-us/research/project/drawbridge/\n0:21:30 CNCF Certified Kubernetes Application Developer (CKAD) exam\n    https://www.cncf.io/announcement/2018/05/02/cloud-native-computing-foundation-announces-launch-of-certified-kubernetes-application-developer-ckad-exam/\n0:22:12 Defining GitOps\n    https://www.weave.works/blog/gitops-operations-by-pull-request\n0:29:41 GitOps compared to Spinnaker\n0:30:49 Layering w/ GitOps, App def vs. app def manipulation vs. app def application\n0:33:40 kubediff for diffing local config vs. cluster config\n    https://github.com/weaveworks/kubediff\n0:34:07 Sealed secrets from Bitnami\n    https://github.com/bitnami-labs/sealed-secrets\n0:35:49 Helm and GitOps?\n    https://www.weave.works/blog/helmflux\n0:37:30 Weave Cloud and Weave Flux\n    https://www.weave.works/features/continuous-delivery/\n0:38:40 Replica scaling and GitOps\n0:39:20 Installing Weave Flux\n0:41:13 Looking at install YAML\n0:42:48 Setting the git repo\n0:44:04 Flux RBAC\n0:48:01 Actually deploying Flux\n0:49:43 Flux \"Big Red Button\"?\n0:51:15 Connecting to Flux/installing fluxctl\n0:59:09 Connecting Flux to our git repo\n1:02:05 Looking at flux secrets\n1:06:36 Flux terminology: Controllers\n1:09:00 List images\n1:10:00 Updating image (release) on controller\n1:12:45 Flux and templating systems?\n1:13:54 Connecting to Hello World application\n1:14:53 Automating updates when new images pushed\n1:17:14 Rolling back an update\n1:20:10 Deautomate\n1:22:23 Semver for image tags?\n1:23:50 Locking a controller\n1:25:23 Editing files in git directly\n1:34:14 More features! Changing git author, image tag filtering\n1:35:59 Wrapping up!\n1:38:50 Kris taking on more TGIKs\n\nCome hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nIn this post-KubeCon episode we'll cover some impressions from the conference and announcements from other CoreOS/Redhat, Microsoft and beyond. Then we'll dive into the idea of \"GitOps\" and how those ideas are used in WeaveWorks Flux.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/aQz3H9bIH8Y/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/aQz3H9bIH8Y/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/aQz3H9bIH8Y/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 61,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "aQz3H9bIH8Y"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/9o1YxttJUrWoLKTXEJoyr-hB3dw\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS45RjNFMDhGQ0Q2RkFCQTc1",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:07:23.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 034: Elasticsearch Operator",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nThis week we'll be exploring the Elasticsearch Operator. This was by popular demand via an ad hoc twitter poll: https://twitter.com/jbeda/status/989222662516891648\n\n\n0:00:00 - Welcome\n0:03:00 - Intro Ryan Schneider! Woo!\n0:04:16 - Ashley t-shirts and shout out to Ashley McNamara! Woo!\n0:07:48 - Kubernetes as a Platform Platform \n0:09:10 - Cilium\n0:09:40 - Announcing Heptio Gimbal\n0:15:00 - New Golang Branding\n0:16:21 - Kubecon and Heptio Presentations \n0:21:16 - Diet Coke and Starting the Operator\n0:21:35 - ElasticSearch overview\n0:31:10 - Deploy the operator\n0:33:07 - Inspecting the static manifest\n0:37:18 - Installing the operator\n0:41:21 - Bringing up a cluster (Kibana and Cerebro)\n0:50:30 - Inspecting the underlying storage classes\n0:54:30 - Elastic Search Cluster CRDs\n0:55:10 - The importance of status\n0:56:00 - Inspecting the ES cluster resources\n0:59:20 - Accessing the ES cluster\n1:01:27 - ES dashboard\n1:03:46 - Cerebro dashboard\n1:09:32 - Loading sample data\n1:14:17 - Kris.\n1:15:20 - Breaking up data sets\n1:20:00 - Kibana with Silicon Valley\n1:24:00 - Uploading Shakespeare \n1:32:49 - Cat API with ES\n1:35:54 - Get Shakespeare search\n1:43:22 - Get cluster health\n1:48:45 - Thanks and Goodbyes! \n\nLinks:\n* Get well Ashley! Buy tshirts to benefit WomenWhoGo: https://medium.com/@ashleymcnamara/gophercon-2018-b9a97387b954\n* TGIK8s voting! https://twitter.com/jbeda/status/989222662516891648\n* Presentation: Kubernetes is a Platform Platform: http://slides.eightypercent.net/platform-platform/index.html#p1\n* Cilium hits 1.0: https://cilium.io/blog/2018/04/24/cilium-10/\n* Introducing Heptio Gimbal: https://blog.heptio.com/introducing-heptio-gimbal-bridging-cloud-native-and-traditional-infrastructure-9d6224bece5a\n  * Contour ingressroute design: https://github.com/heptio/contour/blob/master/design/ingressroute-design.md\n* Go (re)branding: https://blog.golang.org/go-brand\n* Kubecon EU 2018: https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2018/\n* Heptio at KubeCon EU 2018: https://gist.github.com/jbeda/a0193c15c26a855b5d84eea25b8852a9\n* Kubernetes Contributor Summit: https://github.com/kubernetes/community/tree/master/events/2018/05-contributor-summit\n\n* Elasticsearch Operator: https://github.com/upmc-enterprises/elasticsearch-operator\n  * API definition structs: https://github.com/upmc-enterprises/elasticsearch-operator/blob/master/pkg/apis/elasticsearchoperator/v1/cluster.go\n  * Sample data docs: https://www.elastic.co/guide/en/kibana/current/tutorial-load-dataset.html\n  * William Shakespeare subtweets on twitter: https://twitter.com/wwm_shakespeare",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/8X8Rh_RKFSQ/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/8X8Rh_RKFSQ/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/8X8Rh_RKFSQ/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 62,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "8X8Rh_RKFSQ"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/aGJcF6hcidMpBPSpcVPZqFgEg94\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS42MTI4Njc2QjM1RjU1MjlG",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:07:19.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 033: Developing with Draft",
+    "description": "0:00:55 Hello and talking Grand Canyon\n0:01:50 Kris is heading to Toronto and doesn't know what Tim Horton's is.\n0:02:55 Setting topic as Draft\n0:06:11 News: Hashicorp Vault Operator from CoreOS/Red Hat\n0:08:22 News: Heptio Ark v0.8.0\n0:11:36 Bug I hit in k8s VS Code extension\n0:13:00 Naming kube-deploy tool\n0:14:55 Digression and thoughts on Kubernetes Federation\n0:20:35 Starting look at Draft\n0:21:45 Draft is MIT licensed (vs. Apache 2)\n0:23:15 Installing Draft\n0:27:20 Draft init\n0:29:24 Helm with RBAC cluster\n0:31:37 Looking forward to Helm v3\n0:33:50 Continuing installing Helm\n0:40:27 Configure Registry (ECR) with draft\n0:46:21 Take draft for a spin (python example)\n0:48:10 draft create\n0:53:55 draft up (including creating ECR repo)\n0:57:43 Why is ECR different?\n0:59:15 Decoding helm params that draft sets\n1:02:25 draft up with no changes a no-op?\n1:04:50 draft connect (including port-forward details)\n1:15:12 Customizing local ports for `draft connect`\n1:16:53 draft connect utility outside of draft?\n1:19:33 Language auto detect and packs\n1:27:20 Multiple microservices and draft?\n1:28:30 Docker \"onbuild\" images\n1:32:38 Filesystem watch?\n1:34:10 Wrap up and goodbye!\n\nCome hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nDeploying applications to Kubernetes is one thing. But what about developing on Kubernetes? How do you use Kubernetes to run your application in an environment that is similar to production?\n\nFinishing our our series on developer tools for working with Kubernetes, we are looking at Draft from Microsoft.  https://draft.sh/.  Draft automates creating/rebuilding and launching apps on Kubernetes.\n\nLinks:\n* Draft: https://draft.sh/\n* Vault Operator: https://coreos.com/blog/introducing-vault-operator-project\n* Heptio Ark 0.8.0: https://github.com/heptio/ark/releases/tag/v0.8.0\n* Issue I'm hitting with k8s extension for VS Code: https://github.com/Azure/vscode-kubernetes-tools/issues/69\n* Vote on the kube-deploy client tool name! https://github.com/kubernetes/kube-deploy/issues/689\n* Go port of linguist: https://github.com/generaltso/linguist\n* Helm v3 design proposal: https://github.com/kubernetes-helm/community/blob/master/helm-v3/000-helm-v3.md",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/8B1D7cTMPgA/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/8B1D7cTMPgA/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/8B1D7cTMPgA/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 63,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "8B1D7cTMPgA"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/zqd8_jalO8yNdcdrnxnCi91WiPc\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5CMEQ2Mjk5NTc3NDZFRUNB",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:07:13.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 032: kubicorn and the cluster-api",
+    "description": "Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!\n\nThis week we will be exploring Kris Nova’s project Kubicorn and discovering the future of cloud native infrastructure with the cluster API work going on in upstream kubernetes.\n\n0:00:00 - Intro\n0:00:40 - Starting TGIK and updates\n0:02:15 - YouTube event explanation \n0:03:40 - Hello and welcome everyone!\n0:04:30 - Reddit AMA\n0:06:37 - New CNCF open source project landscape\n0:07:55 - Shoutout to release team\n0:08:53 - Kubernetes mentoring update\n0:09:47 - Increasing diversity contributions at Kubecon (Panel)\n0:11:00 - The history of kops and kubicorn\n0:12:45 - Shoutout to Kubicorn contributors\n0:13:45 - Updating on the next (first release) of Kubicorn\n0:15:28 - Compile the binary\n0:17:03 - Kubicorn commands\n0:17:27 - Kubicorn and declaring infrastructure\n0:18:53 - Kubicorn state interface and state stores\n0:19:55 - Inspecting a kubicorn declaration \n0:23:18 - Kubicorn bootstrap scripts with Kubeadm\n0:24:23 - Inspecting Kubernetes master bootstrap script (Amazon, Ubuntu)\n0:26:14 - Bootstrapping a cluster with Kubicorn in Amazon\n0:27:28 - Using --set with Kubicorn profiles\n0:32:00 - Race conditions in the Amazon API\n0:36:00 - Explaining the Kubicorn resource graph\n0:37:55 - Kubicorn reconciling and object hashes\n0:38:31 - Cluster names with kubeadm\n0:38:50 - Kubicorn SSH (in the works)\n0:39:53 - Inspecting the Kubicorn control plane nodes\n0:41:20 - Where the rubber meets the road with kubeadm\n0:43:00 - Inspecting the Kubicorn worker nodes\n0:44:49 - The kube-deploy repository and the cluster API work\n0:45:55 - Fragmented user interfaces in the wild\n0:46:44 - Common controller code with the cluster API\n0:47:45 - New proposal for community driven cluster API tooling\n0:49:07 - The new cluster API repository\n0:50:25 - Kubicorn running the cluster API\n0:51:35 - Creating a controller driven kubicorn cluster\n0:53:45 - Controllers with Kubicorn\n0:57:00 - Apply the controller type of cluster\n0:59:50 - kubectl get machines\n1:01:20 - Looking at the kubicorn controller code\n1:05:40 - Compiling the kubicorn controller\n1:07:10 - Hacking on the kubicorn controller\n1:11:30 - How to learn more about the cluster API and contribute upstream\n1:20:30 - Thanks and goodbye!\n\n\n\n\n\nLinks:\n\nReddit AMA\nhttps://www.reddit.com/r/kubernetes/comments/8a2e2f/ama_with_kubernetes_developers_on_tuesday_april_10/\n\nCNCF interactive landscape\nhttps://landscape.cncf.io/\n\nKubernetes 1.10.1 released\nhttps://github.com/kubernetes/kubernetes/blob/master/CHANGELOG-1.10.md#v1101\n\nDiversity panel for Kubecon\nhttp://sched.co/E8bW\n\nMentoring / meet our contributors\nhttps://github.com/kubernetes/community/blob/master/mentoring/meet-our-contributors.md\n\nCluster API Tooling Proposal\nhttps://docs.google.com/document/d/1-sYb3EdkRga49nULH1kSwuQFf1o6GvAw_POrsNo5d8c/edit#heading=h.mhd2l21c5f2l",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/oLGaWktrB60/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/oLGaWktrB60/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/oLGaWktrB60/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/oLGaWktrB60/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/oLGaWktrB60/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 64,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "oLGaWktrB60"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/p1bcP8Sfd5NiSnkisLFYphqbouw\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4zRDBDOEZDOUM0MDY5NEEz",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:07:10.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 031: Connecting with Telepresence",
+    "description": "(Sorry the stream was choppy. I think this was a YouTube issue.)\n\n0:02:01 Intro to topic - 3 ways\n0:06:00 Go Kris!\n0:08:10 Kubernetes Application Survey\n0:09:44 ksonnet TGIK8s?\n0:11:05 EKS conformance\n0:13:45 Oracle MySQL Operator\n0:15:35 SSO series from Joel Speed\n0:18:02 Awesome Kubernetes for finding operators\n0:19:35 Quick digression on volumes and stability and storage\n0:23:30 VS Code extension for Kubernetes\n0:24:06 Telepresence introduction\n0:26:45 Different Telepresence modes\n0:29:45 Installing Telepresence\n0:33:15 sshuttle for VPNing\n0:33:58 Running a first example\n0:34:48 Accessing a service with port-forward (no Telepresence)\n0:36:34 telepresence --docker-run\n0:38:17 Stumbling over osxfuse\n0:39:59 Running curl from inside telepresence    \n0:41:48 Looking under the covers for --docker-run\n0:45:57 vpn-tcp mode\n0:51:06 Kubernetes context used?\n0:51:44 Exposing local services to cluster\n0:53:05 local dev of kuard with telepresence\n0:57:02 Running kuard backend under telepresence\n0:59:05 Reviewing batch job setup\n1:02:51 Figuring out --expose\n1:05:30 Running kuard client\n1:08:05 Creating kuard queue (struggling with curl flags)\n1:14:02 Setting up kuard client correctly\n1:16:30 debugging with exec -- user permission issues!\n1:18:15 Best practice: don't run as root in containers\n1:22:28 Fixing the port I was using\n1:24:21 Success! Working on cluster is dequeuing items from local queue\n1:26:48 Summary and feedback on telepresence\n1:31:33 Thank you and goodbye!\n\n* Telepresence: https://www.telepresence.io/\n  * github: https://github.com/datawire/telepresence\n  * sshuttle: https://sshuttle.readthedocs.io/en/stable/#\n  * TGIK 024 for workqueue example: https://www.youtube.com/watch?v=-gLMTm85R3M&t=3174s\n    * Loop to create work items:  for i in work-item-{0..99}; do curl -X POST localhost:8080/memq/server/queues/tgik/enqueue -d \"$i\"; done\n\n* Good luck Kris! https://twitter.com/krisnova/status/981748166339985408\n* Take the Kubernetes Application Survey! https://groups.google.com/forum/#!msg/kubernetes-sig-apps/AjB_lFdILY8/NskxVxdvCQAJ\n* AWS EKS passes conformance. https://github.com/cncf/k8s-conformance/pull/184\n* Oracle MySQL operator: https://medium.com/oracledevs/introducing-the-oracle-mysql-operator-for-kubernetes-b06bd0608726\n* Kubernetes SSO series:\n  * Intro: https://thenewstack.io/kubernetes-single-sign-one-less-identity/\n  * CLI: https://thenewstack.io/single-sign-kubernetes-command-line-experience/\n  * Dashboard: https://thenewstack.io/single-sign-on-for-kubernetes-dashboard-experience/\n* Awesome Kubernetes (Operators): https://github.com/ramitsurana/awesome-kubernetes#operators\n* VSCode k8s tools: https://github.com/Azure/vscode-kubernetes-tools\n\nCome hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nDeploying applications to Kubernetes is one thing. But what about developing on Kubernetes? How do you use Kubernetes to run your application in an environment that is similar to production?\n\nContinuing on our series on developer tools for working with Kubernetes, we are looking at Telepresence from Datawire.  https://www.telepresence.io/.  It allows you to run locally but connect to your remote Kubernetes cluster.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/zezeBAJ_3w8/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/zezeBAJ_3w8/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/zezeBAJ_3w8/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 65,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "zezeBAJ_3w8"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/x0c5Bk9VO0iUf85pf-LJX9UJazg\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS41QUZGQTY5OTE4QTREQUU4",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:07:05.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 030: Exploring Skaffold",
+    "description": "0:00:45 - Hi everyone!\n0:02:42 - Heptio sponsors Cloud Native Infrastructure\n0:03:55 - SPIFFE\n0:05:37 - Amazon IOT Kubernetes Quickstart Button (Tim Carr)\n0:06:29 - Comparisons of dev tool blog\n0:07:40 - kubed-sh (Bash for Kubernetes)\n0:08:21 - Click from Databricks \n0:09:40 - Working group around dev tools in Kubernetes upstream\n0:11:50 - Gloo toolset\n0:14:30 - Introduction of skaffold\n0:17:35 - Comparing to Flux\n0:22:08 - Getting started with skaffold\n0:23:00 - Installing Skaffold\n0:24:00 - Goreleaser (awesome tool for managing Go releases)\n0:28:06 - Joe uses GoLand\n0:32:50 - Inspecting the Dockerfile\n0:35:00 - Inspecting the Skaffold YAML\n0:37:00 - Porting the YAML to Amazon\n0:42:14 - First skaffold dev command\n0:43:09 - Hello world\n0:47:09 - Skaffold vs Ksync latency  \n0:48:10 - Inspecting the container registry\n0:48:50 - Skaffold run\n0:53:00 - Exploring helm\n0:54:00 - Possible integration with ksonnet\n0:56:45 - Looking at tagging strategies for the container images\n1:01:03 - Going beyond Dockerfiles\n1:05:22 - How skaffold detects deltas\n1:06:00 - Microservices example\n1:06:44 - Kubernauts Parameterizer\n1:08:30 - Creating new repository in ECR\n1:10:35 - Running the microservice example\n1:12:04 - Fixing the leeroy app\n1:12:27 - Learning how skaffold manages YAML delta\n1:16:36 - Launching a kuard\n1:18:20 - Examining the service and round robin DNS\n1:19:10 - Port forwarding \n1:20:50 - Tweaking the HTTP get request in Go (Turning of Keepalive)\n1:28:20 - Working example!\n1:31:00 - Looking at CRDs with skaffold\n1:32:00 - What's next?\n\n\n* Skaffold: https://github.com/GoogleCloudPlatform/skaffold/tree/master/docs\n    * v0.3: https://github.com/GoogleCloudPlatform/skaffold/blob/v0.3.0/CHANGELOG.md\n\n* Cloud Native Infrastructure e-book: http://go.heptio.com/cloud-native-infrastructure\n* SPIFFE joins the CNCF: https://www.cncf.io/blog/2018/03/29/cncf-to-host-the-spiffe-project/\n* Heptio Quick Start for Kubernetes IoT button: https://twitter.com/timmycarr/status/979393239429107718\n* Comparison for dev tools: https://blog.hasura.io/draft-vs-gitkube-vs-helm-vs-ksonnet-vs-metaparticle-vs-skaffold-f5aa9561f948\n* kubed-sh: https://github.com/mhausenblas/kubed-sh\n* Click from databricks: https://databricks.com/blog/2018/03/27/introducing-click-the-command-line-interactive-controller-for-kubernetes.html\n* K8s WG around Dev Tools? https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/kubernetes-dev/YcjXRDrCdbI/msPgV3tBBgAJ\n* Draft v0.12 released: https://github.com/Azure/draft/releases/tag/v0.12.0\n* solo.io Gloo function gateway: https://www.solo.io/\n* Weave Flux for gitops deployment: https://github.com/weaveworks/flux\n* Goreleaser: https://goreleaser.com/\n* Kail -- Kubernetes tail: https://github.com/boz/kail\n* Kubernauts Parameterizer: https://github.com/kubernauts/parameterizer\n\nCome hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nDeploying applications to Kubernetes is one thing. But what about developing on Kubernetes? How do you use Kubernetes to run your application in an environment that is similar to production?\n\nLast week we looked at ksync.  This week we are taking on Skaffold from Google.  We'll follow up in coming weeks with Draft and Telepresence.\n\nhttps://github.com/GoogleCloudPlatform/skaffold",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/McwwWhCXMxc/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/McwwWhCXMxc/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/McwwWhCXMxc/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 66,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "McwwWhCXMxc"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/_1H11E4vjwDJ_FphDwvDvLuPH2o\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS43NDhFRTgwOTRERTU4Rjg3",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:07:00.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 029: Developing Apps with Ksync",
+    "description": "0:00:30 Talking about YouTube problems last time\n0:02:50 Intro to series on Dev workflow\n0:03:41 Kubernetes 1.10\n0:08:18 Apache Spark on Kubernetes\n0:08:59 Jenkins X\n0:09:52 Untrusted Container Building from JessFraz\n0:13:56 Why do development with Kubernetes Clusters\n0:19:55 Quick question on distributed monoliths\n0:21:18 Factoring layers of dev/deploy workflows\n0:23:15 Approaches to development in cluster\n0:29:22 Looking at ksync\n0:30:38 Prior art w/ docker-sync and unison\n0:32:16 Other ways to pronounce of Kubernetes\n0:33:16 Installing ksync\n0:37:29 Aside: Fun spinners and lolgopher\n0:39:37 Demo app with ksync\n0:47:12 Syncing a directory\n0:52:38 Syncing is working!\n0:53:40 Is bidirectional sync a good idea?\n0:56:41 Exec to container that is sync'd\n0:58:10 Compiled languages and reload?\n1:03:45 Architecture docs\n1:04:25 Alternate approaches?\n1:08:30 Wrapping up\n\n(Last try was aborted due to technical problems. Hopefully this week we won't have the same issues!)\n\nCome hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nDeploying applications to Kubernetes is one thing. But what about developing on Kubernetes? How do you use Kubernetes to run your application in an environment that is similar to production?\n\nThis is a super active space with a lot of interesting tools including things like Draft or newer projects like Skaffold.  In this episode we'll start to break down ways to approach this problem and look at a tool called ksync from vapor.io.\n\nNotes/Links\n\n* Gap between local and cluster dev experiences\n  * Why run dev on cluster?\n  * Languages/tools drive decisions\n* Approaches\n  * Auto rebuild and deploy\n    * Draft - https://github.com/Azure/draft\n    * Skaffold - https://github.com/GoogleCloudPlatform/skaffold\n    * Questions around moving data/source?\n      * Cloud builds\n      * Container registry\n      * Non-priv builders (img, orca-build, buildah, Bazel?)\n  * Run on cluster, sync file system\n    * ksync - https://github.com/vapor-ware/ksync\n    * Adapt docker host volume solutions\n      * http://docker-sync.io/\n      * Unison -- https://www.cis.upenn.edu/~bcpierce/unison/\n  * Run locally, bridge network\n    * How to run locally?\n      * Minikube?\n      * Local container\n      * Local native\n      * Local node attached to remote cluster\n    * Telepresence https://www.telepresence.io/\n* Other stuff that came up in episode:\n  * Kubernetes 1.10: http://blog.kubernetes.io/2018/03/first-beta-version-of-kubernetes-1-10.html\n  * Apache Spark on K8s: http://blog.kubernetes.io/2018/03/apache-spark-23-with-native-kubernetes.html\n  * Jenkins X: https://jenkins.io/blog/2018/03/19/introducing-jenkins-x/\n  * Jessie's work on untrusted container builds: https://blog.jessfraz.com/post/building-container-images-securely-on-kubernetes/\n  * docker-sync: http://docker-sync.io/\n  * Unison: https://www.cis.upenn.edu/~bcpierce/unison/\n  * Syncthing: https://syncthing.net/\n  * lolgopher: https://github.com/kris-nova/lolgopher",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/QW85Y0Ug3KY/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/QW85Y0Ug3KY/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/QW85Y0Ug3KY/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 67,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "QW85Y0Ug3KY"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/bN-dbvZ2tBDq9ayle250vqoFExU\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS44Mjc5REFBRUE2MTdFRDU0",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:06:55.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 028: Exploring CockroachDB on Kubernetes",
+    "description": "Index\n\n0:00:00 - Intros\n0:02:50 - Container World\n0:04:00 - How to deploy web applications on K8s with Countour + LetsEncrypt\n0:07:28 - Kubernetes in CNCF incubation\n0:09:40 - Debugging scratch containers\n0:13:19 - Stateful Sets and Stateful Workloads in Kubernetes\n0:14:20 - Defining Stateful Workloads\n0:20:15 - Understanding StatefulSets\n0:20:00 - Jetstack Navigator\n0:39:06 - Launching CockroachDB\n0:40:04 - Inspecting the Cockroach Manifests\n0:50:30 - Applying CockroachDB\n0:51:18 - Readiness checks with CockroachDB\n0:55:15 - Observing CockroachDB coming up in Kubernetes\n0:56:39 - Approving the CSR\n0:59:27 - Secrets\n1:02:27 - Common name \"root\" with CSRs in CockroachDB\n1:05:04 - Creating a database called \"bank\"\n1:06:24 - Port forwarding and accessing the UI\n1:11:33 - Getting kuard running\n1:12:45 - DNS with CockroachDB\n1:14:35 - Advanced features of the CockroachDB UI\n1:16:49 - CockroachDB and etcd\n1:20:30 - Taking down an instance of the cluster\n1:28:02 - Debugging pods and pvcs after an outage\n1:34:06 - Tearing down the cluster\n1:40:16 - Q&A\n\n\nCome hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nStateful service and applications are a hot topic in the Kubernetes world. In this episode I'll talk in general about how I view state on Kubernetes and then we'll explore a system built for a dynamic Kubernetes like environment -- CockroachDB\n\nLinks:\n* Dave's guide to HTTPS Ingress. Contour + Let's Encrypt + cert-manager: https://blog.heptio.com/how-to-deploy-web-applications-on-kubernetes-with-heptio-contour-and-lets-encrypt-d58efbad9f56\n* Blog post based TGIK 027 on securing the k8s dashboard: https://blog.heptio.com/on-securing-the-kubernetes-dashboard-16b09b1b7aca\n* Kubernetes is graduating! https://lists.cncf.io/g/cncf-toc/topic/vote_kubernetes_moving_to/12935280?p=,,,20,0,0,0::recentpostdate%2Fsticky,,,20,2,0,12935280\n* Debugging \"From Scratch\" containers: https://ahmet.im/blog/debugging-scratch/\n* StatefulSet basics: https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/#writing-to-stable-storage\n* Jetstack Navigator for managing Cassandra and Elasticsearch: https://github.com/jetstack/navigator\n* Metacontroller catset: https://github.com/kstmp/metacontroller/tree/master/examples/catset\n* Secure install of Cockroachdb: https://www.cockroachlabs.com/docs/stable/orchestrate-cockroachdb-with-kubernetes.html\n* \"Scaling Raft\" talks about raft in Cockroachdb (from 2015 -- may be out of date?) https://www.cockroachlabs.com/blog/scaling-raft/",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/JMCCeAb9eY4/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/JMCCeAb9eY4/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/JMCCeAb9eY4/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 68,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "JMCCeAb9eY4"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/hk2IIyKE-jNLN3JokMCSoCotCsY\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5DMkU4NTY1QUFGQTYwMDE3",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:06:50.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 027: Securing the k8s dashboard and beyond!",
+    "description": "Index:\n00:03:20 - Thank you Unsplash!\n00:04:56 - Tesla k8s dashboard cryptojacking\n00:09:21 - img container image builder from JessFraz\n00:13:40 - ksync from vapor.io\n00:15:24 - Hacking and Hardening k8s clusters from Brad Geesaman\n00:17:34 - Sealed Secrets\n00:19:36 - Blog post tease: Contour+Let's Encrypt+cert-manager\n00:23:31 - Accessing dashboard with kubectl proxy\n00:28:54 - Dashboard without credentials\n00:30:01 - Giving the dashboard root (don't do this!)\n00:35:24 - Creating a service account token for dashboard access\n00:45:18 - Running oauth2_proxy in front of dashboard\n00:48:45 - Aside: using RBAC as allow list for users at proxy?\n01:02:04 - First try at logging in with proxy\n01:03:26 - Relaxing dashboard network policy\n01:05:42 - Exposing HTTP from dashboard service\n01:08:50 - Didn't take for some reason. Debugging...\n01:12:43 - Getting the dashboard to listen on unsecured port\n01:19:20 - Logging into worker node to confirm flags\n01:22:14 - Success! We are hitting the dashboard through oauth2 proxy. Now about that auth header...\n01:25:35 - Back to the dashboard login screen!\n01:29:23 - Wrapping up! Thanks!\n01:32:49 - Aside: Episode on cluster autoscaling?\n\nCome hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nWith the recent report of Tesla being compromised by having an open kubernetes dashboard, it seems like a good time to review best practices for both the dashboard and other similar services. We'll look at the current security model of the Kubernetes dashboard and explore using an authenticating proxy to secure any internal facing web service.\n\nLinks:\n* Files from the episode: https://gist.github.com/jbeda/53a7c6c81359054eacc1608f5211150c\n* Images for title cards from Unspash. Thanks Unsplash! https://unsplash.com/\n* Details on the Tesla k8s dashboard cryptojack: https://blog.redlock.io/cryptojacking-tesla\n* Jess' awesome image builder: https://github.com/jessfraz/img\n* ksync from vapor.io: https://github.com/vapor-ware/ksync\n* Securing k8s talk from Brad Geesaman: https://www.youtube.com/watch?v=vTgQLzeBfRU\n* Sealed Secrets: https://github.com/bitnami-labs/sealed-secrets\n* Dashboard access wiki page: https://github.com/kubernetes/dashboard/wiki/Access-control",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/od8TnIvuADg/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/od8TnIvuADg/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/od8TnIvuADg/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 69,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "od8TnIvuADg"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/UROjPvOk7Cwegx7v33CSRHf8j4U\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4yQUE2Q0JEMTk4NTM3RTZC",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:06:45.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 026: Helm Yeah!",
+    "description": "0:02:39 - Create a Kubernetes cluster with Kubicorn\n0:03:13 - Kooper\n0:03:35 - Kris gets Pizza, hot sauce, and diet coke from Joe\n0:05:49 - Prow prow.k8s.io\n0:07:22 - GPU on GKE\n0:07:30 - Helm summit https://t.co/rzbzqHHxKg\n0:08:58 - Heptio ark release\n0:11:42 - Vanilla k8s cluster\n0:12:34 - Installing helm\n0:24:22 - Exploring charts\n0:27:31 - Text Template \n0:31:22 - values.yaml and interpolating at runtime\n0:32:40 - Installing tiller\n0:33:02 - Cobra CLI library\n0:34:01 - helm init\n0:38:44 - Debugging tiller with RBAC\n0:48:35 - Joe + Kris RBAC help\n0:51:03 - helm install stable/wordpress\n0:53:16 - Mapping deployment to chart\n0:57:17 - Using --set\n1:01:30 - Helm exploit\n1:04:36 - Creating a helm chart\n1:07:16 - emacs helm \n1:09:10 - Bug in kubicorn\n1:12:35 - Creating a repository\n1:16:34 - Recap and goodbyes\n\nKris Nova is guest starring this week on TGIK! \n\nCome hang out with Kris Nova as she does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Kris talking about the things she knows well. Some of this will be Kris exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nThis week Kris will be exploring Helm. We will start by installing Helm on a new Kubernetes cluster. We will be installing an existing helm chart, and creating a new one from scratch for the Java Prototype application.\n\nLinks:",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/t3kmscqbFHg/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/t3kmscqbFHg/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/t3kmscqbFHg/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 70,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "t3kmscqbFHg"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/hhQLX01-2hGWCEfM8aMOns0HiDg\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5DQ0MyQ0Y4Mzg0M0VGOEYw",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:06:40.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 025: Using (Linux) K8s from Windows",
+    "description": "Index:\n\n0:03:16 - Blog O' Maty\n0:04:12 - Dotmesh\n0:05:57 - Weaveworks Kured\n0:08:06 - Kubernetes Repository Structure\n0:12:03 - Kelsey Hightower - Nocode\n0:14:01 - Open Policy Agent\n0:15:13 - Hashicorp Sentinel \n0:15:45 - Windows Containers and High Level of call\n0:17:35 - NodePort bug report\n0:19:05 - Docker on Windows and HyperV\n0:21:05 - Connecting to Windows RDP in Azure\n0:22:14 - Installing Docker for Windows\n0:26:40 - Installing VSCode\n0:29:03 - Installing git\n0:30:06 - Joe locks himself out of his Windows VM\n0:31:30 - Installing Windows Subsystem for Linux (WSL)\n0:43:50 - Docker crashes\n0:45:10 - Installing docker in WSL\n0:51:10 - Building a minimal Python server\n0:53:45 - Configuring terminal for VSCode\n0:55:45 - Touch hello.py\n1:01:47 - Installing Python\n1:03:44 - Creating Dockerfile.txt\n1:09:24 - Now installing docker CE\n1:12:17 - Installing kubectl windows\n1:13:15 - Choclatey on Windows\n1:18:45 - Running python server on localhost:8080\n1:24:00 - kubectl get po \n1:25:45 - Volume mapping for kube config\n1:26:08 - SMB Share\n1:28:45 - Reload VSCode for kubectl\n1:29:40 - kubectl get no (Off to the races)\n1:29:55 - Launching kuard\n1:36:20 - Joe signs Kris up for TGIK\n1:38:15 - Kris wants to do helm for TGIK\n\n\n\nCome hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nThis week Joe goes Windows! He'll explore the Windows Subsystem for Linux (WSL), Docker for Windows and using kubectl to manage Kubernetes from the Windows command line.\n\nLinks:\n* LeMatty's blog with notes from previous TGIKs: https://prefetch.net/blog/\n* dotmesh: https://dotmesh.com/\n* kured: https://github.com/weaveworks/kured\n* Kubernetes community repository structure proposal: https://github.com/kubernetes/community/pull/1752\n* nocode: https://github.com/kelseyhightower/nocode\n* OPA: http://www.openpolicyagent.org/\n* NodePort issue with 1.9 kubeadm clusters: https://github.com/kubernetes/kubernetes/issues/58908\n* WSL in VSCode: https://github.com/Microsoft/vscode/issues/22317\n*",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/F47RwU8AzYI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/F47RwU8AzYI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/F47RwU8AzYI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 71,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "F47RwU8AzYI"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/scnw2oqq2-lTuIRVnKct-WfP8xw\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS43MTI1NDIwOTMwQjIxMzNG",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:06:32.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 024: Kubernetes Job objects",
+    "description": "Index:\n0:02:58 - CoreOS and Red Hat\n0:10:39 - Heptio Kubernetes Subscription (HKS)\n0:12:07 - KubeCon EU contributor summit\n0:13:14 - New k8s.io docs experience\n0:14:00 - Removing the term \"Master\" from k8s\n0:16:52 - Job object: intro\n0:21:03 - Job object: one shot\n0:38:46 - Job object: failures\n0:43:42 - kubectl run semantics\n0:47:34 - Job object: parallelism\n0:52:54 - Job object: work queue\n1:07:11 - Job object: sidecar gotcha\n\nCome hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nThis week we'll dig into the Kubernetes \"Job\" primitive. We'll look at how it works, how it compares to other controllers like Deployments and common usage patterns.\n\nJobs object links:\n* KUAR excerpt link (unfortunately doesn't have Jobs chapter): http://go.heptio.com/kubernetes-up-and-running\n* k8s.io docs on Jobs: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/\n* Issue around sidecars and jobs: https://github.com/kubernetes/kubernetes/issues/25908\n* kubectl run behavior based on flags: https://kubernetes.io/docs/reference/kubectl/conventions/#generators\n* KUAR org with kuard and examples: https://github.com/kubernetes-up-and-running\n\nWeekly review of k8s land:\n* CoreOS joins RedHat: https://coreos.com/blog/coreos-agrees-to-join-red-hat\n* Container Linux lives: https://groups.google.com/forum/m/#!topic/coreos-user/GR4YlF2c1dM\n* CoreOS/Red Hat FAQ: https://www.redhat.com/en/blog/faq-red-hat-acquire-coreos\n* Brandon is a dad! https://twitter.com/BrandonPhilips/status/958809760299565056\n* Brian shaves his beard! https://twitter.com/brianredbeard/status/958455929694953473\n* Heptio Kubernetes Subscription. The Undistro: https://blog.heptio.com/introducing-heptio-kubernetes-subscription-5415052ef374\n* KubeCon EU Contributor Summit: https://github.com/kubernetes/community/tree/master/events/2018/05-contributor-summit\n* New k8s.io docs experience! https://kubernetes.io/docs/home/\n* Rename Master in Kubernetes: https://github.com/kubernetes/website/issues/6525",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/-gLMTm85R3M/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/-gLMTm85R3M/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/-gLMTm85R3M/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 72,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "-gLMTm85R3M"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/_3WApFT_hN5Xq2nAPBtqxj4ymjM\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5DNzE1RjZEMUZCMjA0RDBB",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:06:29.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 023: Using private registries",
+    "description": "0:00:00 - New stuff with k8s this week\n0:12:53 - Cluster configuration\n0:19:20 - Registry terminology\n0:20:28 - Docker Hub\n0:36:54 - Discover and debug misconfigured cluster\n0:39:41 - Docker Hub continued\n0:51:06 - Azure\n1:02:00 - ImagePullPolicy questions/advice\n1:05:14 - Azure continued\n1:09:25 - AWS\n1:20:58 - registry-creds helper\n1:23:54 - Google\n1:40:47 - Note on issue with kubectl 1.9.0\n1:42:49 - Docker version validation/compatibility\n1:45:08 - Goodbye and thanks!\n\nCome hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nThis week we'll look at how to use private/custom registries with Kubernetes.  I'm going to try to cover major cloud providers and the Docker Hub.  We'll look at how registries interact with Kubernetes secrets and service accounts.\n\nLinks:\n* Notes I was using during the video: https://gist.github.com/jbeda/71b85764187dcd3434ee921ff0baae3a\n* k8s.io docs on private registries: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/\n* k8s.io docs on service accounts (and imagePullSecrets): https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/\n* ECR re-registerer: https://github.com/upmc-enterprises/registry-creds (Thanks Steve!)\n* Applatix joins Intuit: https://blog.argoproj.io/applatix-joins-intuit-7ab587270573\n* Nuclio hackathon: https://nuclio.devpost.com/\n* Nuclio 0.2.4: https://github.com/nuclio/nuclio/releases/tag/0.2.4\n* 99pi Scott McCloud episode: https://99percentinvisible.org/episode/speech-bubbles-understanding-comics-scott-mccloud/\n* Scott's k8s comic: https://cloud.google.com/kubernetes-engine/kubernetes-comic/\n* OpenCensus: http://opencensus.io/\n* kubed-sh: https://github.com/mhausenblas/kubed-sh\n* Telepresence: https://github.com/datawire/telepresence\n* Heptio Labs wardroom: https://github.com/heptiolabs/wardroom\n* Node validation code for docker version: https://github.com/kubernetes/kubernetes/blob/master/test/e2e_node/system/docker_validator.go",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/-JN8NSUnVgM/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/-JN8NSUnVgM/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/-JN8NSUnVgM/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 73,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "-JN8NSUnVgM"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/Hs_YIMS726imNYkUFxLnsTnABZc\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS45NzUwQkI1M0UxNThBMkU0",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:06:26.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 022: Nuclio serverless system",
+    "description": "Content on Nuclio starts at about 20:00 in.\n\nCome hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nThis week we will look at Nuclio -- a serverless system that is aimed at real time and data driven applications.  How does this compare with some of the other serverless systems out there? What makes it for \"real time and data driven apps\"?  How does it work when I try to install on a k8s cluster that they don't have explicit instructions around?\n\n* Nuclio serverless: https://nuclio.io/\n* Nuclio github: https://github.com/nuclio/nuclio\nhttps://twitter.com/kelseyhightower/status/950867543773859840, https://github.com/nuclio/nuclio\n* Nuclio hackathon! https://nuclio.devpost.com/\n* Kubernetes 1.9.2 changelog\n* Matt Klein's post on modern LBing: https://blog.envoyproxy.io/introduction-to-modern-network-load-balancing-and-proxying-a57f6ff80236\n* Maglev paper from Google: https://research.google.com/pubs/pub44824.html\n* Heptio community call on moving monolithic applications to k8s hosted by Kris Nova: https://blog.heptio.com/moving-monolithic-apps-e8f7483938db\n* Heptio help article on accessing private registries: http://docs.heptio.com/content/private-registries/pr-gcr.html\n* Old but good blog post on queueing theory with single threaded workers with Rap Genius (now genius.com) and heroku: https://genius.com/James-somers-herokus-ugly-secret-annotated",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/wmXHqQLdM2I/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/wmXHqQLdM2I/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/wmXHqQLdM2I/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 74,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "wmXHqQLdM2I"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/lLodtB4GA132A9ifEm1DRlIUEI4\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4zRjM0MkVCRTg0MkYyQTM0",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:06:21.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 021: kube-deploy",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nThis week we will look at kube-deploy. This is an early project that reexamines how to build and scale clusters using the \"Cluster API\". We'll talk about how this builds on top of kubeadm and look at an early version in action on GCP.\n\nLinks from the episode:\n* Cluster API working group: https://github.com/kubernetes/community/tree/master/wg-cluster-api\n* kube-deploy repo: https://github.com/kubernetes/kube-deploy\n* kubicorn: https://github.com/kris-nova/kubicorn\n* Kubernetes API docs: https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.9/\n* heptiolabs/ktx: https://github.com/heptiolabs/ktx\n* Nuclio serverless platform: https://twitter.com/kelseyhightower/status/950867543773859840, https://github.com/nuclio/nuclio",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/f_ANRYIXFgI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/f_ANRYIXFgI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/f_ANRYIXFgI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 75,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "f_ANRYIXFgI"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/ZmtGdu_u3aSJaaY-qUvaiEpeBxM\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5GM0Q3M0MzMzY5NTJFNTdE",
+   "snippet": {
+    "publishedAt": "2019-04-03T20:06:18.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 020: Argo workflow system",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nThis week we will take a look at the Argo project.  This is a Kubernetes native declarative workflow system driven by CRDs.\n\nLinks:\n* Argo github: https://github.com/argoproj/argo\n* Meltdown/Spectre: https://meltdownattack.com/, https://googleprojectzero.blogspot.com/\n* Brigade: https://github.com/azure/brigade\n* Matt's post on Brigade/YAML: http://technosophos.com/2018/01/04/why-brigade-doesn-t-do-yaml.html\n* Fission workflow: http://fission.io/workflows/\n* AWS StepFunctions: https://aws.amazon.com/step-functions/\n* kubeflow: https://github.com/google/kubeflow",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/M_rxPPLG8pU/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/M_rxPPLG8pU/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/M_rxPPLG8pU/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 76,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "M_rxPPLG8pU"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/vWa2aFE53ErRaRLhOmmFEz0MmA8\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4yMDhBMkNBNjRDMjQxQTg1",
+   "snippet": {
+    "publishedAt": "2019-04-03T19:59:23.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 019: Prometheus as a noob",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nThis week we will be exploring monitoring with Prometheus. Joe hasn't used Prometheus before (but has used similar systems inside of Google).  We'll install it and try to get some simple metrics connected.  Let's see how far we can get in ~1.5 hours.\n\nLinks:\n* Prometheus: https://prometheus.io/\n* Prometheus Operator: https://github.com/coreos/prometheus-operator\n* kube-prometheus config: https://github.com/coreos/prometheus-operator/tree/master/contrib/kube-prometheus\n* jrnt30's patch to kuard adding metrics: https://github.com/kubernetes-up-and-running/kuard/pull/14\n* Example of scraping pods directly instead of via service (thanks jrnt30!): https://github.com/prometheus/prometheus/blob/70f3d1e9f95ad6611be2e76fad44f07b0a2579ca/documentation/examples/prometheus-kubernetes.yml#L248\n* Honeycomb for high cardinality observability: https://honeycomb.io/\n* Scripts I used in the episode: https://gist.github.com/jbeda/50ce424c318a1862e5c619ea649f7c53\n\nK8s weekly update links:\n* KubeCon videos: https://www.youtube.com/playlist?list=PLj6h78yzYM2P-3-xqvmWaZbbI1sW-ulZb\n* Joe's KubeCon talk: https://www.youtube.com/watch?v=QQsq2Ny5a4A&index=58&list=PLj6h78yzYM2P-3-xqvmWaZbbI1sW-ulZb\n* Kubernetes 1.9 changelog: https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG-1.9.md\n* kubeflow: https://github.com/google/kubeflow",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/pDb2psNcvKU/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/pDb2psNcvKU/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/pDb2psNcvKU/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 77,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "pDb2psNcvKU"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/gmLgpm9_o-c-QO9l1Lc_jt4MEhY\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5ENDU4Q0M4RDExNzM1Mjcy",
+   "snippet": {
+    "publishedAt": "2019-04-03T19:59:15.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 018: kube-metacontroller",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nThis week we will be exploring the kube-metacontroller project from Anthony Yeh at Google.  This is a framework that makes it super easy to create controllers and is something that was highlighted in a KubeCon keynote. \n\nAs this is the first episode after KubeCon I'll also share my impressions of what I saw there.\n\nLinks:\n* kube-metacontroller: https://github.com/GoogleCloudPlatform/kube-metacontroller\n* Dick's Drive In: http://www.ddir.com/\n* KSonnet: https://ksonnet.io/\n* KSonnet quick screencast: https://www.youtube.com/heptio\n* Heptio Ark + Microsoft Azure: https://techcrunch.com/2017/12/07/heptio-teams-up-with-microsoft-to-build-a-better-kubernetes-disaster-recovery-solution/\n* Helm security thoughts: https://engineering.bitnami.com/articles/helm-security.html\n* tgik-controller: https://github.com/jbeda/tgik-controller",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/xdCTC4scjDg/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/xdCTC4scjDg/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/xdCTC4scjDg/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 78,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "xdCTC4scjDg"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/RKZLBUJdw_BcxGJyLeyKGauE6dk\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS45RTgxNDRBMzUwRjQ0MDhC",
+   "snippet": {
+    "publishedAt": "2019-04-03T19:59:07.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 017: Resource limits and quota",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nThis week we will be exploring resource limits (CPU, RAM, etc.) along with resource quotas. We'll explore how these work, how to set them and some best practices.  We also cover heapster and how it collects resource statistics.\n\nLinks from the episode:\n* One year for Heptio! https://blog.heptio.com/one-year-of-heptio-5a1dbd95b73b\n* Jamie's deep dive on how k8s works: https://github.com/jamiehannaford/what-happens-when-k8s\n* My working notes and some of the files I used: https://gist.github.com/jbeda/3c54ddd9c25eaafb399b143f65b9c07d\n\nThanks for watching!  I'll be off for 3 weeks with Thanksgiving and conferences.  See you in December!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/xtl2KV1JW9s/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/xtl2KV1JW9s/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/xtl2KV1JW9s/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 79,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "xtl2KV1JW9s"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/bNONfVCl2uezpgnaR4qlE1aoGd8\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4yMUQyQTQzMjRDNzMyQTMy",
+   "snippet": {
+    "publishedAt": "2019-04-03T19:58:49.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 016: Heptio Contour ingress controller",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nThis week we will be exploring a new project from Heptio: Contour! This is a new Kubernetes Ingress controller based on Envoy written by Dave Cheney.\n\nLinks:\n* Contour: https://github.com/heptio/contour\n* Envoy: https://www.envoyproxy.io/\n* Envoy v2 API: https://github.com/envoyproxy/data-plane-api\n* Kris and Justin's Cloud Native Infrastructure book: https://www.amazon.com/Cloud-Native-Infrastructure-Applications-Environment/dp/1491984309\n* Weaveworks Flux: https://github.com/weaveworks/flux.  Haven't played with it yet but it looks interesting.\n* Zalando ALB controller: https://github.com/zalando-incubator/kube-ingress-aws-controller\n* Glowforge: https://glowforge.com/\n* My paperjs program for the slinky: https://j.hept.io/k8s-slinky",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/-Hvfl6zOLGE/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/-Hvfl6zOLGE/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/-Hvfl6zOLGE/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 80,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "-Hvfl6zOLGE"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/U42-UnklQHFRWZOBYnSz-BmOolQ\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS41QTY1Q0UxMTVCODczNThE",
+   "snippet": {
+    "publishedAt": "2019-04-03T19:58:45.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 015: Exploring Brigade from Microsoft",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nThis week Joe will be looking at Brigade from Microsoft. This is a Serverless-ish workflow system that was recently announced.\n\n* Brigade: https://open.microsoft.com/2017/10/23/announcing-brigade-event-driven-scripting-kubernetes/ and https://github.com/azure/brigade\n* Heptio Contour: https://github.com/heptio/contour\n* In flight work to add NLB to AWS cloud provider: https://github.com/kubernetes/kubernetes/issues/52173\n* SPIFFE/SPIRE demo give at SIG-Auth: https://www.youtube.com/watch?v=uDHNcZ0eGHI&list=PL69nYSiGNLP0VMOZ-V7-5AchXTHAQFzJw&index=1\n* Mutable Webhooks to Beta in 1.9: https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/admission-control-webhooks.md\n* Helm RBAC instructions https://gist.github.com/mgoodness/bd887830cd5d483446cc4cd3cb7db09d.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/hreCyC7XnOw/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/hreCyC7XnOw/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/hreCyC7XnOw/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 81,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "hreCyC7XnOw"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/fgDPMVL_E16dREztz51GaVKH3sc\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5EQUE1NTFDRjcwMDg0NEMz",
+   "snippet": {
+    "publishedAt": "2019-04-03T19:58:42.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 014: Serverless with OpenFaaS",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nThis week Joe will be digging into the OpenFaaS serverless framework.  This is a continuation from the last two weeks when he looked at kubeless and fission.  We'll be starting from scratch and see how far we can get.  We will also compare and contrast approaches.\n\nLinks from the episode:\n* Updated AWS Quickstart for Kubernetes for 1.8: https://github.com/aws-quickstart/quickstart-heptio\n* Heptio Sonobuoy 0.9.0: https://github.com/heptio/sonobuoy/releases/tag/v0.9.0\n* Heptio Ark 0.5.0: https://github.com/heptio/ark/releases\n* Brigade: https://open.microsoft.com/2017/10/23/announcing-brigade-event-driven-scripting-kubernetes/ and https://github.com/azure/brigade\n* New AKS: https://azure.microsoft.com/en-us/services/container-service/kubernetes/\n* Hacking and Hardening Kubernetes by Example: https://docs.google.com/presentation/d/1xeagoDn-6kQ6FPdfX9IlD5MjWalW2o8PeCt20DEfFpg/edit#slide=id.gcb9a0b074_1_0\n* OpenFaaS:\n  * Guides: https://github.com/openfaas/faas/tree/master/guide\n  * Golang functions: https://blog.alexellis.io/serverless-golang-with-openfaas/\n\nThanks for Alex Ellis for joining in and providing so much guidance!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/iMzf_oWsRi0/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/iMzf_oWsRi0/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/iMzf_oWsRi0/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 82,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "iMzf_oWsRi0"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/VCRBtA0tzI1Wu_FzvLpdur_XMh0\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS41Mzk2QTAxMTkzNDk4MDhF",
+   "snippet": {
+    "publishedAt": "2019-04-03T19:58:38.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 013: Serverless with Fission",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nThis week Joe will be digging into the Fission serverless framework.  This is a continuation from last week when he looked at kubeless.  We'll be starting from scratch and see how far we can get.  We will also compare and contrast approaches.\n\nLinks from episode:\n* Grafeas announcement: https://cloudplatform.googleblog.com/2017/10/introducing-grafeas-open-source-api-.html\n* Grafeas site: http://grafeas.io/\n* Kelsey's guide to installing Grafeas: https://github.com/kelseyhightower/grafeas-tutorial\n* Docker/Kubernetes announcement: https://blog.docker.com/2017/10/kubernetes-docker-platform-and-moby-project/\n* Moby and Kubernetes: https://blog.mobyproject.org/moby-and-kubernetes-bf888ab31e38\n* Fission: http://fission.io/\n* Fission Workflows: https://github.com/fission/fission-workflows\n* kube-metacontroller: https://github.com/GoogleCloudPlatform/kube-metacontroller",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/3XgBB4mATNM/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/3XgBB4mATNM/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/3XgBB4mATNM/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 83,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "3XgBB4mATNM"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/qJaYqwBfR5OmXrKNHal-5l_gJ4Y\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4zMDg5MkQ5MEVDMEM1NTg2",
+   "snippet": {
+    "publishedAt": "2019-04-03T19:57:44.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 012: Exploring serverless with Kubeless",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nIn this episode Joe will be getting hands on with kubeless for the first time.  Kubeless is a popular serverless framework that runs on top of Kubernetes.\n\nLinks:\n* Kubeless: http://kubeless.io/ and https://github.com/kubeless/kubeless\n* Kubernetes office hours: https://github.com/kubernetes/community/blob/master/community/office-hours.md\n* Kubernetes Up & Running: http://shop.oreilly.com/product/0636920043874.do\n* Heptio Labs: https://blog.heptio.com/announcing-heptio-labs-c39c268da67c\n*Becoming a Cloud Native Organization eBook: https://blog.heptio.com/becoming-cloud-native-a8b82be02d27\n* Heptio Solutions Engineer Job listing: https://jobs.lever.co/heptio/9b6c7578-b696-4468-859b-a39d58fa0eb8\n* kubevirt: https://github.com/kubevirt/kubevirt\n* Heptio Quickstart issue w/ storage classes: https://github.com/heptio/aws-quickstart/issues/80",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/WotK415iOQM/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/WotK415iOQM/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/WotK415iOQM/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 84,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "WotK415iOQM"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/gH0saQtKbwIIIWGlecCTqs79-0U\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS45ODRDNTg0QjA4NkFBNkQy",
+   "snippet": {
+    "publishedAt": "2019-04-03T19:57:39.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 011: Upgrading to 1.8 with kubeadm",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nThis episode will involving taking a running 1.7.x cluster that was originally built with kubeadm and upgrading that to 1.8.  We'll also talk about the future of install tools and maybe have time to explore \"kubeadm phases\".\n\nLinks from this episode:\n* Kubeadm upgrade guide to 1.8: https://kubernetes.io/docs/tasks/administer-cluster/kubeadm-upgrade-1-8/\n* 1.8 change notes: https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v180\n* My notes I was copy/pasteing from: https://gist.github.com/jbeda/9d14523377b53937cc531f78b9f0f021\n* Allegory of the Cave (wrt API versions): https://en.wikipedia.org/wiki/Allegory_of_the_Cave",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/x9doB5eJWgQ/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/x9doB5eJWgQ/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/x9doB5eJWgQ/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 85,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "x9doB5eJWgQ"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/XkQn-NAVcj5Tox_i9vlK95xegVQ\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5EMEEwRUY5M0RDRTU3NDJC",
+   "snippet": {
+    "publishedAt": "2019-04-03T19:57:36.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 010: Ingress with TLS",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nThis episode will explore installing nginx ingress on an AWS cluster. We'll also look at how to get TLS certificates automatically allocated by Let's Encrypt via kube-lego.\n\nLinks from video:\n* Sonobuoy Scanner: https://scanner.heptio.com/\n* Kubernetes 1.8 release notes: https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v180\n* Ingress repo: https://github.com/kubernetes/ingress\n* kube-lego repo: https://github.com/jetstack/kube-lego\n* kube-lego RBAC rules: https://github.com/jetstack/kube-lego/issues/99#issuecomment-320342156\n* kuard example server: https://github.com/kubernetes-up-and-running/kuard\n* Ingress docs: https://kubernetes.io/docs/concepts/services-networking/ingress/",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/9uU2QMAiZrI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/9uU2QMAiZrI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/9uU2QMAiZrI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 86,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "9uU2QMAiZrI"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/y2g5dfEvvv8J-E2TDTbbnCrJ6o0\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS40NzZCMERDMjVEN0RFRThB",
+   "snippet": {
+    "publishedAt": "2019-04-03T19:57:30.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 009: Finishing the Controller",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nIn this episode, Joe will be continue to build the controller he started in TGIK 007 (https://www.youtube.com/watch?v=8Xo_ghCIOSY).  Some great progress was made in TGIK 008 and we'll look to finish up in this episode.\n\n---\nThanks for watching!  There is a drop in the video part way through but I was able to restart OBS and continue. \n\nThe github repo we were working on: https://github.com/jbeda/tgik-controller",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/wqhKCiGsf1Y/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/wqhKCiGsf1Y/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/wqhKCiGsf1Y/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 87,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "wqhKCiGsf1Y"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/YDK4RtLIiFibwXU7t4Esxy3m79I\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5GNjNDRDREMDQxOThCMDQ2",
+   "snippet": {
+    "publishedAt": "2019-04-03T19:57:11.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 008: Continuing the Controller",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nIn this episode, Joe will be continue to build the controller he started in TGIK 007 (https://www.youtube.com/watch?v=8Xo_ghCIOSY).  After taking a 3 week break from TGIK, Joe is going to take a step back and take a simpler approach to building this. Come hear what he got wrong the first time and watch as he fixes it.\n\nPointers:\n* Repo with the code: https://github.com/jbeda/tgik-controller\n* Julia's cool drawing: https://twitter.com/b0rk/status/872822361199972352\n* Pointer to new AWS NLB: https://twitter.com/jbeda/status/905935335237881857\n* nginx Unit: https://www.nginx.com/products/nginx-unit/\n\nThanks for tuning in!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/fWkK-zsFtlU/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/fWkK-zsFtlU/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/fWkK-zsFtlU/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 88,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "fWkK-zsFtlU"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/U0jRn8ex-ssOqNdt3miUbZDIMw4\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS45NDk1REZENzhEMzU5MDQz",
+   "snippet": {
+    "publishedAt": "2019-04-03T19:56:15.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 007: Building a Controller",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nIn this episode, Joe will be building a new controller using Go.  Learn how controllers work and a bit about how to build one.  Also watch Joe, most probably, looks stuff up on Stack Overflow.\n\nPointers:\n* The repo where this project lives: https://github.com/jbeda/tgik-controller\n* The code that we started with: https://github.com/jbeda/tgik-controller/tree/13db5aaa9d9cc6745474b83316dc5faa9fff9c5f\n* The code that we ended with: https://github.com/jbeda/tgik-controller/tree/ac55060d60f51fc89240200050e88368d5f58848",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/8Xo_ghCIOSY/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/8Xo_ghCIOSY/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/8Xo_ghCIOSY/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 89,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "8Xo_ghCIOSY"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/MUdlmdqo5Df33KQRGB9IgGLp6UU\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS5DQUNERDQ2NkIzRUQxNTY1",
+   "snippet": {
+    "publishedAt": "2019-04-03T19:56:09.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 006: kubeadm",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics. Some of this will be Joe talking about the things he knows well. Some of this will be Joe exploring something new with the audience. Ask questions, comment and help decide where things go.\n\nIn this episode Joe uses kubeadm to stand up a cluster using raw AWS instances.  He goes into some of the details of what is happening under the covers.  You can use this process to get Kubernetes set up on *any* set of linux machines.\n\nLinks from the episode:\n* Lachlan Evenson's videos\n  - Sonobuoy: https://twitter.com/LachlanEvenson/status/893563156324208641\n  - Ark: https://twitter.com/LachlanEvenson/status/893509442750169088\n* Kubeadm docs: https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/\n* gist with commands I was copy/pasting: https://gist.github.com/jbeda/2317cbfdd6b75288254a79468ed30200\n* K8s Quickstart from Heptio repo (for reference): https://github.com/heptio/aws-quickstart\n* AWS cloud provider notes (need to get these into official docs): https://docs.google.com/document/d/17d4qinC_HnIwrK0GHnRlD1FKkTNdN__VO4TH9-EzbIY/edit#heading=h.2hif681swxfg",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/2Yyc2R8yDRo/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/2Yyc2R8yDRo/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/2Yyc2R8yDRo/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 90,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "2Yyc2R8yDRo"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/eqbBhxEG0Rx-EZruj1ui79FQHMg\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS41MzJCQjBCNDIyRkJDN0VD",
+   "snippet": {
+    "publishedAt": "2019-04-03T19:56:02.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 005: Pod Params and Probes",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics.  Some of this will be Joe talking about the things he knows well.  Some of this will be Joe exploring something new with the audience.  Ask questions, comment and help decide where things go.\n\nIn this episode we cover the various parameters on the Pod object and how those interact to provide reliable service.  See Joe kill AWS instances out from under Kubernetes and have Kubernetes continue without missing a beat.  Learn how liveness and readiness probes work to make sure that services stay up and only serve traffic when they want to.  Watch Joe learn new things about Kubernetes that he didn't already know.\n\nPlease keep the comments coming!  New topic ideas always welcome.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/xEdBSVaUtp4/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/xEdBSVaUtp4/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/xEdBSVaUtp4/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 91,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "xEdBSVaUtp4"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/HO7fMwSqHBvFNkd0EvEOMGJzEsk\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4xMkVGQjNCMUM1N0RFNEUx",
+   "snippet": {
+    "publishedAt": "2019-04-03T19:55:52.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 004: RBAC",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics.  Some of this will be Joe talking about the things he knows well.  Some of this will be Joe exploring something new with the audience.  Ask questions, comment and help decide where things go.\n\nHere we talk about Authentication, Authorization and RBAC for Kubernetes.\n\nLinks to resources mentioned in the episode:\n* AWS Quick Start for Kubernetes by Heptio: https://aws.amazon.com/quickstart/architecture/heptio-kubernetes/\n* Jakub Scholz's guide to adding users with x509 certs: https://www.linkedin.com/pulse/adding-users-quick-start-kubernetes-aws-jakub-scholz\n* Kubernetes docs page on Authn: https://kubernetes.io/docs/admin/authentication/\n* Kubernetes docs page on Authz: https://kubernetes.io/docs/admin/authorization/\n* Heptio cheat page on RBAC: http://docs.heptio.com/content/tutorials/rbac.html",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/slUMVwRXlRo/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/slUMVwRXlRo/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/slUMVwRXlRo/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 92,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "slUMVwRXlRo"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/7-EmkKkSxBaLeMInLkDh3ScqjUc\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4wMTcyMDhGQUE4NTIzM0Y5",
+   "snippet": {
+    "publishedAt": "2019-04-03T19:53:47.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 003: Istio",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics.  Some of this will be Joe talking about the things he knows well.  Some of this will be Joe exploring something new with the audience.  Ask questions, comment and help decide where things go.\n\nNot everything goes as planned, but with the help of the watchers we figure it out and get Istio up and running on Kubernetes.\n\nA fix for the issue that we hit is outlined here: https://github.com/istio/istio/pull/333.  Hopefully this'll get merged soon.\n\nThe link to Tim's presentation about Containers vs Pods: https://twitter.com/thockin/status/885803327614840833",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/WnDG-5cvEew/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/WnDG-5cvEew/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/WnDG-5cvEew/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 93,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "WnDG-5cvEew"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/Ym6WxlABGk0FtK-cVDlecJhCIQM\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS4yODlGNEE0NkRGMEEzMEQy",
+   "snippet": {
+    "publishedAt": "2019-04-03T19:53:42.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 002: Networking and Services",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics.  Some of this will be Joe talking about the things he knows well.  Some of this will be Joe exploring something new with the audience.  Ask questions, comment and help decide where things go.\n\nSend topic ideas beforehand to Joe at @jbeda.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/PlnvxqKR28A/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/PlnvxqKR28A/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/PlnvxqKR28A/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 94,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "PlnvxqKR28A"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/rpqj87-jF8ETifgAF0kVsCat6YY\"",
+   "id": "UEw3Ym1pZ2ZWMEVxUXp4Y05wbWNkVEo5ZUZSUEJlLWlaYS41NkI0NEY2RDEwNTU3Q0M2",
+   "snippet": {
+    "publishedAt": "2019-04-03T19:53:35.000Z",
+    "channelId": "UCdkGV51Nu0unDNT58bHt9bg",
+    "title": "TGI Kubernetes 001: A Quick Tour",
+    "description": "Come hang out with Joe Beda as he does a bit of hands on exploration of Kubernetes and related topics.  Some of this will be Joe talking about the things he knows well.  Some of this will be Joe exploring something new with the audience.  Ask questions, comment and help decide where things go.\n\n---\nShow notes:\n* Quick Start for Kubernets by Heptio: https://aws.amazon.com/quickstart/architecture/heptio-kubernetes/\n* Command line snippets: https://gist.github.com/jbeda/9a2097c726584560fa13f6c1ae13abfb\n* ksonnet\n** http://ksonnet.heptio.com/\n** https://github.com/ksonnet\n\n---\nReach out to us on twitter @heptio or Joe directly at @jbeda.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/9YYeE-bMWv8/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/9YYeE-bMWv8/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/9YYeE-bMWv8/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "VMware Cloud Native Apps",
+    "playlistId": "PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+    "position": 95,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "9YYeE-bMWv8"
+    }
+   }
+  }
+ ]
+}
