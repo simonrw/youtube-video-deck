@@ -1,7 +1,8 @@
 from unittest import mock
 from django.utils import timezone
 import pytest
-from subscriptions.utils import YoutubeClient, ItemType
+from subscriptions.utils.youtube_client import YoutubeClient
+from subscriptions.utils.types import ItemType
 from subscriptions.utils.crawler import Crawler
 from subscriptions.models import Subscription, Video
 from ytvd.settings import BASE_DIR
@@ -161,7 +162,7 @@ def test_crawler(client, user):
 
     custom_now = timezone.now()
     with mock.patch.object(client, "fetch_latest") as fetch_latest:
-        with mock.patch("subscriptions.utils.timezone.now") as mock_now:
+        with mock.patch("subscriptions.utils.crawler.timezone.now") as mock_now:
             mock_now.return_value = custom_now
             fetch_latest.return_value = videos
 
@@ -205,7 +206,7 @@ def test_crawler_with_existing_videos(client, user):
 
     custom_now = timezone.now()
     with mock.patch.object(client, "fetch_latest") as fetch_latest:
-        with mock.patch("subscriptions.utils.timezone.now") as mock_now:
+        with mock.patch("subscriptions.utils.crawler.timezone.now") as mock_now:
             mock_now.return_value = custom_now
             fetch_latest.return_value = videos
 
@@ -239,7 +240,7 @@ def test_crawler_for_single_subscription(client, last_checked, user):
 
     custom_now = timezone.now()
     with mock.patch.object(client, "fetch_latest") as fetch_latest:
-        with mock.patch("subscriptions.utils.timezone.now") as mock_now:
+        with mock.patch("subscriptions.utils.crawler.timezone.now") as mock_now:
             mock_now.return_value = custom_now
             fetch_latest.return_value = videos
 
