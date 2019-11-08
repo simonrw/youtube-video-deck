@@ -94,6 +94,7 @@ def mark_video_watched(request):
 
     return redirect("/")
 
+
 @login_required
 def update_feeds(request):
     if request.method == "POST":
