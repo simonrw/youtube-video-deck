@@ -38,7 +38,7 @@
         <div>
             {% for video in sub.unwatched %}
             <div class="flex justify-around items-center m-4 my-2">
-                <a href="{{ video.url }}" title="{{ video.description }}">
+                <a href="{{ video.url }}" title="{{ video.hover_text }}">
                     <img class="w-32 hover:opacity-75" src={{ video.thumbnail_url }}></img>
                 </a>
                 <form action="watched_video/" method="POST">
