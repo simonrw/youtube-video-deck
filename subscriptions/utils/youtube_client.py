@@ -106,6 +106,15 @@ class YoutubeClient(object):
 
                 published_at = parse_datetime(item["snippet"]["publishedAt"])
 
+                if published_at <= since:
+                    # Should never happen as we are querying the API since the
+                    # `since` parameter. We want to log this case in case our
+                    # assumptions are incorrect.
+                    LOGGER.warning(
+                        "API returned an item later than the `since` value, despite giving a `publishedAt` value. This is unexpected."
+                    )
+                    continue
+
                 yield Video(
                     youtube_id=item["id"]["videoId"],
                     name=item["snippet"]["title"],
@@ -120,4 +129,46 @@ class YoutubeClient(object):
             else:
                 break
 
-        return []
+    def fetch_latest_from_playlist(self, *, playlist_id, since):
+        page_id = None
+        url = "https://www.googleapis.com/youtube/v3/playlistItems"
+        while True:
+            params = {
+                "key": self.api_key,
+                "part": "snippet",
+                "maxResults": 50,
+                "playlistId": playlist_id,
+            }
+
+            if page_id is not None:
+                params["pageToken"] = (page_id,)
+
+            data = self._fetch(url, params=params)
+
+            for item in data["items"]:
+                resource = item["snippet"]["resourceId"]
+                if resource["kind"] != "youtube#video":
+                    LOGGER.warning(
+                        "Unexpected item found in list: %s, expected youtube#playlistItem",
+                        resource["kind"],
+                    )
+                    continue
+
+                published_at = parse_datetime(item["snippet"]["publishedAt"])
+
+                if published_at <= since:
+                    continue
+
+                yield Video(
+                    youtube_id=resource["videoId"],
+                    name=item["snippet"]["title"],
+                    description=item["snippet"]["description"],
+                    published_at=published_at,
+                    thumbnail_url=item["snippet"]["thumbnails"]["high"]["url"],
+                )
+
+            # Break condition, no more pages
+            if "nextPageToken" in data:
+                page_id = data["nextPageToken"]
+            else:
+                break

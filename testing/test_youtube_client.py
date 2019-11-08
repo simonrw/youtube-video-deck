@@ -95,7 +95,7 @@ def test_fetch_latest(client, response):
         videos = list(
             client.fetch_latest_from_channel(
                 channel_id="UCKk076mm-7JjLxJcFSXIPJA",
-                since=timezone.datetime(2019, 9, 1),
+                since=timezone.make_aware(timezone.datetime(2019, 9, 1)),
             )
         )
         assert len(videos) == 50
@@ -111,3 +111,28 @@ def test_fetch_latest(client, response):
     )
 
     # TODO: check another video
+
+
+def test_fetch_from_playlist(client, response):
+    stub_response_1 = response("playlist_1")
+    stub_response_2 = response("playlist_2")
+
+    with mock.patch.object(client, "_fetch") as fetch:
+        fetch.side_effect = [stub_response_1, stub_response_2]
+
+        videos = list(
+            client.fetch_latest_from_playlist(
+                playlist_id="PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+                since=timezone.make_aware(timezone.datetime(2019, 10, 24)),
+            )
+        )
+        assert len(videos) == 2
+
+    assert videos[0].youtube_id == "XxVHNWoZO_c"
+    assert videos[0].published_at == timezone.make_aware(
+        timezone.datetime(2019, 11, 1, 21, 54, 51)
+    )
+    assert videos[0].name == "TGI Kubernetes 096: Grokking Kubernetes : kube-scheduler"
+    assert videos[0].description.startswith(
+        "Come hang out with Duffie Cooley as he does a bit of hands on hacking"
+    )
