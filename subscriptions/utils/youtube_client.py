@@ -78,7 +78,7 @@ class YoutubeClient(object):
             else:
                 raise ValueError(f"Invalid item kind: {item['id']['kind']}")
 
-    def fetch_latest(self, *, channel_id, since):
+    def fetch_latest_from_channel(self, *, channel_id, since):
         page_id = None
         url = "https://www.googleapis.com/youtube/v3/search"
         while True:
@@ -87,6 +87,7 @@ class YoutubeClient(object):
                 "part": "snippet",
                 "maxResults": 25,
                 "channelId": channel_id,
+                "type": "video",
                 "publishedAfter": since.strftime("%Y-%m-%dT%H:%M:%SZ"),
             }
 

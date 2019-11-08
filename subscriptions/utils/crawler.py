@@ -2,6 +2,7 @@ import logging
 from ..models import Subscription
 from django.utils import timezone
 from django.db.utils import IntegrityError
+from .types import ItemType
 
 LOGGER = logging.getLogger("ytvd.subscriptions.utils")
 
@@ -32,7 +33,13 @@ class Crawler:
         else:
             since = sub.last_checked
 
-        videos = self.client.fetch_latest(channel_id=sub.youtube_id, since=since)
+        item_type = ItemType.from_(sub.type)
+        if item_type == ItemType.CHANNEL:
+            videos = self.client.fetch_latest_from_channel(channel_id=sub.youtube_id, since=since)
+        elif item_type == ItemType.PLAYLIST:
+            videos = self.fetch_latest_from_playlist(playlist_id=sub.youtube_id, since=since)
+        else:
+            raise ValueError(f"Unsupported item type: {item_type}")
 
         for video in videos:
             video.subscription = sub

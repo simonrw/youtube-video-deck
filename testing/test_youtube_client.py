@@ -93,7 +93,7 @@ def test_fetch_latest(client, response):
         fetch.side_effect = [stub_response_1, stub_response_2, stub_response_3]
 
         videos = list(
-            client.fetch_latest(
+            client.fetch_latest_from_channel(
                 channel_id="UCKk076mm-7JjLxJcFSXIPJA",
                 since=timezone.datetime(2019, 9, 1),
             )

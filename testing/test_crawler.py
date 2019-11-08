@@ -43,7 +43,7 @@ def test_crawler(client, user):
     ]
 
     custom_now = timezone.now()
-    with mock.patch.object(client, "fetch_latest") as fetch_latest:
+    with mock.patch.object(client, "fetch_latest_from_channel") as fetch_latest:
         with mock.patch("subscriptions.utils.crawler.timezone.now") as mock_now:
             mock_now.return_value = custom_now
             fetch_latest.return_value = videos
@@ -87,7 +87,7 @@ def test_crawler_with_existing_videos(client, user):
     ]
 
     custom_now = timezone.now()
-    with mock.patch.object(client, "fetch_latest") as fetch_latest:
+    with mock.patch.object(client, "fetch_latest_from_channel") as fetch_latest:
         with mock.patch("subscriptions.utils.crawler.timezone.now") as mock_now:
             mock_now.return_value = custom_now
             fetch_latest.return_value = videos
@@ -121,7 +121,7 @@ def test_crawler_for_single_subscription(client, last_checked, user):
     videos = [Video(youtube_id="123", subscription=sub, published_at=latest_update)]
 
     custom_now = timezone.now()
-    with mock.patch.object(client, "fetch_latest") as fetch_latest:
+    with mock.patch.object(client, "fetch_latest_from_channel") as fetch_latest:
         with mock.patch("subscriptions.utils.crawler.timezone.now") as mock_now:
             mock_now.return_value = custom_now
             fetch_latest.return_value = videos
