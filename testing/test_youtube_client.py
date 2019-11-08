@@ -61,7 +61,7 @@ def test_search_for_term(client, response):
             "part": "snippet",
             "q": "outsidexbox",
             "type": "channel,playlist",
-            "maxResults": 25,
+            "maxResults": 50,
         },
     )
 

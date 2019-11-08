@@ -42,7 +42,7 @@ class YoutubeClient(object):
             "part": "snippet",
             "q": term,
             "type": "channel,playlist",
-            "maxResults": 25,
+            "maxResults": 50,
         }
 
         data = self._fetch(url, params=params)
@@ -85,7 +85,7 @@ class YoutubeClient(object):
             params = {
                 "key": self.api_key,
                 "part": "snippet",
-                "maxResults": 25,
+                "maxResults": 50,
                 "channelId": channel_id,
                 "type": "video",
                 "publishedAfter": since.strftime("%Y-%m-%dT%H:%M:%SZ"),
