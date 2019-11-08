@@ -48,7 +48,7 @@ def test_crawler(client, user):
             mock_now.return_value = custom_now
             fetch_latest.return_value = videos
 
-            crawler = Crawler(client)
+            crawler = Crawler(client, concurrent=False)
             crawler.crawl(user=user)
 
     assert [v.youtube_id for v in Video.objects.all()] == [v.youtube_id for v in videos]
@@ -92,7 +92,7 @@ def test_crawler_with_existing_videos(client, user):
             mock_now.return_value = custom_now
             fetch_latest.return_value = videos
 
-            crawler = Crawler(client)
+            crawler = Crawler(client, concurrent=False)
             crawler.crawl(user=user)
 
     db_videos = Video.objects.all()
@@ -126,7 +126,7 @@ def test_crawler_for_single_subscription(client, last_checked, user):
             mock_now.return_value = custom_now
             fetch_latest.return_value = videos
 
-            crawler = Crawler(client)
+            crawler = Crawler(client, concurrent=False)
             crawler.crawl_subscription(sub)
 
     db_videos = Video.objects.all()

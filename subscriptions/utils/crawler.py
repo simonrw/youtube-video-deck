@@ -3,6 +3,7 @@ from ..models import Subscription
 from django.utils import timezone
 from django.db.utils import IntegrityError
 from .types import ItemType
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 LOGGER = logging.getLogger("ytvd.subscriptions.utils")
 
@@ -13,8 +14,10 @@ class Crawler:
     subscription to find any new ones.
     """
 
-    def __init__(self, client):
+    def __init__(self, client, concurrent=True):
         self.client = client
+        self.concurrent = concurrent
+        self.pool = ThreadPoolExecutor(20)
 
     def crawl(self, *, user):
         """
@@ -22,8 +25,12 @@ class Crawler:
         and update
         """
         subscriptions = Subscription.objects.filter(user__username=user.username).all()
-        for sub in subscriptions:
-            self.crawl_subscription(sub)
+        if self.concurrent:
+            for item in self.pool.map(self.crawl_subscription, subscriptions):
+                pass
+        else:
+            for sub in subscriptions:
+                self.crawl_subscription(sub)
 
     def crawl_subscription(self, sub):
         LOGGER.info("Crawling for subscription %s", sub)
@@ -35,9 +42,13 @@ class Crawler:
 
         item_type = ItemType.from_(sub.type)
         if item_type == ItemType.CHANNEL:
-            videos = self.client.fetch_latest_from_channel(channel_id=sub.youtube_id, since=since)
+            videos = self.client.fetch_latest_from_channel(
+                channel_id=sub.youtube_id, since=since
+            )
         elif item_type == ItemType.PLAYLIST:
-            videos = self.client.fetch_latest_from_playlist(playlist_id=sub.youtube_id, since=since)
+            videos = self.client.fetch_latest_from_playlist(
+                playlist_id=sub.youtube_id, since=since
+            )
         else:
             raise ValueError(f"Unsupported item type: {item_type}")
 
