@@ -13,6 +13,19 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    services:
+      # Set up a postgres database alongside the tests
+      postgres:
+        image: postgres:12.0
+        env:
+          POSTGRES_PASSWORD: "password"
+          POSTGRES_USER: "username"
+          POSTGRES_DB: "database"
+        ports:
+          - 5432:5432
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+
     steps:
     - uses: actions/checkout@v1
     - name: Set up Python 3.7
@@ -32,11 +45,3 @@ jobs:
         DATABASE_PASSWORD: "password"
         DATABASE_HOSTNAME: postgres
         SECRET_KEY: "secret"
-
-    services:
-      postgres:
-        image: postgres:12.0
-        env:
-          POSTGRES_PASSWORD: "password"
-          POSTGRES_USER: "username"
-          POSTGRES_DB: "database"
