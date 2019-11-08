@@ -1,5 +1,5 @@
 import logging
-from .models import Subscription
+from ..models import Subscription
 from django.utils import timezone
 from django.db.utils import IntegrityError
 

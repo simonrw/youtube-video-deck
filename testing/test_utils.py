@@ -2,7 +2,7 @@ from unittest import mock
 from django.utils import timezone
 import pytest
 from subscriptions.utils import YoutubeClient, ItemType
-from subscriptions.crawler import Crawler
+from subscriptions.utils.crawler import Crawler
 from subscriptions.models import Subscription, Video
 from ytvd.settings import BASE_DIR
 import os

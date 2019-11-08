@@ -3,7 +3,7 @@ from dataclasses import dataclass
 from typing import Optional
 import enum
 import logging
-from .models import Subscription, Video
+from ..models import Subscription, Video
 from django.utils import timezone
 from django.db.utils import IntegrityError
 from django.utils.dateparse import parse_datetime
