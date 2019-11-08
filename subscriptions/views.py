@@ -3,7 +3,9 @@ from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.db.models import Count, Q
 from django.contrib.auth.models import User
-from .utils import YoutubeClient, ItemType, Crawler
+from .utils.youtube_client import YoutubeClient
+from .utils.types import ItemType
+from .utils.crawler import Crawler
 from .models import Subscription, Video
 from .forms import SearchForm
 import os

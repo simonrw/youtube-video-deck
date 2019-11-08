@@ -9,6 +9,9 @@ class ItemType(enum.Enum):
 
     @classmethod
     def from_(cls, value):
+        if isinstance(value, cls):
+            return value
+
         if value == "ItemType.CHANNEL":
             return cls.CHANNEL
         elif value == "ItemType.PLAYLIST":

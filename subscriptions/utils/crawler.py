@@ -37,7 +37,7 @@ class Crawler:
         if item_type == ItemType.CHANNEL:
             videos = self.client.fetch_latest_from_channel(channel_id=sub.youtube_id, since=since)
         elif item_type == ItemType.PLAYLIST:
-            videos = self.fetch_latest_from_playlist(playlist_id=sub.youtube_id, since=since)
+            videos = self.client.fetch_latest_from_playlist(playlist_id=sub.youtube_id, since=since)
         else:
             raise ValueError(f"Unsupported item type: {item_type}")
 
