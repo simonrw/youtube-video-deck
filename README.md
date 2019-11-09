@@ -1,5 +1,7 @@
 # Youtube video deck
 
+![](https://github.com/mindriot101/youtube-video-deci/workflows/.github/workflows/pythonapp.yml/badge.svg)
+
 This program runs a web server that manages youtube subscriptions.
 
 The main use case is to replace youtube-video-deck, which keeps track of individual subscriptions, and which videos have been watched already.
