@@ -43,5 +43,5 @@ jobs:
         DATABASE_USERNAME: "username"
         DATABASE_DBNAME: "database"
         DATABASE_PASSWORD: "password"
-        DATABASE_HOSTNAME: postgres
+        DATABASE_HOSTNAME: localhost
         SECRET_KEY: "secret"
