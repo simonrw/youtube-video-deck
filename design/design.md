@@ -47,9 +47,13 @@ This object decouples the domain models from the Youtube API. It supports the fo
 * Search Youtube for either the channel or playlist with the given name
 * Fetch new items (videos) since a specified time
 
+#### Crawler
+
+This concept performs the crawling of multiple subscriptions. This takes the Youtube Client class as a dependency and uses it to perform requests to the Youtube API. When given a user, it fetches the subscriptions from the user. For each subscription, it queries the Youtube API for new videos since the `Subscription`'s `last_fetched` date.
+
 ## Questions
 
-* [ ] can the API check multiple subscriptions (channels or playslists) in a single request?
+* [x] can the API check multiple subscriptions (channels or playslists) in a single request? *no it cannot*
 * [*] does the search method of the Youtube API return what the matched result
   is? *yes it does, and it can query for multiple types of result e.g. channels
   and playlists*
