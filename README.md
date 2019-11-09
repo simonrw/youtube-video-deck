@@ -36,6 +36,10 @@ exit
 docker-compose restart ytvd
 ```
 
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md)
+
 ## Design
 
 See the [design docs](./design/design.md)
