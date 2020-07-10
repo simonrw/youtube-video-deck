@@ -3,7 +3,7 @@ django-debug-toolbar==2.2
 django-filter==2.2.0
 django-webpack-loader==0.6.0
 graphene==2.1.8
-graphene-django==2.6.0
+graphene-django==2.11.1
 psycopg2-binary==2.8.4
 pytest==5.2.2
 pytest-django==3.6.0
