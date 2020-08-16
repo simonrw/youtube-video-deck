@@ -113,6 +113,16 @@ def test_fetch_latest(client, response):
     # TODO: check another video
 
 
+def test_fetch_video_details(client, response, mocker):
+    stub_response = response("video_details")
+    id = "78XKGNmBmHw"
+    mocker.patch.object(client, "_fetch", side_effect=[stub_response])
+
+    meta = client.fetch_video_details(id)
+
+    assert meta[id]["duration"] == "PT29M46S"
+
+
 def test_fetch_from_playlist(client, response):
     stub_response_1 = response("playlist_1")
     stub_response_2 = response("playlist_2")

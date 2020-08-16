@@ -172,3 +172,16 @@ class YoutubeClient(object):
                 page_id = data["nextPageToken"]
             else:
                 break
+
+    def fetch_video_details(self, *video_ids):
+        url = "https://www.googleapis.com/youtube/v3/videos"
+        params = {
+            "key": self.api_key,
+            "id": ",".join(video_ids),
+            "part": "contentDetails",
+        }
+        data = self._fetch(url, params=params)
+        results = {}
+        for item in data["items"]:
+            results[item["id"]] = item["contentDetails"]
+        return results
