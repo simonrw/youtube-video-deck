@@ -7,6 +7,8 @@ services:
     ports:
       - "8000:8000"
     restart: always
+    volumes:
+      - pgdata:/var/lib/postgresql/data
     environment:
       GOOGLE_API_KEY: "${GOOGLE_API_KEY}"
       DATABASE_USERNAME: "${DATABASE_USERNAME}"
@@ -21,3 +23,6 @@ services:
       POSTGRES_USER: "${DATABASE_USERNAME}"
       POSTGRES_DB: "${DATABASE_DBNAME}"
     restart: always
+
+volumes:
+  pgdata:
