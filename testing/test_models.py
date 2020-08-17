@@ -1,3 +1,4 @@
+from datetime import time
 import pytest
 from django.utils import timezone
 from django.contrib.auth.models import User
@@ -44,6 +45,11 @@ class TestVideo:
 
         assert video.url == "https://www.youtube.com/watch?v={}".format(youtube_id)
 
+    def test_duration(self, now):
+        video = Video(youtube_id="foobar", duration=time(0, 29, 46))
+
+        assert video.duration == time(0, 29, 46)
+
 
 @pytest.mark.django_db
 def test_subscriptions_belong_to_user():
@@ -54,4 +60,6 @@ def test_subscriptions_belong_to_user():
     sub2 = u2.subscriptions.create(name="bar", youtube_id="456")
 
     # Check that querying for u1's subscriptions does not return u2
-    assert list(u1.subscriptions.all()) == [sub1, ]
+    assert list(u1.subscriptions.all()) == [
+        sub1,
+    ]

@@ -52,6 +52,7 @@ class Video(models.Model):
     )
     published_at = models.DateTimeField()
     watched = models.BooleanField(default=False)
+    duration = models.TimeField(null=True)
 
     @property
     def url(self):
@@ -68,7 +69,6 @@ class Video(models.Model):
             return "{self.name}\n\n{self.description}".format(self=self)
         else:
             return self.name
-
 
     def __str__(self):
         return f"{self.youtube_id} from {self.subscription}"
