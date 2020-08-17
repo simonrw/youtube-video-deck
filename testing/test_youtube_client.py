@@ -1,4 +1,5 @@
 from unittest import mock
+from datetime import time
 from django.utils import timezone
 import pytest
 from subscriptions.utils.youtube_client import YoutubeClient
@@ -84,21 +85,31 @@ def test_search_for_term(client, response):
     assert results[2].channel_title == "outsidexbox"
 
 
-def test_fetch_latest(client, response):
+def test_fetch_latest(client, response, mocker):
     stub_response_1 = response("fetch_latest_1")
     stub_response_2 = response("fetch_latest_2")
     stub_response_3 = response("fetch_latest_3")
 
-    with mock.patch.object(client, "_fetch") as fetch:
-        fetch.side_effect = [stub_response_1, stub_response_2, stub_response_3]
+    mocker.patch.object(
+        client,
+        "_fetch",
+        side_effect=[stub_response_1, stub_response_2, stub_response_3],
+    )
 
-        videos = list(
-            client.fetch_latest_from_channel(
-                channel_id="UCKk076mm-7JjLxJcFSXIPJA",
-                since=timezone.make_aware(timezone.datetime(2019, 9, 1)),
-            )
+    mocker.patch.object(
+        client, "fetch_video_details",
+    )
+    mocker.patch.object(
+        client, "_parse_duration",
+    )
+
+    videos = list(
+        client.fetch_latest_from_channel(
+            channel_id="UCKk076mm-7JjLxJcFSXIPJA",
+            since=timezone.make_aware(timezone.datetime(2019, 9, 1)),
         )
-        assert len(videos) == 50
+    )
+    assert len(videos) == 50
 
     # Check the first result
     assert videos[0].youtube_id == "7v-KIxHOhrs"
@@ -123,20 +134,39 @@ def test_fetch_video_details(client, response, mocker):
     assert meta[id]["duration"] == "PT29M46S"
 
 
-def test_fetch_from_playlist(client, response):
+@pytest.mark.parametrize(
+    "duration,expected",
+    [
+        ("PT29M46S", time(0, 29, 46)),
+        ("PT1H4M16S", time(1, 4, 16)),
+        ("PT5S", time(0, 0, 5)),
+    ],
+)
+def test_parse_video_duration(client, duration, expected):
+    assert client._parse_duration(duration) == expected
+
+
+def test_fetch_from_playlist(client, response, mocker):
     stub_response_1 = response("playlist_1")
     stub_response_2 = response("playlist_2")
 
-    with mock.patch.object(client, "_fetch") as fetch:
-        fetch.side_effect = [stub_response_1, stub_response_2]
+    mocker.patch.object(
+        client, "_fetch", side_effect=[stub_response_1, stub_response_2]
+    )
+    mocker.patch.object(
+        client, "fetch_video_details",
+    )
+    mocker.patch.object(
+        client, "_parse_duration",
+    )
 
-        videos = list(
-            client.fetch_latest_from_playlist(
-                playlist_id="PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
-                since=timezone.make_aware(timezone.datetime(2019, 10, 24)),
-            )
+    videos = list(
+        client.fetch_latest_from_playlist(
+            playlist_id="PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa",
+            since=timezone.make_aware(timezone.datetime(2019, 10, 24)),
         )
-        assert len(videos) == 2
+    )
+    assert len(videos) == 2
 
     assert videos[0].youtube_id == "XxVHNWoZO_c"
     assert videos[0].published_at == timezone.make_aware(

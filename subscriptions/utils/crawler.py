@@ -3,7 +3,8 @@ from ..models import Subscription
 from django.utils import timezone
 from django.db.utils import IntegrityError
 from .types import ItemType
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from .youtube_client import YoutubeClient
+from concurrent.futures import ThreadPoolExecutor
 
 LOGGER = logging.getLogger("ytvd.subscriptions.utils")
 
@@ -14,7 +15,7 @@ class Crawler:
     subscription to find any new ones.
     """
 
-    def __init__(self, client, concurrent=True):
+    def __init__(self, client: YoutubeClient, concurrent: bool = True):
         self.client = client
         self.concurrent = concurrent
         self.pool = ThreadPoolExecutor(20)
@@ -56,7 +57,7 @@ class Crawler:
             video.subscription = sub
             try:
                 video.save()
-            except IntegrityError as e:
+            except IntegrityError:
                 # Video already exists, so do not bother updating, and silently
                 # skip this
                 continue

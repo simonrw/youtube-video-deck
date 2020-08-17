@@ -6,7 +6,7 @@ from subscriptions.utils.crawler import Crawler
 
 
 @pytest.mark.django_db
-def test_crawler(client, user):
+def test_crawler(client, user, mocker):
     last_checked = timezone.make_aware(timezone.datetime(2019, 9, 1))
     # Set up the database contents
     sub1 = Subscription.objects.create(
@@ -43,13 +43,11 @@ def test_crawler(client, user):
     ]
 
     custom_now = timezone.now()
-    with mock.patch.object(client, "fetch_latest_from_channel") as fetch_latest:
-        with mock.patch("subscriptions.utils.crawler.timezone.now") as mock_now:
-            mock_now.return_value = custom_now
-            fetch_latest.return_value = videos
+    mocker.patch.object(client, "fetch_latest_from_channel", return_value=videos)
+    mocker.patch("subscriptions.utils.crawler.timezone.now", return_value=custom_now)
 
-            crawler = Crawler(client, concurrent=False)
-            crawler.crawl(user=user)
+    crawler = Crawler(client, concurrent=False)
+    crawler.crawl(user=user)
 
     assert [v.youtube_id for v in Video.objects.all()] == [v.youtube_id for v in videos]
     assert Subscription.objects.get(name="outsidexbox").last_checked == custom_now

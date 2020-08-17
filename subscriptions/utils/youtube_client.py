@@ -1,8 +1,10 @@
 import requests
+import re
 import logging
 from ..models import Video
 from .types import ItemType, Thumbnail, SearchItem
 from django.utils.dateparse import parse_datetime
+from datetime import time
 
 
 LOGGER = logging.getLogger("ytvd.subscriptions.utils.youtube_client")
@@ -18,6 +20,16 @@ class YoutubeClient(object):
     * Search Youtube for either the channel or playlist with the given name
     * Fetch new items (videos) since a specified time
     """
+
+    duration_re = re.compile(
+        r"""
+        PT  # Always starts with PT as we are parsing a time duration
+        ((?P<hours>\d+)H)?
+        ((?P<minutes>\d+)M)?
+        ((?P<seconds>\d+)S)?
+        """,
+        re.VERBOSE,
+    )
 
     def __init__(self, api_key):
         self.api_key = api_key
@@ -115,12 +127,17 @@ class YoutubeClient(object):
                     )
                     continue
 
+                video_id = item["id"]["videoId"]
+                details = self.fetch_video_details(video_id)
+                duration = self._parse_duration(details[video_id]["duration"])
+
                 yield Video(
-                    youtube_id=item["id"]["videoId"],
+                    youtube_id=video_id,
                     name=item["snippet"]["title"],
                     description=item["snippet"]["description"],
                     published_at=published_at,
                     thumbnail_url=item["snippet"]["thumbnails"]["high"]["url"],
+                    duration=duration,
                 )
 
             # Break condition, no more pages
@@ -159,12 +176,17 @@ class YoutubeClient(object):
                 if published_at <= since:
                     continue
 
+                video_id = resource["videoId"]
+                details = self.fetch_video_details(video_id)
+                duration = self._parse_duration(details[video_id]["duration"])
+
                 yield Video(
-                    youtube_id=resource["videoId"],
+                    youtube_id=video_id,
                     name=item["snippet"]["title"],
                     description=item["snippet"]["description"],
                     published_at=published_at,
                     thumbnail_url=item["snippet"]["thumbnails"]["high"]["url"],
+                    duration=duration,
                 )
 
             # Break condition, no more pages
@@ -185,3 +207,15 @@ class YoutubeClient(object):
         for item in data["items"]:
             results[item["id"]] = item["contentDetails"]
         return results
+
+    @classmethod
+    def _parse_duration(cls, duration: str) -> time:
+        match = cls.duration_re.match(duration)
+        if not match:
+            raise ValueError(f"Cannot parse duration: {duration}")
+
+        hours = int(match.group("hours") or 0)
+        minutes = int(match.group("minutes") or 0)
+        seconds = int(match.group("seconds") or 0)
+
+        return time(hours, minutes, seconds)
