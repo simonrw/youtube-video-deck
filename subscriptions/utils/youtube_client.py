@@ -23,10 +23,15 @@ class YoutubeClient(object):
 
     duration_re = re.compile(
         r"""
-        PT  # Always starts with PT as we are parsing a time duration
+        (
+        PT
         ((?P<hours>\d+)H)?
         ((?P<minutes>\d+)M)?
         ((?P<seconds>\d+)S)?
+        |
+        P
+        ((?P<days>\d+)D)?
+        )
         """,
         re.VERBOSE,
     )

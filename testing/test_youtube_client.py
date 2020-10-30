@@ -97,10 +97,12 @@ def test_fetch_latest(client, response, mocker):
     )
 
     mocker.patch.object(
-        client, "fetch_video_details",
+        client,
+        "fetch_video_details",
     )
     mocker.patch.object(
-        client, "_parse_duration",
+        client,
+        "_parse_duration",
     )
 
     videos = list(
@@ -140,6 +142,7 @@ def test_fetch_video_details(client, response, mocker):
         ("PT29M46S", time(0, 29, 46)),
         ("PT1H4M16S", time(1, 4, 16)),
         ("PT5S", time(0, 0, 5)),
+        ("P0D", time(0, 0, 0)),
     ],
 )
 def test_parse_video_duration(client, duration, expected):
@@ -154,10 +157,12 @@ def test_fetch_from_playlist(client, response, mocker):
         client, "_fetch", side_effect=[stub_response_1, stub_response_2]
     )
     mocker.patch.object(
-        client, "fetch_video_details",
+        client,
+        "fetch_video_details",
     )
     mocker.patch.object(
-        client, "_parse_duration",
+        client,
+        "_parse_duration",
     )
 
     videos = list(
