@@ -5,5 +5,5 @@ django-webpack-loader==0.6.0
 graphene==2.1.8
 graphene-django==2.13.0
 psycopg2-binary==2.8.4
-python-dotenv==0.14.0
+python-dotenv==0.19.2
 requests==2.24.0
